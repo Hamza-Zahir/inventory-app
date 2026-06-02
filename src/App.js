@@ -5,7 +5,7 @@ import BranchSelector from "./Component/BranchSelector/BranchSelector";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
 import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
-import Card from "./Component/Card/Card"; // NEW
+import Card from "./Component/Card/Card";
 import "./App.css";
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
   // Search states
   const [nameQuery, setNameQuery] = useState("");
 
-  // NEW: selected notes (chips)
+  // Selected notes (chips)
   const [selectedNotes, setSelectedNotes] = useState([]);
 
   const [selectedItem, setSelectedItem] = useState(null);
@@ -42,7 +42,7 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
-  // ⭐ NEW FILTER + STRICT RANKING
+  // ⭐ FILTER + STRICT RANKING + HIDE ZERO MATCHES
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -60,6 +60,9 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
+      // ❗ hide perfumes with 0 matches when searching by notes
+      if (selectedNotes.length > 0 && item.matchCount === 0) return false;
+
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
         item.brand.toLowerCase().includes(nameQ);
@@ -69,7 +72,7 @@ export default function App() {
 
       return true;
     })
-    .sort((a, b) => b.matchCount - a.matchCount); // STRICT FIRST → PARTIAL → ZERO
+    .sort((a, b) => b.matchCount - a.matchCount);
 
   return (
     <div
@@ -89,7 +92,7 @@ export default function App() {
 
         <BranchSelector branch={branch} setBranch={setBranch} />
 
-        {/* NEW SEARCH SYSTEM */}
+        {/* SEARCH SYSTEM */}
         <SearchBox
           nameQuery={nameQuery}
           setNameQuery={setNameQuery}
@@ -98,13 +101,14 @@ export default function App() {
           setSelectedNotes={setSelectedNotes}
         />
 
-        <div className="grid">
+        {/* ⭐ GRID CHANGES BASED ON NOTES MODE */}
+        <div className={`grid ${selectedNotes.length > 0 ? "notes-grid" : ""}`}>
           {filtered.map((item) => (
             <Card
               key={item.id}
               item={item}
               selectedNotes={selectedNotes}
-              notesMode={selectedNotes.length > 0} // NEW
+              notesMode={selectedNotes.length > 0}
               onClick={() => setSelectedItem(item)}
             />
           ))}

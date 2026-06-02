@@ -1,3 +1,12 @@
+/* FORCE OVERRIDE */
+.notes-mini-wrapper .mini-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* WRAPPER */
 .mini-wrapper {
   margin-top: 10px;
   width: 100%;
@@ -42,13 +51,8 @@
   );
 }
 
-.mini-line.left {
-  margin-right: 6px;
-}
-
-.mini-line.right {
-  margin-left: 6px;
-}
+.mini-line.left { margin-right: 6px; }
+.mini-line.right { margin-left: 6px; }
 
 /* GRID */
 .mini-grid {
@@ -59,12 +63,16 @@
 }
 
 /* ITEM */
-.mini-item {
+.mini-grid .mini-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 /* ICON */
-.mini-icon {
+.mini-grid .mini-icon {
   width: 36px;
   height: 36px;
   border-radius: 8px;
@@ -76,18 +84,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: 0.25s ease;
 }
 
-.mini-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* MATCHED ICON (highlight) */
+.mini-grid .mini-icon.matched {
+  border: 1.5px solid #c9a86a;
+  box-shadow: 0 0 6px rgba(201,168,106,0.6);
+  transform: scale(1.05);
 }
 
 /* LABEL */
-.mini-label {
-  margin-top: 3px;
-  font-size: 8.5px;
-  color: #e8e8e8;
-  opacity: 0.9;
+.mini-grid .mini-label {
+  margin-top: 4px;
+  font-size: 9.5px;
+  color: #f0f0f0;
+  opacity: 0.95;
+  text-align: center;
+  letter-spacing: 0.15px;
+  transition: 0.25s ease;
+}
+
+/* ⭐ MATCHED LABEL (لون مختلف) */
+.mini-grid .mini-label.matched {
+  color: #c9a86a;
+  font-weight: 600;
+  opacity: 1;
 }

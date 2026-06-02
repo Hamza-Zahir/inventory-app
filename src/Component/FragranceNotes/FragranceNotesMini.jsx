@@ -1,77 +1,49 @@
 import "./FragranceNotesMini.css";
+import NOTES_IMAGES from "../../data/NOTES_IMAGES";
 
-export default function FragranceNotesMini({ notes }) {
+export default function FragranceNotesMini({ notes, matchedNotes = [] }) {
   if (!notes) return null;
 
+  const renderSection = (title, list) => (
+    list?.length > 0 && (
+      <div className="mini-section">
+        <div className="mini-title">
+          <div className="mini-line left"></div>
+          <span>{title}</span>
+          <div className="mini-line right"></div>
+        </div>
+
+        <div className="mini-grid">
+          {list.map((n, i) => {
+            const key = n.note.toLowerCase();
+            const isMatch = matchedNotes.includes(key);
+
+            return (
+              <div key={i} className="mini-item">
+                {/* ICON */}
+                <div className={`mini-icon ${isMatch ? "matched" : ""}`}>
+                  <img src={NOTES_IMAGES[key]} alt={n.note} />
+                </div>
+
+                {/* LABEL */}
+                <span className={`mini-label ${isMatch ? "matched" : ""}`}>
+                  {n.note}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    )
+  );
+
   return (
-    <div className="mini-wrapper">
-
-      {/* TOP NOTES */}
-      {notes.top?.length > 0 && (
-        <div className="mini-section">
-          <div className="mini-title">
-            <div className="mini-line left"></div>
-            <span>Top Notes</span>
-            <div className="mini-line right"></div>
-          </div>
-
-          <div className="mini-grid">
-            {notes.top.map((n, i) => (
-              <div key={i} className="mini-item">
-                <div className="mini-icon">
-                  <img src={n.image} alt={n.note} />
-                </div>
-                <span className="mini-label">{n.note}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* MIDDLE NOTES */}
-      {notes.middle?.length > 0 && (
-        <div className="mini-section">
-          <div className="mini-title">
-            <div className="mini-line left"></div>
-            <span>Middle Notes</span>
-            <div className="mini-line right"></div>
-          </div>
-
-          <div className="mini-grid">
-            {notes.middle.map((n, i) => (
-              <div key={i} className="mini-item">
-                <div className="mini-icon">
-                  <img src={n.image} alt={n.note} />
-                </div>
-                <span className="mini-label">{n.note}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* BASE NOTES */}
-      {notes.base?.length > 0 && (
-        <div className="mini-section">
-          <div className="mini-title">
-            <div className="mini-line left"></div>
-            <span>Base Notes</span>
-            <div className="mini-line right"></div>
-          </div>
-
-          <div className="mini-grid">
-            {notes.base.map((n, i) => (
-              <div key={i} className="mini-item">
-                <div className="mini-icon">
-                  <img src={n.image} alt={n.note} />
-                </div>
-                <span className="mini-label">{n.note}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
+    <div className="notes-mini-wrapper">
+      <div className="mini-wrapper">
+        {renderSection("Top Notes", notes.top)}
+        {renderSection("Middle Notes", notes.middle)}
+        {renderSection("Base Notes", notes.base)}
+      </div>
     </div>
   );
 }
