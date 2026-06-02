@@ -5,35 +5,29 @@ import BranchSelector from "./Component/BranchSelector/BranchSelector";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
 import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
-import Card from "./Component/Card/Card";
+
+import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
+
+import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
+
 import "./App.css";
 
 export default function App() {
   const branchNames = Object.keys(BRANCHES);
-
-  // Load saved branch OR default to first branch
   const savedBranch = localStorage.getItem("selectedBranch") || branchNames[0];
 
   const [branch, setBranch] = useState(savedBranch);
-
-  // Search states
   const [nameQuery, setNameQuery] = useState("");
-
-  // Selected notes (chips)
   const [selectedNotes, setSelectedNotes] = useState([]);
-
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // Save branch to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("selectedBranch", branch);
   }, [branch]);
 
   const items = getBranchItems(branch);
 
-  // Extract ALL notes from branch
   const ALL_NOTES = new Set();
-
   items.forEach((item) => {
     item.notes.top.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
     item.notes.middle.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
@@ -42,7 +36,6 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
-  // ⭐ FILTER + STRICT RANKING + HIDE ZERO MATCHES
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -60,7 +53,6 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
-      // ❗ hide perfumes with 0 matches when searching by notes
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
 
       const matchName =
@@ -75,53 +67,55 @@ export default function App() {
     .sort((a, b) => b.matchCount - a.matchCount);
 
   return (
-    <div
-      className="app-bg"
-      style={{
-        backgroundImage:
-          'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("woodbg.png")',
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="app-container">
+    <>
+      {/* ⭐ FIXED BACKGROUND LAYER */}
+      <div className="bg-fixed"></div>
 
-        <h1 className="title">Inventory</h1>
+      <div className="app-bg">
+        <div className="app-container">
 
-        <BranchSelector branch={branch} setBranch={setBranch} />
+          <h1 className="title">Inventory</h1>
 
-        {/* SEARCH SYSTEM */}
-        <SearchBox
-          nameQuery={nameQuery}
-          setNameQuery={setNameQuery}
-          notesList={notesList}
-          selectedNotes={selectedNotes}
-          setSelectedNotes={setSelectedNotes}
-        />
+          <BranchSelector branch={branch} setBranch={setBranch} />
 
-        {/* ⭐ GRID CHANGES BASED ON NOTES MODE */}
-        <div className={`grid ${selectedNotes.length > 0 ? "notes-grid" : ""}`}>
-          {filtered.map((item) => (
-            <Card
-              key={item.id}
-              item={item}
-              selectedNotes={selectedNotes}
-              notesMode={selectedNotes.length > 0}
-              onClick={() => setSelectedItem(item)}
-            />
-          ))}
+          <SearchBox
+            nameQuery={nameQuery}
+            setNameQuery={setNameQuery}
+            notesList={notesList}
+            selectedNotes={selectedNotes}
+            setSelectedNotes={setSelectedNotes}
+          />
+
+          {/* ⭐ هنا كيتبدل نوع الكارد حسب selectedNotes */}
+          <div className={`grid ${selectedNotes.length > 0 ? "notes-grid" : ""}`}>
+            {filtered.map((item) =>
+              selectedNotes.length > 0 ? (
+                <AnimatedNotesCard
+                  key={item.id}
+                  item={item}
+                  selectedNotes={selectedNotes}
+                  notesMode={true}
+                  onClick={() => setSelectedItem(item)}
+                />
+              ) : (
+                <SimpleFragranceCard
+                  key={item.id}
+                  item={item}
+                  onClick={() => setSelectedItem(item)}
+                />
+              )
+            )}
+          </div>
+
+          <ScrollToTopButton />
         </div>
 
-        <ScrollToTopButton />
+        <footer className="footer">
+          Created by <strong>Hamza Zahir</strong>
+        </footer>
+
+        <ModalCard item={selectedItem} onClose={() => setSelectedItem(null)} />
       </div>
-
-      <footer className="footer">
-        Created by <strong>Hamza Zahir</strong>
-      </footer>
-
-      <ModalCard item={selectedItem} onClose={() => setSelectedItem(null)} />
-    </div>
+    </>
   );
 }
