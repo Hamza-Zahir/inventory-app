@@ -1,0 +1,93 @@
+.mini-wrapper {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mini-section {
+  margin-bottom: 14px;
+}
+
+/* TITLE */
+.mini-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  margin: 10px 0;
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-title span {
+  padding: 0 8px;
+  z-index: 2;
+}
+
+.mini-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.35) 50%,
+    rgba(255,255,255,0) 100%
+  );
+}
+
+.mini-line.left {
+  margin-right: 6px;
+}
+
+.mini-line.right {
+  margin-left: 6px;
+}
+
+/* GRID */
+.mini-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ITEM */
+.mini-item {
+  text-align: center;
+}
+
+/* ICON */
+.mini-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: #1a1a1a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LABEL */
+.mini-label {
+  margin-top: 3px;
+  font-size: 8.5px;
+  color: #e8e8e8;
+  opacity: 0.9;
+}
