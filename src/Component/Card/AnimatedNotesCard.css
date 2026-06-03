@@ -57,7 +57,7 @@
 
 .card-wrapper:hover .card {
   background: rgba(0, 0, 0, 0.95);
-  transform: rotate(5deg);
+  transform: rotate(3deg);
 }
 
 /* ========================= */

@@ -7,7 +7,6 @@ import ModalCard from "./Component/ModalCard/ModalCard";
 import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
 
 import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
-
 import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
 
 import "./App.css";
@@ -53,11 +52,14 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
+      // ⭐ البحث بالـ NOTES
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
 
+      // ⭐ البحث بالاسم / البراند / ID
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
-        item.brand.toLowerCase().includes(nameQ);
+        item.brand.toLowerCase().includes(nameQ) ||
+        item.id.toString().includes(nameQ); // ⭐ البحث بالـ ID
 
       if (nameQ && selectedNotes.length > 0) return matchName;
       if (nameQ) return matchName;
@@ -68,7 +70,6 @@ export default function App() {
 
   return (
     <>
-      {/* ⭐ FIXED BACKGROUND LAYER */}
       <div className="bg-fixed"></div>
 
       <div className="app-bg">
@@ -86,7 +87,6 @@ export default function App() {
             setSelectedNotes={setSelectedNotes}
           />
 
-          {/* ⭐ هنا كيتبدل نوع الكارد حسب selectedNotes */}
           <div className={`grid ${selectedNotes.length > 0 ? "notes-grid" : ""}`}>
             {filtered.map((item) =>
               selectedNotes.length > 0 ? (

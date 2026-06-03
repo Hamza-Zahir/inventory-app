@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./SearchBox.css";
+import NOTES_IMAGES from "../../data/NOTES_IMAGES";
 
 export default function SearchBox({
   nameQuery,
@@ -8,26 +9,40 @@ export default function SearchBox({
   selectedNotes,
   setSelectedNotes,
 }) {
-  const [active, setActive] = useState("name"); // name | notes
+  const [active, setActive] = useState("name");
   const [noteInput, setNoteInput] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  // Filter suggestions
-  const suggestions =
-    noteInput.trim().length === 0
-      ? []
-      : notesList.filter((n) => n.startsWith(noteInput.toLowerCase()));
+  const notesWithImages = notesList.map((note) => ({
+    name: note,
+    img: NOTES_IMAGES[note] || "/images/notes/default.png",
+  }));
 
-  // Add note chip
+  const sortedNotes = [...notesWithImages].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
+  const suggestions = [...sortedNotes].sort((a, b) => {
+    const input = noteInput.toLowerCase();
+    if (!input) return a.name.localeCompare(b.name);
+
+    const aStarts = a.name.startsWith(input);
+    const bStarts = b.name.startsWith(input);
+
+    if (aStarts && !bStarts) return -1;
+    if (!aStarts && bStarts) return 1;
+
+    return a.name.localeCompare(b.name);
+  });
+
   const addNote = (note) => {
-    if (!selectedNotes.includes(note)) {
-      setSelectedNotes([...selectedNotes, note]);
+    if (!selectedNotes.includes(note.name)) {
+      setSelectedNotes([...selectedNotes, note.name]);
     }
     setNoteInput("");
     setShowSuggestions(false);
   };
 
-  // Remove note chip
   const removeNote = (note) => {
     setSelectedNotes(selectedNotes.filter((n) => n !== note));
   };
@@ -37,35 +52,24 @@ export default function SearchBox({
 
       {/* TABS */}
       <div className="search-tabs">
-
-        {/* BRAND / FRAGRANCE TAB */}
         <div
           className={`search-tab ${active === "name" ? "active" : ""}`}
           onClick={() => {
             setActive("name");
-
-            // RESET NOTES SEARCH
-            setSelectedNotes([]);   // remove all chips
-            setNoteInput("");       // clear input
+            setSelectedNotes([]);
+            setNoteInput("");
             setShowSuggestions(false);
-
-            // RESET NAME SEARCH
-            setNameQuery("");       // start fresh
+            setNameQuery("");
           }}
         >
           Search by Brand / Fragrance
         </div>
 
-        {/* NOTES TAB */}
         <div
           className={`search-tab ${active === "notes" ? "active" : ""}`}
           onClick={() => {
             setActive("notes");
-
-            // RESET NAME SEARCH
             setNameQuery("");
-
-            // RESET NOTES INPUT ONLY (chips stay until user removes them)
             setNoteInput("");
             setShowSuggestions(false);
           }}
@@ -74,60 +78,77 @@ export default function SearchBox({
         </div>
       </div>
 
-      {/* NAME SEARCH */}
-      {active === "name" && (
-        <input
-          className="search-input fade-in"
-          placeholder="Type brand or fragrance..."
-          value={nameQuery}
-          onChange={(e) => setNameQuery(e.target.value)}
-        />
-      )}
+      {/* FIXED AREA */}
+      <div className="search-dynamic-area">
 
-      {/* NOTES SEARCH */}
-      {active === "notes" && (
-        <div className="notes-container fade-in">
-
-          {/* SELECTED NOTES (CHIPS) */}
-          <div className="chips-row">
-            {selectedNotes.map((note) => (
-              <div key={note} className="chip">
-                {note}
-                <span className="chip-x" onClick={() => removeNote(note)}>
-                  ×
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* INPUT */}
+        {/* NAME SEARCH */}
+        <div className={`name-container ${active === "name" ? "show" : "hide"}`}>
           <input
             className="search-input"
-            placeholder="Type notes (vanilla, musk...)"
-            value={noteInput}
-            onChange={(e) => {
-              setNoteInput(e.target.value);
-              setShowSuggestions(true);
-            }}
-            onFocus={() => setShowSuggestions(true)}
+            placeholder="Type brand, fragrance or ID..."
+            value={nameQuery}
+            onChange={(e) => setNameQuery(e.target.value)}
           />
+        </div>
+
+        {/* NOTES SEARCH */}
+        <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
+
+          {/* CHIPS ONLY IF NOTES SELECTED */}
+          {selectedNotes.length > 0 && (
+            <div className="chips-row">
+              {selectedNotes.map((note) => (
+                <div key={note} className="chip">
+                  {note}
+                  <span className="chip-x" onClick={() => removeNote(note)}>×</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* INPUT */}
+          <div className="input-wrapper">
+            <input
+              className="search-input"
+              placeholder="Type notes (vanilla, musk...)"
+              value={noteInput}
+              onChange={(e) => {
+                setNoteInput(e.target.value);
+                setShowSuggestions(true);
+              }}
+              onFocus={() => setShowSuggestions(true)}
+              onBlur={() => {
+                setTimeout(() => setShowSuggestions(false), 150);
+              }}
+            />
+
+            {noteInput.length > 0 && (
+              <span className="clear-input" onClick={() => setNoteInput("")}>
+                ×
+              </span>
+            )}
+          </div>
 
           {/* SUGGESTIONS */}
           {showSuggestions && suggestions.length > 0 && (
             <div className="suggestions-box">
               {suggestions.map((note) => (
                 <div
-                  key={note}
-                  className="suggestion-item"
+                  key={note.name}
+                  className={`suggestion-item note-with-img ${
+                    selectedNotes.includes(note.name) ? "selected-note" : ""
+                  }`}
                   onClick={() => addNote(note)}
                 >
-                  {note}
+                  <img src={note.img} alt={note.name} className="note-icon" />
+                  {note.name}
                 </div>
               ))}
             </div>
           )}
         </div>
-      )}
+
+      </div>
     </div>
   );
 }
