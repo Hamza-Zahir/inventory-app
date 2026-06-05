@@ -2,46 +2,50 @@ import "./AnimatedNotesCard.css";
 import FragranceNotesMini from "../FragranceNotes/FragranceNotesMini";
 
 export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
-  const { fragrance, brand, image, notes } = item;
+  const { fragrance, brand, image, notes, gender, id } = item;
 
-  // ⭐ استخراج جميع النوتات
   const allNotes = [
     ...notes.top.map((n) => n.note.toLowerCase()),
     ...notes.middle.map((n) => n.note.toLowerCase()),
     ...notes.base.map((n) => n.note.toLowerCase())
   ];
 
-  // ⭐ النوتات لي كيتطابقو مع selectedNotes
   const matchedNotes = selectedNotes
     .map((n) => n.toLowerCase())
     .filter((n) => allNotes.includes(n));
 
   return (
-    <div className="card-wrapper" onClick={onClick}>
+    <div className="card" onClick={onClick}>
 
-      {/* ⭐ الصورة خارج الكارد نهائياً */}
-      <img
-        src={image}
-        alt={fragrance}
-        className="card-img-rise"
-      />
+      {/* ⭐ SEE MORE ICON — TOP RIGHT */}
+      <div className="see-more-icon">➜</div>
 
-      {/* ⭐ الكارد فوق الصورة */}
-      <div className="card notes-mode">
-        <div className="card-content">
-          <div className="frag">{fragrance}</div>
-          <div className="brand">({brand})</div>
+      {/* HEADER */}
+      <div className="card-header">
 
-          {/* ⭐ notes always visible in this card */}
-          <FragranceNotesMini
-            notes={{
-              top: [...notes.top],
-              middle: [...notes.middle],
-              base: [...notes.base]
-            }}
-            matchedNotes={matchedNotes}
-          />
+        {/* IMAGE */}
+        <div className={`image-box ${gender}`}>
+          <img src={image} alt={fragrance} className="small-img" />
         </div>
+
+        {/* TITLE + ID */}
+        <div className="title-column">
+          <div className="id-inline">{id}</div>
+
+          <div className="title-box">
+            <div className="frag">{fragrance}</div>
+            <div className="brand">({brand})</div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* NOTES */}
+      <div className="notes-box">
+        <FragranceNotesMini
+          notes={notes}
+          matchedNotes={matchedNotes}
+        />
       </div>
 
     </div>

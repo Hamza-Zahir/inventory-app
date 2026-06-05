@@ -1,7 +1,7 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0, 0, 0, 0.555);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,13 +12,18 @@
   width: 80%;
   max-width: 1100px;
   height: 75%;
-  background: rgba(15, 15, 15, 0.95);
+  background: rgba(15, 15, 15, 0.945);
   border-radius: 20px;
   display: flex;
   gap: 18px;
   padding: 18px;
   border: 1px solid rgba(255,255,255,0.12);
+
   overflow-y: auto;
+  overflow-x: hidden;
+
+  /* ⭐ باش scrollbar يدخل لداخل border-radius */
+  padding-right: 12px;
 }
 
 .modal-close {
@@ -86,4 +91,90 @@
   opacity: 0.9;
   margin-bottom: 15px;
   text-align: left;
+}
+
+.modal-id {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  width: fit-content;
+
+  color: #c9a86a;
+  background: rgba(255, 255, 255, 0.10);
+
+  padding: 4px 10px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+}
+
+/* ⭐ LUXURY SCROLLBAR — fully rounded + inside border-radius */
+.modal-big::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-big::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px; /* ⭐ مهم */
+}
+
+.modal-big::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c9a86a67, #8b6b3477);
+  border-radius: 20px; /* ⭐ باش يدور */
+  border: 2px solid rgba(0,0,0,0.4);
+}
+
+.modal-big::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e6c98a00, #b48a4a00);
+}
+.modal-big {
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 20px;
+  scrollbar-gutter: stable both-edges;
+  mask-image: radial-gradient(circle at top left, transparent 0, black 0),
+              radial-gradient(circle at top right, transparent 0, black 0),
+              radial-gradient(circle at bottom left, transparent 0, black 0),
+              radial-gradient(circle at bottom right, transparent 0, black 0);
+}
+/* ⭐ MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  .modal-big {
+    flex-direction: column;      /* الصورة فوق والنص تحت */
+    height: 85%;                 /* باش تولي مناسبة للموبايل */
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .modal-left {
+    width: 100%;                 /* الصورة تاخد العرض كامل */
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-big-img {
+    width: 50%;                  /* باش ما تكونش كبيرة بزاف */
+    max-height: 260px;
+    object-fit: contain;
+  }
+
+  .modal-right {
+    width: 100%;                 /* النص ياخد العرض كامل */
+  }
+
+  .modal-title-line {
+    font-size: 20px;
+    text-align: center;          /* أحسن فالموبايل */
+  }
+
+  .modal-id {
+    margin: 0 auto 10px auto;    /* ID يتوسّط */
+  }
+
+  .gender-line-modal,
+  .family-line {
+    text-align: center;
+  }
 }

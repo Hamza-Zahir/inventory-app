@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getBranchItems } from "./data/merge";
 import { BRANCHES } from "./data/branches";
+
 import BranchSelector from "./Component/BranchSelector/BranchSelector";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
@@ -8,6 +9,9 @@ import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
 
 import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
 import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
+
+import ViewSwitcher from "./Component/ViewSwitcher/ViewSwitcher";
+import FragranceTable from "./Component/FragranceTable/FragranceTable"; // ⭐ NEW
 
 import "./App.css";
 
@@ -20,12 +24,16 @@ export default function App() {
   const [selectedNotes, setSelectedNotes] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
+  // ⭐ VIEW MODE
+  const [view, setView] = useState("cards");
+
   useEffect(() => {
     localStorage.setItem("selectedBranch", branch);
   }, [branch]);
 
   const items = getBranchItems(branch);
 
+  // ⭐ COLLECT ALL NOTES
   const ALL_NOTES = new Set();
   items.forEach((item) => {
     item.notes.top.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
@@ -35,6 +43,7 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
+  // ⭐ FILTERING
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -52,14 +61,12 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
-      // ⭐ البحث بالـ NOTES
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
 
-      // ⭐ البحث بالاسم / البراند / ID
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
         item.brand.toLowerCase().includes(nameQ) ||
-        item.id.toString().includes(nameQ); // ⭐ البحث بالـ ID
+        item.id.toString().includes(nameQ);
 
       if (nameQ && selectedNotes.length > 0) return matchName;
       if (nameQ) return matchName;
@@ -87,25 +94,49 @@ export default function App() {
             setSelectedNotes={setSelectedNotes}
           />
 
-          <div className={`grid ${selectedNotes.length > 0 ? "notes-grid" : ""}`}>
-            {filtered.map((item) =>
-              selectedNotes.length > 0 ? (
+          {/* ⭐ VIEW SWITCHER (only when not filtering by notes) */}
+          {selectedNotes.length === 0 && (
+            <ViewSwitcher view={view} setView={setView} />
+          )}
+
+          {/* ⭐ DISPLAY LOGIC */}
+          {selectedNotes.length > 0 ? (
+            <div className="grid notes-grid">
+              {filtered.map((item) => (
                 <AnimatedNotesCard
                   key={item.id}
                   item={item}
                   selectedNotes={selectedNotes}
-                  notesMode={true}
                   onClick={() => setSelectedItem(item)}
                 />
-              ) : (
+              ))}
+            </div>
+          ) : view === "cards" ? (
+            <div className="grid">
+              {filtered.map((item) => (
                 <SimpleFragranceCard
                   key={item.id}
                   item={item}
                   onClick={() => setSelectedItem(item)}
                 />
-              )
-            )}
-          </div>
+              ))}
+            </div>
+          ) : view === "table" ? (
+            <div className="table-view">
+              <FragranceTable data={filtered} /> {/* ⭐ TABLE READY */}
+            </div>
+          ) : view === "notes" ? (
+            <div className="grid notes-grid">
+              {filtered.map((item) => (
+                <AnimatedNotesCard
+                  key={item.id}
+                  item={item}
+                  selectedNotes={[]}
+                  onClick={() => setSelectedItem(item)}
+                />
+              ))}
+            </div>
+          ) : null}
 
           <ScrollToTopButton />
         </div>

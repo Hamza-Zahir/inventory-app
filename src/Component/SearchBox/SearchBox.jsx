@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./SearchBox.css";
 import NOTES_IMAGES from "../../data/NOTES_IMAGES";
 
@@ -12,6 +12,9 @@ export default function SearchBox({
   const [active, setActive] = useState("name");
   const [noteInput, setNoteInput] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
+
+  // ⭐ ref for scroll reset
+  const suggestionsRef = useRef(null);
 
   const notesWithImages = notesList.map((note) => ({
     name: note,
@@ -94,7 +97,7 @@ export default function SearchBox({
         {/* NOTES SEARCH */}
         <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
 
-          {/* CHIPS ONLY IF NOTES SELECTED */}
+          {/* CHIPS */}
           {selectedNotes.length > 0 && (
             <div className="chips-row">
               {selectedNotes.map((note) => (
@@ -115,6 +118,11 @@ export default function SearchBox({
               onChange={(e) => {
                 setNoteInput(e.target.value);
                 setShowSuggestions(true);
+
+                // ⭐ Reset scroll to top
+                if (suggestionsRef.current) {
+                  suggestionsRef.current.scrollTop = 0;
+                }
               }}
               onFocus={() => setShowSuggestions(true)}
               onBlur={() => {
@@ -131,7 +139,7 @@ export default function SearchBox({
 
           {/* SUGGESTIONS */}
           {showSuggestions && suggestions.length > 0 && (
-            <div className="suggestions-box">
+            <div className="suggestions-box" ref={suggestionsRef}>
               {suggestions.map((note) => (
                 <div
                   key={note.name}

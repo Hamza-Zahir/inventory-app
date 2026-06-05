@@ -1,0 +1,103 @@
+/* ============================
+   WRAPPER — نفس عرض الكروت
+   ============================ */
+.table-wrapper {
+  width: 100%;
+  max-width: 1100px; /* نفس عرض الكروت */
+  margin: 20px auto 0 auto;
+  padding: 0 10px; /* نفس padding ديال app-container */
+}
+
+/* ============================
+   TABLE — ياخد 100% العرض
+   ============================ */
+.luxury-table {
+  width: 100%;
+  max-width: 100%; /* مهم: باش مايبقاش ضيّق */
+
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.527);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 14px;
+  overflow: hidden;
+
+  color: #f5e9d0;
+  font-size: 16px;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+.luxury-table thead {
+  background: rgba(3, 1, 1, 0.548);
+}
+
+.luxury-table th {
+  padding: 16px 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-size: 16px;
+}
+
+/* ============================
+   ID BOX — مربع واضح
+   ============================ */
+.luxury-table td:first-child {
+  width: 85px;
+  text-align: center;
+
+  border-right: 1px solid rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.35);
+
+  font-weight: 700;
+  font-size: 18px;
+
+  padding: 18px 0;
+}
+
+/* ============================
+   ITEM CELL
+   ============================ */
+.luxury-table td:last-child {
+  padding: 18px 14px;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-size: 15px;
+}
+
+/* ============================
+   LAST ROW
+   ============================ */
+.luxury-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ============================
+   HOVER EFFECT
+   ============================ */
+.luxury-table tbody tr:hover {
+  background: rgba(255,255,255,0.12);
+  transition: 0.25s ease;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 600px) {
+  .luxury-table {
+    font-size: 14px;
+  }
+
+  .luxury-table td:first-child {
+    width: 60px;
+    font-size: 16px;
+  }
+
+  .luxury-table th,
+  .luxury-table td {
+    padding: 12px 8px;
+  }
+}

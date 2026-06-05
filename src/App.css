@@ -19,19 +19,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2; /* تحت overlay */
+  z-index: -2;
   pointer-events: none;
 }
 
-/* ⭐ DARK OVERLAY فوق الخلفية */
+/* ⭐ DARK OVERLAY */
 .bg-fixed::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(83, 83, 83, 0.384);
-  /* ⭐ زيد أو نقص الشفافية */
-  /* backdrop-filter: blur(2px);  */
-  /* اختيارية */
   z-index: -1;
 }
 
@@ -46,14 +43,14 @@
 .app-container {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 14px; /* FIXED (كان 20px) */
   color: #fff;
 }
 
 .title {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 15px; /* FIXED (كان 25px) */
   font-weight: 600;
   color: #f5e9d0;
 }
@@ -63,7 +60,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 18px;
-  margin-top: 25px;
+  margin-top: 15px; /* FIXED (كان 25px) */
   transition: 0.25s ease;
 }
 

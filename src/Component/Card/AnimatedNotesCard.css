@@ -1,82 +1,150 @@
-/* ========================= */
-/*       CARD WRAPPER        */
-/* ========================= */
-
-.card-wrapper {
-  position: relative;
-  width: 250px;
-  height: 380px; /* ثابتة باش الأنيميشن يبقى مضبوط */
-}
-
-.card-wrapper:hover {
-  z-index: 999;
-}
-
-/* ========================= */
-/*     IMAGE BEHIND CARD     */
-/* ========================= */
-
-.card-img-rise {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  z-index: 1;
-  transition: transform 0.45s ease;
-}
-
-.card-wrapper:hover .card-img-rise {
-  transform: translateY(-70%) rotate(-12deg);
-}
-
-/* ========================= */
-/*           CARD            */
-/* ========================= */
-
+/* MAIN CARD */
 .card {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   width: 100%;
   height: 100%;
+  cursor: pointer;
 
-  background: rgba(0, 0, 0, 0.85);
-  border-radius: 14px;
-  padding: 18px;
+  padding: 16px;
+  border-radius: 18px;
 
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.822);
+  backdrop-filter: blur(8px);
 
-  z-index: 10;
-  transition: 0.35s ease;
-}
+  border: 8px solid rgba(201, 168, 106, 0.22);
 
-.card-wrapper:hover .card {
-  background: rgba(0, 0, 0, 0.95);
-  transform: rotate(3deg);
-}
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 0.12),
+    0 0 18px rgba(201, 168, 106, 0.25);
 
-/* ========================= */
-/*         CARD CONTENT      */
-/* ========================= */
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-.card-content {
   position: relative;
-  z-index: 20;
+}
+
+/* ⭐ SEE MORE ICON — TOP RIGHT + one-direction infinite animation */
+.see-more-icon {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+
+  font-size: 25px;      
+  /* font-weight: 30; */
+  color: #c9a86a;
+  opacity: 0.85;
+
+  animation: arrowMove 1.4s ease-in-out infinite;
+}
+/* ⭐ حركة من اليسار → لليمين فقط */
+@keyframes arrowMove {
+  0%   { transform: translateX(0); opacity: 0.6; }
+  50%  { transform: translateX(10px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0.6; }
+}
+
+/* HEADER */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 90px;
+}
+
+/* IMAGE BOX */
+.image-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.12),
+              0 4px 12px rgba(0,0,0,0.35);
+
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* IMAGE HOVER EFFECT */
+.card:hover .image-box .small-img {
+  transform: scale(1.12);
+}
+
+.card:hover .image-box {
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,0.18),
+    0 0 14px rgba(201,168,106,0.35);
+}
+
+/* GENDER COLORS */
+.image-box.men {
+  background: linear-gradient(135deg, #2b4c7e, #1b2a41);
+}
+
+.image-box.women {
+  background: linear-gradient(135deg, #d77fa1, #b05c7a);
+}
+
+.image-box.unisex {
+  background: linear-gradient(135deg, #b05c7a, #2b4c7e);
+}
+
+.small-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.35s ease;
+}
+
+/* TITLE COLUMN */
+.title-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ID */
+.id-inline {
+  font-size: 14px;
+  color: #c9a86a;
+
+  background: rgba(255, 255, 255, 0.10);
+  padding: 2px;
+  width: fit-content;
+  min-width: 70px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+/* TITLE */
+.title-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .frag {
-  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .brand {
-  margin-bottom: 12px;
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 0;
 }
 
-.card-content > div:last-child {
-  margin-top: 10px;
+/* NOTES */
+.notes-box {
+  margin-top: 12px;
+  flex-grow: 1;
 }

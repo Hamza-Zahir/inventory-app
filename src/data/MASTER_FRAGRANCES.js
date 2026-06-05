@@ -223,7 +223,7 @@ export const MASTER_FRAGRANCES = {
   egoiste_platinum: {
     code: "egoiste_platinum",
     brand: "Chanel",
-    fragrance: "Égoïste Platinum",
+    fragrance: "Égoïste Platinum Égoïste Platinum",
     family: "Woody Floral Musk",
     gender: "men",
     image: IMAGES.egoiste_platinum,
@@ -244,7 +244,13 @@ export const MASTER_FRAGRANCES = {
         { note: "Cedar", image: NOTES_IMAGES.cedar },
         { note: "Sandalwood", image: NOTES_IMAGES.sandalwood },
         { note: "Amber", image: NOTES_IMAGES.amber }
+        ,
+        { note: "Vetiver", image: NOTES_IMAGES.vetiver },
+        { note: "Cedar", image: NOTES_IMAGES.cedar },
+        { note: "Sandalwood", image: NOTES_IMAGES.sandalwood },
+        { note: "Amber", image: NOTES_IMAGES.amber }
       ]
     }
   }
+
 };

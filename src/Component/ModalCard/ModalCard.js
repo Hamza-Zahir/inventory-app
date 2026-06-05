@@ -6,7 +6,7 @@ import "./ModalCard.css";
 export default function ModalCard({ item, onClose }) {
   if (!item) return null;
 
-  const { fragrance, brand, family, gender, image, notes } = item;
+  const { fragrance, brand, family, gender, image, notes, id } = item;
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -22,6 +22,9 @@ export default function ModalCard({ item, onClose }) {
 
         {/* RIGHT SIDE */}
         <div className="modal-right">
+
+          {/* ⭐ ID فوق العنوان */}
+          <div className="id-inline modal-id">{id}</div>
 
           {/* TITLE */}
           <div className="modal-title-line">

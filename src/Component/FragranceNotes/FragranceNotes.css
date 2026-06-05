@@ -1,18 +1,17 @@
 /* WRAPPER */
 .notes-wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
+  padding-bottom: 18px;
 }
 
-/* ========================= */
-/*      NOTES SECTIONS       */
-/* ========================= */
 
 .notes-section {
-  margin-bottom: 22px;
+  margin-bottom: 14px;
+   
 }
 
-/* TITLES WITH LINES */
+/* TITLE — SAME STYLE AS MINI BUT KEEP ORIGINAL FONT SIZE */
 .notes-title {
   position: relative;
   width: 100%;
@@ -21,7 +20,7 @@
   margin: 18px 0;
   color: #fff;
 
-  font-size: 13px;
+  font-size: 13px;        /* ⭐ KEEP ORIGINAL SIZE */
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -36,9 +35,19 @@
   z-index: 2;
 }
 
+/* LINES — SAME AS MINI */
 .notes-title .line {
   flex: 1;
   height: 1px;
+  display: block;
+  min-width: 24px;
+  .line-block {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 25px;
+  height: 0;
+
+}
   background: linear-gradient(
     to right,
     rgba(255,255,255,0) 0%,
@@ -47,43 +56,42 @@
   );
 }
 
-.notes-title .line.left {
-  margin-right: 8px;
-}
+.notes-title .line.left { margin-right: 8px; }
+.notes-title .line.right { margin-left: 8px; }
 
-.notes-title .line.right {
-  margin-left: 8px;
-}
-
-/* ========================= */
-/*           GRID            */
-/* ========================= */
-
+/* GRID — SAME AS MINI */
 .notes-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
 }
 
-/* NOTE ITEM (LARGE VERSION) */
+/* ITEM — SAME AS MINI */
 .note-item-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-/* IMAGE BOX (LARGE VERSION) */
+/* ICON — SAME AS MINI BUT BIGGER */
 .note-icon-large {
   width: 50px;
   height: 50px;
   border-radius: 10px;
   overflow: hidden;
 
-  border: 1.2px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   background: #1a1a1a;
 
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+
+  transition: 0.25s ease;
 }
 
 .note-img-large {
@@ -92,10 +100,12 @@
   object-fit: cover;
 }
 
-/* LABEL (LARGE VERSION) */
+/* LABEL — KEEP ORIGINAL FONT SIZE */
 .note-label-large {
   margin-top: 4px;
-  font-size: 10px;
+  font-size: 10px;        /* ⭐ KEEP ORIGINAL SIZE */
   color: #e8e8e8;
   opacity: 0.9;
+  text-align: center;
+  letter-spacing: 0.15px;
 }
