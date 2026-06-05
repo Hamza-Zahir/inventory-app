@@ -4,6 +4,8 @@
   gap: 14px;
   margin: 10px 0 14px 0; /* FIXED */
   flex-wrap: wrap;
+  background: #2709094f;
+  border-radius: 14px;
 }
 
 .view-btn {
