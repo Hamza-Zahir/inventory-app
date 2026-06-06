@@ -1470,17 +1470,17 @@ black_orchid: {
   image: IMAGES.black_orchid,
   notes: {
     top: [
-      { note: "Truffle", image: NOTES_IMAGES.caramel },
-      { note: "Gardenia", image: NOTES_IMAGES.white_flowers },
+      { note: "Truffle", image: NOTES_IMAGES.truffle },
+      { note: "Gardenia", image: NOTES_IMAGES.gardenia },
       { note: "Blackcurrant", image: NOTES_IMAGES.blackcurrant },
       { note: "Ylang Ylang", image: NOTES_IMAGES["ylang ylang"] },
       { note: "Bergamot", image: NOTES_IMAGES.bergamot },
       { note: "Mandarin", image: NOTES_IMAGES.mandarin },
     ],
     middle: [
-      { note: "Orchid", image: NOTES_IMAGES.white_flowers },
-      { note: "Spices", image: NOTES_IMAGES.pepper },
-      { note: "Lotus", image: NOTES_IMAGES.white_flowers },
+      { note: "Orchid", image: NOTES_IMAGES.orchid },
+      { note: "Spices", image: NOTES_IMAGES.spices },
+      { note: "Lotus", image: NOTES_IMAGES.lotus },
     ],
     base: [
       { note: "Patchouli", image: NOTES_IMAGES.patchouli },
@@ -1491,6 +1491,7 @@ black_orchid: {
     ],
   },
 },
+
 good_girl_gone_bad: {
   code: "good_girl_gone_bad",
   brand: "Kilian",
@@ -1534,7 +1535,7 @@ oud_ispahan: {
       { note: "Saffron", image: NOTES_IMAGES.saffron },
     ],
     base: [
-      { note: "Agarwood (Oud)", image: NOTES_IMAGES.agarwood },
+      { note: "Agarwood (Oud)", image: NOTES_IMAGES["Agarwood (Oud)"] },
       { note: "Sandalwood", image: NOTES_IMAGES.sandalwood },
       { note: "Cedar", image: NOTES_IMAGES.cedar },
     ],
@@ -1550,7 +1551,7 @@ cuir_intense: {
   image: IMAGES.cuir_intense,
   notes: {
     top: [
-      { note: "Osmathus", image: NOTES_IMAGES.osmanthus },
+      { note: "Osmanthus", image: NOTES_IMAGES.osmanthus },
       { note: "Ylang Ylang", image: NOTES_IMAGES["ylang ylang"] },
     ],
     middle: [
@@ -2089,7 +2090,7 @@ the_night: {
       { note: "Turkish Rose", image: NOTES_IMAGES.rose },
     ],
     middle: [
-      { note: "Agarwood (Oud)", image: NOTES_IMAGES.agarwood },
+       { note: "Agarwood (Oud)", image: NOTES_IMAGES["Agarwood (Oud)"] },
     ],
     base: [
       { note: "Amber", image: NOTES_IMAGES.amber },
@@ -2627,17 +2628,17 @@ elysium_pour_homme: {
     top: [
       { note: "Grapefruit", image: NOTES_IMAGES.grapefruit },
       { note: "Lemon", image: NOTES_IMAGES.lemon },
-      { note: "Lime", image: NOTES_IMAGES.lemon },
+      { note: "Lime", image: NOTES_IMAGES.lime },
       { note: "Bergamot", image: NOTES_IMAGES.bergamot },
-      { note: "Thyme", image: NOTES_IMAGES["green tea"] },
-      { note: "Artemisia", image: NOTES_IMAGES["green tea"] },
+      { note: "Thyme", image: NOTES_IMAGES.thyme },
+      { note: "Artemisia", image: NOTES_IMAGES.artemisia },
     ],
     middle: [
       { note: "Vetiver", image: NOTES_IMAGES.vetiver },
       { note: "Cedarwood", image: NOTES_IMAGES.cedarwood },
-      { note: "Juniper Berry", image: NOTES_IMAGES.pepper },
+      { note: "Juniper Berry", image: NOTES_IMAGES["juniper berry"] },
       { note: "Blackcurrant", image: NOTES_IMAGES.blackcurrant },
-      { note: "Apple", image: NOTES_IMAGES["fruity notes"] },
+      { note: "Apple", image: NOTES_IMAGES.apple },
       { note: "Pink Pepper", image: NOTES_IMAGES["pink pepper"] },
     ],
     base: [
@@ -2650,6 +2651,7 @@ elysium_pour_homme: {
     ],
   },
 },
+
 
 libre: {
   code: "libre",
@@ -2772,7 +2774,7 @@ black_saffron: {
   notes: {
     top: [
       { note: "Saffron", image: NOTES_IMAGES.saffron },
-      { note: "Juniper Berries", image: NOTES_IMAGES.pepper },
+      { note: "Juniper Berry", image: NOTES_IMAGES.pepper },
       { note: "Grapefruit", image: NOTES_IMAGES.grapefruit },
     ],
     middle: [
@@ -2949,11 +2951,11 @@ supreme_bouquet: {
   image: IMAGES.supreme_bouquet,
   notes: {
     top: [
-      { note: "Ylang-Ylang", image: NOTES_IMAGES.white_flowers },
+      { note: "Ylang Ylang", image: NOTES_IMAGES["ylang ylang"] },
       { note: "Bergamot", image: NOTES_IMAGES.bergamot },
     ],
     middle: [
-      { note: "Tuberose", image: NOTES_IMAGES.white_flowers },
+      { note: "Tuberose", image: NOTES_IMAGES.tuberose },
       { note: "Jasmine", image: NOTES_IMAGES.jasmine },
     ],
     base: [
@@ -2963,6 +2965,7 @@ supreme_bouquet: {
     ],
   },
 },
+
 
 angels_share: {
   code: "angels_share",
@@ -4326,7 +4329,7 @@ neroli_portofino_tf: {
     ]
   }
 },
-
+// Oud Wood Intense Tom Ford
 oud_wood_intense_tf: {
   code: "oud_wood_intense_tf",
   brand: "Tom Ford",
@@ -4340,7 +4343,7 @@ oud_wood_intense_tf: {
       { note: "Cypress", image: NOTES_IMAGES.cypress }
     ],
     middle: [
-      { note: "Juniper Berry", image: NOTES_IMAGES.juniper_berry },
+      { note: "Juniper Berry", image: NOTES_IMAGES["juniper berry"] },
       { note: "Angelica", image: NOTES_IMAGES.angelica }
     ],
     base: [
@@ -4396,27 +4399,31 @@ terre_dhermes_parfum_hermes: {
   }
 },
 
-ambre_sultan_sl: {
-  code: "ambre_sultan_sl",
-  brand: "Serge Lutens",
-  brand_short: "SL",
-  fragrance: "Ambre Sultan",
-  family: "Amber",
+garcon_manque_givenchy: {
+  code: "garcon_manque_givenchy",
+  brand: "Givenchy",
+  brand_short: "Givenchy",
+  fragrance: "Garcon Manque",
+  family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.ambre_sultan_sl,
+  image: IMAGES.garcon_manque_givenchy,
   notes: {
     top: [
-      { note: "Bay Leaf", image: NOTES_IMAGES["bay leaf"] }
+      { note: "Black Pepper", image: NOTES_IMAGES["black pepper"] },
+      { note: "Bergamot", image: NOTES_IMAGES.bergamot }
     ],
     middle: [
-      { note: "Amber", image: NOTES_IMAGES.amber }
+      { note: "Iris", image: NOTES_IMAGES.iris },
+      { note: "Incense", image: NOTES_IMAGES.incense }
     ],
     base: [
-      { note: "Sandalwood", image: NOTES_IMAGES.sandalwood },
-      { note: "Vanilla", image: NOTES_IMAGES.vanilla }
+      { note: "Vetiver", image: NOTES_IMAGES.vetiver },
+      { note: "Cedarwood", image: NOTES_IMAGES.cedarwood },
+      { note: "Musk", image: NOTES_IMAGES.musk }
     ]
   }
 },
+
 
 ambre_eternel_guerlain: {
   code: "ambre_eternel_guerlain",
@@ -4749,221 +4756,221 @@ symphony_lv: {
     ]
   }
 },
-vanilla_28_kayali: {
-  code: "vanilla_28_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Vanilla 28",
-  family: "Amber Vanilla",
-  gender: "women",
-  image: IMAGES.vanilla_28_kayali,
-  notes: {
-    top: [
-      { note: "Vanilla Orchid", image: NOTES_IMAGES.vanilla_orchid }
-    ],
-    middle: [
-      { note: "Brown Sugar", image: NOTES_IMAGES.brown_sugar }
-    ],
-    base: [
-      { note: "Amber", image: NOTES_IMAGES.amber },
-      { note: "Tonka Bean", image: NOTES_IMAGES["tonka bean"] }
-    ]
-  }
-},
+// vanilla_28_kayali: {
+//   code: "vanilla_28_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Vanilla 28",
+//   family: "Amber Vanilla",
+//   gender: "women",
+//   image: IMAGES.vanilla_28_kayali,
+//   notes: {
+//     top: [
+//       { note: "Vanilla Orchid", image: NOTES_IMAGES.vanilla_orchid }
+//     ],
+//     middle: [
+//       { note: "Brown Sugar", image: NOTES_IMAGES.brown_sugar }
+//     ],
+//     base: [
+//       { note: "Amber", image: NOTES_IMAGES.amber },
+//       { note: "Tonka Bean", image: NOTES_IMAGES["tonka bean"] }
+//     ]
+//   }
+// },
 
-vanilla_candy_rock_sugar_42_kayali: {
-  code: "vanilla_candy_rock_sugar_42_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Vanilla Candy Rock Sugar 42",
-  family: "Gourmand",
-  gender: "women",
-  image: IMAGES.vanilla_candy_rock_sugar_42_kayali,
-  notes: {
-    top: [
-      { note: "Sugar", image: NOTES_IMAGES.sugar }
-    ],
-    middle: [
-      { note: "Vanilla", image: NOTES_IMAGES.vanilla }
-    ],
-    base: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ]
-  }
-},
+// vanilla_candy_rock_sugar_42_kayali: {
+//   code: "vanilla_candy_rock_sugar_42_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Vanilla Candy Rock Sugar 42",
+//   family: "Gourmand",
+//   gender: "women",
+//   image: IMAGES.vanilla_candy_rock_sugar_42_kayali,
+//   notes: {
+//     top: [
+//       { note: "Sugar", image: NOTES_IMAGES.sugar }
+//     ],
+//     middle: [
+//       { note: "Vanilla", image: NOTES_IMAGES.vanilla }
+//     ],
+//     base: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ]
+//   }
+// },
 
-fleur_majesty_rose_royale_31_kayali: {
-  code: "fleur_majesty_rose_royale_31_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Fleur Majesty Rose Royale 31",
-  family: "Floral",
-  gender: "women",
-  image: IMAGES.fleur_majesty_rose_royale_31_kayali,
-  notes: {
-    top: [
-      { note: "Rose", image: NOTES_IMAGES.rose }
-    ],
-    middle: [
-      { note: "Peony", image: NOTES_IMAGES.peony }
-    ],
-    base: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ]
-  }
-},
+// fleur_majesty_rose_royale_31_kayali: {
+//   code: "fleur_majesty_rose_royale_31_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Fleur Majesty Rose Royale 31",
+//   family: "Floral",
+//   gender: "women",
+//   image: IMAGES.fleur_majesty_rose_royale_31_kayali,
+//   notes: {
+//     top: [
+//       { note: "Rose", image: NOTES_IMAGES.rose }
+//     ],
+//     middle: [
+//       { note: "Peony", image: NOTES_IMAGES.peony }
+//     ],
+//     base: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ]
+//   }
+// },
 
-eden_sparkling_lychee_39_kayali: {
-  code: "eden_sparkling_lychee_39_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Eden Sparkling Lychee 39",
-  family: "Fruity Floral",
-  gender: "women",
-  image: IMAGES.eden_sparkling_lychee_39_kayali,
-  notes: {
-    top: [
-      { note: "Lychee", image: NOTES_IMAGES.lychee },
-      { note: "Grapefruit", image: NOTES_IMAGES.grapefruit }
-    ],
-    middle: [
-      { note: "Rose", image: NOTES_IMAGES.rose }
-    ],
-    base: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ]
-  }
-},
+// eden_sparkling_lychee_39_kayali: {
+//   code: "eden_sparkling_lychee_39_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Eden Sparkling Lychee 39",
+//   family: "Fruity Floral",
+//   gender: "women",
+//   image: IMAGES.eden_sparkling_lychee_39_kayali,
+//   notes: {
+//     top: [
+//       { note: "Lychee", image: NOTES_IMAGES.lychee },
+//       { note: "Grapefruit", image: NOTES_IMAGES.grapefruit }
+//     ],
+//     middle: [
+//       { note: "Rose", image: NOTES_IMAGES.rose }
+//     ],
+//     base: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ]
+//   }
+// },
 
-eden_juicy_apple_01_kayali: {
-  code: "eden_juicy_apple_01_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Eden Juicy Apple 01",
-  family: "Fruity Floral",
-  gender: "women",
-  image: IMAGES.eden_juicy_apple_01_kayali,
-  notes: {
-    top: [
-      { note: "Apple", image: NOTES_IMAGES.apple },
-      { note: "Blackcurrant", image: NOTES_IMAGES.blackcurrant }
-    ],
-    middle: [
-      { note: "Raspberry", image: NOTES_IMAGES.raspberry }
-    ],
-    base: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ]
-  }
-},
+// eden_juicy_apple_01_kayali: {
+//   code: "eden_juicy_apple_01_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Eden Juicy Apple 01",
+//   family: "Fruity Floral",
+//   gender: "women",
+//   image: IMAGES.eden_juicy_apple_01_kayali,
+//   notes: {
+//     top: [
+//       { note: "Apple", image: NOTES_IMAGES.apple },
+//       { note: "Blackcurrant", image: NOTES_IMAGES.blackcurrant }
+//     ],
+//     middle: [
+//       { note: "Raspberry", image: NOTES_IMAGES.raspberry }
+//     ],
+//     base: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ]
+//   }
+// },
 
-freedom_musk_matcha_45_kayali: {
-  code: "freedom_musk_matcha_45_kayali",
-  brand: "Kayali",
-  brand_short: "Kayali",
-  fragrance: "Freedom Musk Matcha 45",
-  family: "Aromatic",
-  gender: "unisex",
-  image: IMAGES.freedom_musk_matcha_45_kayali,
-  notes: {
-    top: [
-      { note: "Matcha", image: NOTES_IMAGES.matcha }
-    ],
-    middle: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ],
-    base: [
-      { note: "Cedarwood", image: NOTES_IMAGES.cedarwood }
-    ]
-  }
-},
+// freedom_musk_matcha_45_kayali: {
+//   code: "freedom_musk_matcha_45_kayali",
+//   brand: "Kayali",
+//   brand_short: "Kayali",
+//   fragrance: "Freedom Musk Matcha 45",
+//   family: "Aromatic",
+//   gender: "unisex",
+//   image: IMAGES.freedom_musk_matcha_45_kayali,
+//   notes: {
+//     top: [
+//       { note: "Matcha", image: NOTES_IMAGES.matcha }
+//     ],
+//     middle: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ],
+//     base: [
+//       { note: "Cedarwood", image: NOTES_IMAGES.cedarwood }
+//     ]
+//   }
+// },
 
-idole_lancome: {
-  code: "idole_lancome",
-  brand: "Lancôme",
-  brand_short: "Lancôme",
-  fragrance: "Idole",
-  family: "Floral",
-  gender: "women",
-  image: IMAGES.idole_lancome,
-  notes: {
-    top: [
-      { note: "Pear", image: NOTES_IMAGES.pear }
-    ],
-    middle: [
-      { note: "Rose", image: NOTES_IMAGES.rose },
-      { note: "Jasmine", image: NOTES_IMAGES.jasmine }
-    ],
-    base: [
-      { note: "Vanilla", image: NOTES_IMAGES.vanilla }
-    ]
-  }
-},
+// idole_lancome: {
+//   code: "idole_lancome",
+//   brand: "Lancôme",
+//   brand_short: "Lancôme",
+//   fragrance: "Idole",
+//   family: "Floral",
+//   gender: "women",
+//   image: IMAGES.idole_lancome,
+//   notes: {
+//     top: [
+//       { note: "Pear", image: NOTES_IMAGES.pear }
+//     ],
+//     middle: [
+//       { note: "Rose", image: NOTES_IMAGES.rose },
+//       { note: "Jasmine", image: NOTES_IMAGES.jasmine }
+//     ],
+//     base: [
+//       { note: "Vanilla", image: NOTES_IMAGES.vanilla }
+//     ]
+//   }
+// },
 
-myriad_lv: {
-  code: "myriad_lv",
-  brand: "Louis Vuitton",
-  brand_short: "LV",
-  fragrance: "Myriad",
-  family: "Amber Floral",
-  gender: "unisex",
-  image: IMAGES.myriad_lv,
-  notes: {
-    top: [
-      { note: "Saffron", image: NOTES_IMAGES.saffron }
-    ],
-    middle: [
-      { note: "Rose", image: NOTES_IMAGES.rose }
-    ],
-    base: [
-      { note: "Oud", image: NOTES_IMAGES.oud },
-      { note: "Amber", image: NOTES_IMAGES.amber }
-    ]
-  }
-},
+// myriad_lv: {
+//   code: "myriad_lv",
+//   brand: "Louis Vuitton",
+//   brand_short: "LV",
+//   fragrance: "Myriad",
+//   family: "Amber Floral",
+//   gender: "unisex",
+//   image: IMAGES.myriad_lv,
+//   notes: {
+//     top: [
+//       { note: "Saffron", image: NOTES_IMAGES.saffron }
+//     ],
+//     middle: [
+//       { note: "Rose", image: NOTES_IMAGES.rose }
+//     ],
+//     base: [
+//       { note: "Oud", image: NOTES_IMAGES.oud },
+//       { note: "Amber", image: NOTES_IMAGES.amber }
+//     ]
+//   }
+// },
 
-les_sables_roses_lv: {
-  code: "les_sables_roses_lv",
-  brand: "Louis Vuitton",
-  brand_short: "LV",
-  fragrance: "Les Sables Roses",
-  family: "Amber Floral",
-  gender: "unisex",
-  image: IMAGES.les_sables_roses_lv,
-  notes: {
-    top: [
-      { note: "Rose", image: NOTES_IMAGES.rose }
-    ],
-    middle: [
-      { note: "Oud", image: NOTES_IMAGES.oud }
-    ],
-    base: [
-      { note: "Ambergris", image: NOTES_IMAGES.ambergris }
-    ]
-  }
-},
+// les_sables_roses_lv: {
+//   code: "les_sables_roses_lv",
+//   brand: "Louis Vuitton",
+//   brand_short: "LV",
+//   fragrance: "Les Sables Roses",
+//   family: "Amber Floral",
+//   gender: "unisex",
+//   image: IMAGES.les_sables_roses_lv,
+//   notes: {
+//     top: [
+//       { note: "Rose", image: NOTES_IMAGES.rose }
+//     ],
+//     middle: [
+//       { note: "Oud", image: NOTES_IMAGES.oud }
+//     ],
+//     base: [
+//       { note: "Ambergris", image: NOTES_IMAGES.ambergris }
+//     ]
+//   }
+// },
 
-symphony_lv: {
-  code: "symphony_lv",
-  brand: "Louis Vuitton",
-  brand_short: "LV",
-  fragrance: "Symphony",
-  family: "Citrus Aromatic",
-  gender: "unisex",
-  image: IMAGES.symphony_lv,
-  notes: {
-    top: [
-      { note: "Grapefruit", image: NOTES_IMAGES.grapefruit },
-      { note: "Bergamot", image: NOTES_IMAGES.bergamot }
-    ],
-    middle: [
-      { note: "Ginger", image: NOTES_IMAGES.ginger }
-    ],
-    base: [
-      { note: "Musk", image: NOTES_IMAGES.musk }
-    ]
-  }
-},
+// symphony_lv: {
+//   code: "symphony_lv",
+//   brand: "Louis Vuitton",
+//   brand_short: "LV",
+//   fragrance: "Symphony",
+//   family: "Citrus Aromatic",
+//   gender: "unisex",
+//   image: IMAGES.symphony_lv,
+//   notes: {
+//     top: [
+//       { note: "Grapefruit", image: NOTES_IMAGES.grapefruit },
+//       { note: "Bergamot", image: NOTES_IMAGES.bergamot }
+//     ],
+//     middle: [
+//       { note: "Ginger", image: NOTES_IMAGES.ginger }
+//     ],
+//     base: [
+//       { note: "Musk", image: NOTES_IMAGES.musk }
+//     ]
+//   }
+// },
 deep_ocean_amber_lv: {
   code: "deep_ocean_amber_lv",
   brand: "Louis Vuitton",
@@ -5593,27 +5600,27 @@ born_in_roma_extradose_donna_valentino: {
     ]
   }
 },
-neroli_portofino_tf: {
-  code: "neroli_portofino_tf",
-  brand: "Tom Ford",
-  brand_short: "Tom Ford",
-  fragrance: "Neroli Portofino",
-  family: "Citrus Aromatic",
-  gender: "unisex",
-  image: IMAGES.neroli_portofino_tf,
-  notes: {
-    top: [
-      { note: "Neroli", image: NOTES_IMAGES.neroli },
-      { note: "Bergamot", image: NOTES_IMAGES.bergamot }
-    ],
-    middle: [
-      { note: "Orange Blossom", image: NOTES_IMAGES.orange }
-    ],
-    base: [
-      { note: "Amber", image: NOTES_IMAGES.amber }
-    ]
-  }
-},
+// neroli_portofino_tf: {
+//   code: "neroli_portofino_tf",
+//   brand: "Tom Ford",
+//   brand_short: "Tom Ford",
+//   fragrance: "Neroli Portofino",
+//   family: "Citrus Aromatic",
+//   gender: "unisex",
+//   image: IMAGES.neroli_portofino_tf,
+//   notes: {
+//     top: [
+//       { note: "Neroli", image: NOTES_IMAGES.neroli },
+//       { note: "Bergamot", image: NOTES_IMAGES.bergamot }
+//     ],
+//     middle: [
+//       { note: "Orange Blossom", image: NOTES_IMAGES.orange }
+//     ],
+//     base: [
+//       { note: "Amber", image: NOTES_IMAGES.amber }
+//     ]
+//   }
+// },
 
 noir_de_noir_tf: {
   code: "noir_de_noir_tf",
@@ -6883,3 +6890,33 @@ new_look_2024_dior: {
 
 
 };
+
+
+
+
+
+// 1) استخراج جميع النوتات من MASTER_FRAGRANCES
+// const allNotesUsed = new Set();
+
+// Object.values(MASTER_FRAGRANCES).forEach(fragrance => {
+//   ["top", "middle", "base"].forEach(level => {
+//     fragrance.notes[level].forEach(n => {
+//       allNotesUsed.add(n.note.trim().toLowerCase());
+//     });
+//   });
+// });
+
+// // 2) استخراج جميع النوتات لي عندك فـ NOTES_IMAGES
+// const allNotesImages = new Set(
+//   Object.keys(NOTES_IMAGES).map(n => n.trim().toLowerCase())
+// );
+
+// // 3) مقارنة: شنو ناقص؟
+// const missingNotes = [...allNotesUsed].filter(n => !allNotesImages.has(n));
+
+// // 4) طباعة النتائج
+// console.log("🔵 Total notes used in MASTER_FRAGRANCES:", allNotesUsed.size);
+// console.log("🟢 Total notes available in NOTES_IMAGES:", allNotesImages.size);
+// console.log("🔴 Missing notes (without duplicates):");
+// console.log(missingNotes);
+// ambre_sultan_sl

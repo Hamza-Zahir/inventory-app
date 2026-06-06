@@ -5,13 +5,11 @@
   padding-bottom: 18px;
 }
 
-
 .notes-section {
   margin-bottom: 14px;
-   
 }
 
-/* TITLE — SAME STYLE AS MINI BUT KEEP ORIGINAL FONT SIZE */
+/* TITLE */
 .notes-title {
   position: relative;
   width: 100%;
@@ -20,7 +18,7 @@
   margin: 18px 0;
   color: #fff;
 
-  font-size: 13px;        /* ⭐ KEEP ORIGINAL SIZE */
+  font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -35,19 +33,13 @@
   z-index: 2;
 }
 
-/* LINES — SAME AS MINI */
+/* LINES */
 .notes-title .line {
   flex: 1;
   height: 1px;
   display: block;
   min-width: 24px;
-  .line-block {
-  flex-grow: 1;
-  flex-shrink: 0;
-  min-width: 25px;
-  height: 0;
 
-}
   background: linear-gradient(
     to right,
     rgba(255,255,255,0) 0%,
@@ -59,7 +51,7 @@
 .notes-title .line.left { margin-right: 8px; }
 .notes-title .line.right { margin-left: 8px; }
 
-/* GRID — SAME AS MINI */
+/* GRID */
 .notes-grid {
   display: flex;
   flex-wrap: wrap;
@@ -67,29 +59,31 @@
   gap: 8px;
 }
 
-/* ITEM — SAME AS MINI */
+/* ITEM */
 .note-item-large {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
-/* ICON — SAME AS MINI BUT BIGGER */
+/* ICON */
 .note-icon-large {
   width: 50px;
   height: 50px;
   border-radius: 10px;
   overflow: hidden;
 
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.97);   /* ⭐ أوضح من قبل */
 
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
+  position: relative;
+  z-index: 5;
+  isolation: isolate;
 
   transition: 0.25s ease;
 }
@@ -98,14 +92,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  filter: brightness(1.45) contrast(1.28);   /* ⭐ أقوى باش الصور يبانوا */
 }
 
-/* LABEL — KEEP ORIGINAL FONT SIZE */
+/* LABEL */
 .note-label-large {
   margin-top: 4px;
-  font-size: 10px;        /* ⭐ KEEP ORIGINAL SIZE */
-  color: #e8e8e8;
-  opacity: 0.9;
+  font-size: 10px;
+  color: #f0f0f0;
+  opacity: 0.95;
   text-align: center;
   letter-spacing: 0.15px;
 }

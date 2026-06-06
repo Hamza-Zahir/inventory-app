@@ -11,7 +11,10 @@ import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
 import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
 
 import ViewSwitcher from "./Component/ViewSwitcher/ViewSwitcher";
-import FragranceTable from "./Component/FragranceTable/FragranceTable"; // ⭐ NEW
+import FragranceTable from "./Component/FragranceTable/FragranceTable";
+
+import LuxuryBackground from "./Component/LuxuryBackground/LuxuryBackground";
+import "./Component/LuxuryBackground/LuxuryBackground.css";
 
 import "./App.css";
 
@@ -24,7 +27,6 @@ export default function App() {
   const [selectedNotes, setSelectedNotes] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // ⭐ VIEW MODE
   const [view, setView] = useState("cards");
 
   useEffect(() => {
@@ -33,7 +35,6 @@ export default function App() {
 
   const items = getBranchItems(branch);
 
-  // ⭐ COLLECT ALL NOTES
   const ALL_NOTES = new Set();
   items.forEach((item) => {
     item.notes.top.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
@@ -43,7 +44,6 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
-  // ⭐ FILTERING
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -77,8 +77,13 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-fixed"></div>
+      {/* ⭐ الخلفية */}
+      <LuxuryBackground nameQuery={nameQuery} selectedNotes={selectedNotes} />
 
+      {/* ⭐ overlay الجديد */}
+      <div className="luxury-overlay"></div>
+
+      {/* ⭐ المحتوى */}
       <div className="app-bg">
         <div className="app-container">
 
@@ -94,12 +99,10 @@ export default function App() {
             setSelectedNotes={setSelectedNotes}
           />
 
-          {/* ⭐ VIEW SWITCHER (only when not filtering by notes) */}
           {selectedNotes.length === 0 && (
             <ViewSwitcher view={view} setView={setView} />
           )}
 
-          {/* ⭐ DISPLAY LOGIC */}
           {selectedNotes.length > 0 ? (
             <div className="grid notes-grid">
               {filtered.map((item) => (
@@ -123,7 +126,7 @@ export default function App() {
             </div>
           ) : view === "table" ? (
             <div className="table-view">
-              <FragranceTable data={filtered} /> {/* ⭐ TABLE READY */}
+              <FragranceTable data={filtered} />
             </div>
           ) : view === "notes" ? (
             <div className="grid notes-grid">

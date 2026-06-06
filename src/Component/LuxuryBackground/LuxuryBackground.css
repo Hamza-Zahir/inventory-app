@@ -1,0 +1,62 @@
+/* ROOT */
+.luxury-bg-root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* background: radial-gradient(circle at center, #2d2d2d 0%, #1c1c1c 55%, #0f0f0f 100%); */
+  isolation: isolate;
+  background-color: black;
+}
+
+/* CONTAINER */
+.luxury-bg-notes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* EACH NOTE AS A FISH */
+.note-fish {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  top: var(--y);
+  left: var(--x);
+
+  transform: translate(-50%, -50%) scale(var(--s)) rotate(var(--r));
+  /* opacity: 0.12; */
+
+  animation: swim var(--d) ease-in-out infinite alternate;
+}
+
+/* FISH MOVEMENT */
+@keyframes swim {
+  0% {
+    transform: translate(-50%, -50%) scale(var(--s)) rotate(var(--r));
+  }
+  50% {
+    transform: translate(calc(-50% + 35px), calc(-50% - 25px))
+      scale(calc(var(--s) * 1.05))
+      rotate(calc(var(--r) + 20deg));
+  }
+  100% {
+    transform: translate(calc(-50% - 30px), calc(-50% + 30px))
+      scale(calc(var(--s) * 0.95))
+      rotate(calc(var(--r) - 15deg));
+  }
+}
+
+/* OVERLAY */
+.luxury-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: rgba(51, 51, 51, 0.822);
+  /* backdrop-filter: blur(1px); */
+}
