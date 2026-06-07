@@ -3,58 +3,64 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
-  width: 100%;
+  width: auto; /* ⭐ باش يجي مناسب للهيدر */
+  margin: 0;   /* ⭐ نحيدو المسافة اللي كانت كتخرب الheader */
 }
 
 /* main button */
 .branch-menu-button {
-  width: 600px; 
-               
-  max-width: 95%;
-  padding: 18px 24px;
-  font-size: 19px;
+  min-width: 220px;
+  padding: 10px 16px;
+
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 12px;
-  border: 2px solid #c9a86a;
-  background: #0d0d0d;
-  color: #f5e9d0;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+
   transition: 0.25s ease;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
 }
 
 .branch-menu-button:hover {
-  background: #161616;
-  border-color: #e0c48c;
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 /* text */
 .branch-text {
   flex: 1;
   text-align: left;
+  white-space: nowrap;
 }
 
 /* arrow icon */
 .arrow {
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.8;
-  margin-left: 10px;
 }
 
 /* dropdown list */
 .branch-menu-list {
   position: absolute;
   top: calc(100% + 4px);
-  width: 600px;              /* ⭐ نفس العرض */
-  max-width: 95%;
-  background: #0d0d0d;
-  border: 2px solid #c9a86a;
-  border-radius: 12px;
+
+  min-width: 220px;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
   z-index: 20;
   overflow: hidden;
@@ -62,49 +68,27 @@
 
 /* each item */
 .branch-menu-item {
-  padding: 18px 24px;
-  font-size: 18px;
-  color: #f5e9d0;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: white;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .branch-menu-item:hover {
-  background: #1a1a1a;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .branch-menu-button {
-    width: 95%;
-    font-size: 18px;
-    padding: 16px 20px;
-  }
-
-  .branch-menu-list {
-    width: 95%;
-    top: calc(100% + 2px);
+    min-width: 180px;
+    font-size: 15px;
+    padding: 9px 14px;
   }
 
   .branch-menu-item {
-    font-size: 17px;
-    padding: 16px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .branch-menu-button {
-    font-size: 17px;
-    padding: 14px 18px;
-  }
-
-  .branch-menu-list {
-    width: 95%;
-    top: calc(100% + 1px);
-  }
-
-  .branch-menu-item {
-    font-size: 16px;
-    padding: 14px 18px;
+    font-size: 14px;
+    padding: 10px 14px;
   }
 }

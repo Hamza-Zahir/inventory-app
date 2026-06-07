@@ -4473,30 +4473,32 @@ ambre_royal_or: {
   }
 },
 
-ambre_114_hdp: {
-  code: "ambre_114_hdp",
-  brand: "Histoires de Parfums",
-  brand_short: "HDP",
-  fragrance: "Ambre 114",
-  family: "Amber Spicy",
-  gender: "unisex",
-  image: IMAGES.ambre_114_hdp,
+gentleman_society_extreme_givenchy: {
+  code: "gentleman_society_extreme_givenchy",
+  brand: "Givenchy",
+  brand_short: "Givenchy",
+  fragrance: "Gentleman Society Eau de Parfum Extrême",
+  family: "Woody Aromatic",
+  gender: "men",
+  image: IMAGES.gentleman_society_extreme_givenchy,
   notes: {
     top: [
-      { note: "Nutmeg", image: NOTES_IMAGES.nutmeg },
-      { note: "Thyme", image: NOTES_IMAGES.thyme }
+      { note: "Sage", image: NOTES_IMAGES.sage },
+      { note: "Cardamom", image: NOTES_IMAGES.cardamom },
+      { note: "Pepper", image: NOTES_IMAGES.pepper }
     ],
     middle: [
-      { note: "Patchouli", image: NOTES_IMAGES.patchouli },
-      { note: "Rose", image: NOTES_IMAGES.rose }
+      { note: "Vetiver", image: NOTES_IMAGES.vetiver },
+      { note: "Coffee", image: NOTES_IMAGES.coffee },
+      { note: "Orris", image: NOTES_IMAGES.orris }
     ],
     base: [
-      { note: "Amber", image: NOTES_IMAGES.amber },
-      { note: "Vanilla", image: NOTES_IMAGES.vanilla }
+      { note: "Vanilla", image: NOTES_IMAGES.vanilla },
+      { note: "Cedarwood", image: NOTES_IMAGES.cedarwood },
+      { note: "Sandalwood", image: NOTES_IMAGES.sandalwood }
     ]
   }
 },
-
 ambre_passion_montale: {
   code: "ambre_passion_montale",
   brand: "Montale",
@@ -6887,7 +6889,7 @@ new_look_2024_dior: {
     ]
   }
 },
-
+// ambre_114_hdp 
 
 };
 

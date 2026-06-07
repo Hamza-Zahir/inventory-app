@@ -1,6 +1,7 @@
 import NOTES_IMAGES from "../../data/NOTES_IMAGES";
+import { memo } from "react";
 
-export default function LuxuryBackground() {
+function LuxuryBackground() {
   const notesArray = Object.values(NOTES_IMAGES);
 
   return (
@@ -24,3 +25,5 @@ export default function LuxuryBackground() {
     </div>
   );
 }
+
+export default memo(LuxuryBackground);

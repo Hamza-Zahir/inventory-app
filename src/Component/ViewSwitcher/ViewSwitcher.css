@@ -1,53 +1,70 @@
 .view-switcher {
   display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin: 10px 0 14px 0; /* FIXED */
-  flex-wrap: wrap;
-  background: #2709094f;
-  border-radius: 14px;
+  align-items: center;
+  gap: 10px;
+
+  /* no margin because it's inside navbar */
+  margin: 0;
 }
 
+/* BUTTON */
 .view-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 
-  padding: 10px 16px;
-  border-radius: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
 
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.18);
-  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
 
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 
   color: #e8e8e8;
   font-size: 13px;
   font-weight: 500;
+
+  white-space: nowrap;
 }
 
 .view-btn:hover {
-  background: rgba(255,255,255,0.12);
-  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.18);
 }
 
+/* ACTIVE STATE */
 .view-btn.active {
-  background: rgba(201,168,106,0.25);
-  border-color: rgba(201,168,106,0.55);
-  box-shadow: 0 0 12px rgba(201,168,106,0.45);
+  background: rgba(201, 168, 106, 0.25);
+  border-color: rgba(201, 168, 106, 0.55);
   color: #c9a86a;
+  box-shadow: 0 0 8px rgba(201, 168, 106, 0.35);
 }
 
+/* ICON SIZE */
+.view-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
+  .view-switcher {
+    gap: 8px;
+  }
+
   .view-btn {
-    padding: 8px 12px;
+    padding: 7px 10px;
     font-size: 12px;
   }
 
   .view-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
+}
+.view-btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
 }

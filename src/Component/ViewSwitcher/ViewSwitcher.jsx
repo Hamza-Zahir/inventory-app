@@ -1,6 +1,6 @@
 import "./ViewSwitcher.css";
 
-export default function ViewSwitcher({ view, setView }) {
+export default function ViewSwitcher({ view, setView, disabled }) {
 
   const iconCards = (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -35,13 +35,13 @@ export default function ViewSwitcher({ view, setView }) {
     <div className="view-switcher">
 
       <div
-        className={`view-btn ${view === "cards" ? "active" : ""}`}
-        onClick={() => setView("cards")}
+        className={`view-btn ${view === "cards" ? "active" : ""} ${disabled ? "disabled" : ""}`}
+        onClick={() => !disabled && setView("cards")}
       >
         {iconCards}
         <span>See with Photos</span>
       </div>
-  <div
+      <div
         className={`view-btn ${view === "notes" ? "active" : ""}`}
         onClick={() => setView("notes")}
       >
@@ -50,14 +50,14 @@ export default function ViewSwitcher({ view, setView }) {
       </div>
 
       <div
-        className={`view-btn ${view === "table" ? "active" : ""}`}
+        className={`view-btn ${view === "table" ? "active" : ""} ${disabled ? "disabled" : ""}`}
         onClick={() => setView("table")}
       >
         {iconTable}
         <span>See Table</span>
       </div>
 
-    
+
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getBranchItems } from "./data/merge";
 import { BRANCHES } from "./data/branches";
 
-import BranchSelector from "./Component/BranchSelector/BranchSelector";
+import Header from "./Component/Header/Header";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
 import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
@@ -10,12 +10,12 @@ import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTopButton";
 import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
 import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
 
-import ViewSwitcher from "./Component/ViewSwitcher/ViewSwitcher";
 import FragranceTable from "./Component/FragranceTable/FragranceTable";
 
 import LuxuryBackground from "./Component/LuxuryBackground/LuxuryBackground";
-import "./Component/LuxuryBackground/LuxuryBackground.css";
+import Footer from "./Component/Footer/Footer";
 
+import "./Component/LuxuryBackground/LuxuryBackground.css";
 import "./App.css";
 
 export default function App() {
@@ -27,11 +27,31 @@ export default function App() {
   const [selectedNotes, setSelectedNotes] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const [view, setView] = useState("cards");
+  const savedView = localStorage.getItem("selectedView") || "cards";
+  const [view, setView] = useState(savedView);
+
+  const [forcedNotesMode, setForcedNotesMode] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem("selectedBranch", branch);
-  }, [branch]);
+    if (!forcedNotesMode) {
+      localStorage.setItem("selectedView", view);
+    }
+  }, [view, forcedNotesMode]);
+
+  useEffect(() => {
+    if (selectedNotes.length > 0) {
+      setForcedNotesMode(true);
+      setView("notes");
+    }
+  }, [selectedNotes]);
+
+  useEffect(() => {
+    if (selectedNotes.length === 0 && forcedNotesMode) {
+      setForcedNotesMode(false);
+      const saved = localStorage.getItem("selectedView") || "cards";
+      setView(saved);
+    }
+  }, [selectedNotes, forcedNotesMode]);
 
   const items = getBranchItems(branch);
 
@@ -77,76 +97,72 @@ export default function App() {
 
   return (
     <>
-      {/* ⭐ الخلفية */}
-      <LuxuryBackground nameQuery={nameQuery} selectedNotes={selectedNotes} />
-
-      {/* ⭐ overlay الجديد */}
+      <LuxuryBackground key="lux-bg" />
       <div className="luxury-overlay"></div>
 
-      {/* ⭐ المحتوى */}
-      <div className="app-bg">
-        <div className="app-container">
+      <div className="app-wrapper">
+        <Header
+          branch={branch}
+          setBranch={setBranch}
+          view={view}
+          setView={setView}
+          selectedNotes={selectedNotes}
+        />
 
-          <h1 className="title">Inventory</h1>
+        <div className="app-content">
+          <div className="app-container">
+            <SearchBox
+              nameQuery={nameQuery}
+              setNameQuery={setNameQuery}
+              notesList={notesList}
+              selectedNotes={selectedNotes}
+              setSelectedNotes={setSelectedNotes}
+              onModeChange={() => setSelectedNotes([])}
+            />
 
-          <BranchSelector branch={branch} setBranch={setBranch} />
+            {selectedNotes.length > 0 ? (
+              <div className="grid notes-grid">
+                {filtered.map((item) => (
+                  <AnimatedNotesCard
+                    key={item.id}
+                    item={item}
+                    selectedNotes={selectedNotes}
+                    onClick={() => setSelectedItem(item)}
+                  />
+                ))}
+              </div>
+            ) : view === "cards" ? (
+              <div className="grid">
+                {filtered.map((item) => (
+                  <SimpleFragranceCard
+                    key={item.id}
+                    item={item}
+                    onClick={() => setSelectedItem(item)}
+                  />
+                ))}
+              </div>
+            ) : view === "table" ? (
+              <div className="table-view">
+                <FragranceTable data={filtered} />
+              </div>
+            ) : view === "notes" ? (
+              <div className="grid notes-grid">
+                {filtered.map((item) => (
+                  <AnimatedNotesCard
+                    key={item.id}
+                    item={item}
+                    selectedNotes={[]}
+                    onClick={() => setSelectedItem(item)}
+                  />
+                ))}
+              </div>
+            ) : null}
 
-          <SearchBox
-            nameQuery={nameQuery}
-            setNameQuery={setNameQuery}
-            notesList={notesList}
-            selectedNotes={selectedNotes}
-            setSelectedNotes={setSelectedNotes}
-          />
-
-          {selectedNotes.length === 0 && (
-            <ViewSwitcher view={view} setView={setView} />
-          )}
-
-          {selectedNotes.length > 0 ? (
-            <div className="grid notes-grid">
-              {filtered.map((item) => (
-                <AnimatedNotesCard
-                  key={item.id}
-                  item={item}
-                  selectedNotes={selectedNotes}
-                  onClick={() => setSelectedItem(item)}
-                />
-              ))}
-            </div>
-          ) : view === "cards" ? (
-            <div className="grid">
-              {filtered.map((item) => (
-                <SimpleFragranceCard
-                  key={item.id}
-                  item={item}
-                  onClick={() => setSelectedItem(item)}
-                />
-              ))}
-            </div>
-          ) : view === "table" ? (
-            <div className="table-view">
-              <FragranceTable data={filtered} />
-            </div>
-          ) : view === "notes" ? (
-            <div className="grid notes-grid">
-              {filtered.map((item) => (
-                <AnimatedNotesCard
-                  key={item.id}
-                  item={item}
-                  selectedNotes={[]}
-                  onClick={() => setSelectedItem(item)}
-                />
-              ))}
-            </div>
-          ) : null}
-
-          <ScrollToTopButton />
+            <ScrollToTopButton />
+          </div>
         </div>
 
-        <footer className="footer">
-          Created by <strong>Hamza Zahir</strong>
-        </footer>
+        <Footer />
 
         <ModalCard item={selectedItem} onClose={() => setSelectedItem(null)} />
       </div>

@@ -8,12 +8,12 @@ export default function SearchBox({
   notesList,
   selectedNotes,
   setSelectedNotes,
+  onModeChange, // NEW
 }) {
   const [active, setActive] = useState("name");
   const [noteInput, setNoteInput] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  // ⭐ ref for scroll reset
   const suggestionsRef = useRef(null);
 
   const notesWithImages = notesList.map((note) => ({
@@ -59,7 +59,7 @@ export default function SearchBox({
           className={`search-tab ${active === "name" ? "active" : ""}`}
           onClick={() => {
             setActive("name");
-            setSelectedNotes([]);
+            onModeChange(); // ⭐ NEW — كيقول لـ App.js بلي خرجنا من notes mode
             setNoteInput("");
             setShowSuggestions(false);
             setNameQuery("");
@@ -97,7 +97,6 @@ export default function SearchBox({
         {/* NOTES SEARCH */}
         <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
 
-          {/* CHIPS */}
           {selectedNotes.length > 0 && (
             <div className="chips-row">
               {selectedNotes.map((note) => (
@@ -109,7 +108,6 @@ export default function SearchBox({
             </div>
           )}
 
-          {/* INPUT */}
           <div className="input-wrapper">
             <input
               className="search-input"
@@ -119,7 +117,6 @@ export default function SearchBox({
                 setNoteInput(e.target.value);
                 setShowSuggestions(true);
 
-                // ⭐ Reset scroll to top
                 if (suggestionsRef.current) {
                   suggestionsRef.current.scrollTop = 0;
                 }
@@ -137,7 +134,6 @@ export default function SearchBox({
             )}
           </div>
 
-          {/* SUGGESTIONS */}
           {showSuggestions && suggestions.length > 0 && (
             <div className="suggestions-box" ref={suggestionsRef}>
               {suggestions.map((note) => (
