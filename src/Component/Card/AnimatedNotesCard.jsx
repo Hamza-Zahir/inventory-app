@@ -4,10 +4,11 @@ import FragranceNotesMini from "../FragranceNotes/FragranceNotesMini";
 export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
   const { fragrance, brand, image, notes, gender, id } = item;
 
+  // ⭐ FIXED — notes are strings, not objects
   const allNotes = [
-    ...notes.top.map((n) => n.note.toLowerCase()),
-    ...notes.middle.map((n) => n.note.toLowerCase()),
-    ...notes.base.map((n) => n.note.toLowerCase())
+    ...notes.top.map((n) => n.toLowerCase()),
+    ...notes.middle.map((n) => n.toLowerCase()),
+    ...notes.base.map((n) => n.toLowerCase())
   ];
 
   const matchedNotes = selectedNotes

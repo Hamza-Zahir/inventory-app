@@ -241,9 +241,16 @@ export const NOTES_IMAGES = {
 "litchi": "/images/notes/lychee.png",
 
 
+
+
+"orris root": "/images/notes/orris_root.png",
+"Aldehydes": "/images/notes/lychee.png",
+"mandarin orange": "/images/notes/lychee.png",
+"Tonka Bean": "/images/notes/lychee.png",
+"Vetiver": "/images/notes/lychee.png",
+
+
 };
-
-
 
 
 export default NOTES_IMAGES;

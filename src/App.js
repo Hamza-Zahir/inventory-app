@@ -55,22 +55,24 @@ export default function App() {
 
   const items = getBranchItems(branch);
 
+  // ⭐ FIXED — notes are now strings, not objects
   const ALL_NOTES = new Set();
   items.forEach((item) => {
-    item.notes.top.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
-    item.notes.middle.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
-    item.notes.base.forEach((n) => ALL_NOTES.add(n.note.toLowerCase()));
+    item.notes.top.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
+    item.notes.middle.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
+    item.notes.base.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
   });
 
   const notesList = Array.from(ALL_NOTES);
 
+  // ⭐ FIXED — perfumeNotes now uses n.toLowerCase()
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
         ...item.notes.top,
         ...item.notes.middle,
         ...item.notes.base,
-      ].map((n) => n.note.toLowerCase());
+      ].map((n) => n.toLowerCase());
 
       const matchCount = selectedNotes.filter((n) =>
         perfumeNotes.includes(n)

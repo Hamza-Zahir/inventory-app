@@ -8,7 +8,7 @@ export default function SearchBox({
   notesList,
   selectedNotes,
   setSelectedNotes,
-  onModeChange, // NEW
+  onModeChange,
 }) {
   const [active, setActive] = useState("name");
   const [noteInput, setNoteInput] = useState("");
@@ -16,21 +16,24 @@ export default function SearchBox({
 
   const suggestionsRef = useRef(null);
 
+  // ⭐ FIXED — lowercase mapping for images
   const notesWithImages = notesList.map((note) => ({
     name: note,
-    img: NOTES_IMAGES[note] || "/images/notes/default.png",
+    img: NOTES_IMAGES[note.toLowerCase()] || "/images/notes/default.png",
   }));
 
+  // ⭐ alphabetical sorting
   const sortedNotes = [...notesWithImages].sort((a, b) =>
     a.name.localeCompare(b.name)
   );
 
+  // ⭐ smart suggestions
   const suggestions = [...sortedNotes].sort((a, b) => {
     const input = noteInput.toLowerCase();
     if (!input) return a.name.localeCompare(b.name);
 
-    const aStarts = a.name.startsWith(input);
-    const bStarts = b.name.startsWith(input);
+    const aStarts = a.name.toLowerCase().startsWith(input);
+    const bStarts = b.name.toLowerCase().startsWith(input);
 
     if (aStarts && !bStarts) return -1;
     if (!aStarts && bStarts) return 1;
@@ -38,6 +41,7 @@ export default function SearchBox({
     return a.name.localeCompare(b.name);
   });
 
+  // ⭐ add note
   const addNote = (note) => {
     if (!selectedNotes.includes(note.name)) {
       setSelectedNotes([...selectedNotes, note.name]);
@@ -46,6 +50,7 @@ export default function SearchBox({
     setShowSuggestions(false);
   };
 
+  // ⭐ remove note
   const removeNote = (note) => {
     setSelectedNotes(selectedNotes.filter((n) => n !== note));
   };
@@ -53,13 +58,13 @@ export default function SearchBox({
   return (
     <div className="search-wrapper">
 
-      {/* TABS */}
+      {/* ⭐ TABS */}
       <div className="search-tabs">
         <div
           className={`search-tab ${active === "name" ? "active" : ""}`}
           onClick={() => {
             setActive("name");
-            onModeChange(); // ⭐ NEW — كيقول لـ App.js بلي خرجنا من notes mode
+            onModeChange();
             setNoteInput("");
             setShowSuggestions(false);
             setNameQuery("");
@@ -81,10 +86,10 @@ export default function SearchBox({
         </div>
       </div>
 
-      {/* FIXED AREA */}
+      {/* ⭐ DYNAMIC AREA */}
       <div className="search-dynamic-area">
 
-        {/* NAME SEARCH */}
+        {/* ⭐ NAME SEARCH */}
         <div className={`name-container ${active === "name" ? "show" : "hide"}`}>
           <input
             className="search-input"
@@ -94,9 +99,10 @@ export default function SearchBox({
           />
         </div>
 
-        {/* NOTES SEARCH */}
+        {/* ⭐ NOTES SEARCH */}
         <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
 
+          {/* Selected notes chips */}
           {selectedNotes.length > 0 && (
             <div className="chips-row">
               {selectedNotes.map((note) => (
@@ -108,6 +114,7 @@ export default function SearchBox({
             </div>
           )}
 
+          {/* Input */}
           <div className="input-wrapper">
             <input
               className="search-input"
@@ -134,6 +141,7 @@ export default function SearchBox({
             )}
           </div>
 
+          {/* Suggestions */}
           {showSuggestions && suggestions.length > 0 && (
             <div className="suggestions-box" ref={suggestionsRef}>
               {suggestions.map((note) => (

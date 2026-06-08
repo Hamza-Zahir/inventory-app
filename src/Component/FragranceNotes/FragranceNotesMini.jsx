@@ -25,16 +25,16 @@ export default function FragranceNotesMini({ notes, matchedNotes = [] }) {
           <div className="section-content">
             {sec.list.length > 0 ? (
               sec.list.map((n, idx) => {
-                const key = n.note.toLowerCase();
+                const key = n.toLowerCase();
                 const isMatch = matchedNotes.includes(key);
 
                 return (
                   <div key={idx} className="note-item">
                     <div className={`note-icon ${isMatch ? "matched" : ""}`}>
-                      <img src={NOTES_IMAGES[key]} alt={n.note} />
+                      <img src={NOTES_IMAGES[key]} alt={n} />
                     </div>
                     <div className={`note-label ${isMatch ? "matched" : ""}`}>
-                      {n.note}
+                      {n}
                     </div>
                   </div>
                 );

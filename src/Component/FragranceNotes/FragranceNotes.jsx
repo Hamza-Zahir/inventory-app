@@ -17,18 +17,21 @@ export default function FragranceNotes({ notes }) {
           </div>
 
           <div className="notes-grid">
-            {notes.top.map((n, i) => (
-              <div key={i} className="note-item-large">
-                <div className="note-icon-large">
-                  <img
-                    className="note-img-large"
-                    src={NOTES_IMAGES[n.note.toLowerCase()]}
-                    alt={n.note}
-                  />
+            {notes.top.map((n, i) => {
+              const key = n.toLowerCase();
+              return (
+                <div key={i} className="note-item-large">
+                  <div className="note-icon-large">
+                    <img
+                      className="note-img-large"
+                      src={NOTES_IMAGES[key]}
+                      alt={n}
+                    />
+                  </div>
+                  <span className="note-label-large">{n}</span>
                 </div>
-                <span className="note-label-large">{n.note}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
@@ -43,18 +46,21 @@ export default function FragranceNotes({ notes }) {
           </div>
 
           <div className="notes-grid">
-            {notes.middle.map((n, i) => (
-              <div key={i} className="note-item-large">
-                <div className="note-icon-large">
-                  <img
-                    className="note-img-large"
-                    src={NOTES_IMAGES[n.note.toLowerCase()]}
-                    alt={n.note}
-                  />
+            {notes.middle.map((n, i) => {
+              const key = n.toLowerCase();
+              return (
+                <div key={i} className="note-item-large">
+                  <div className="note-icon-large">
+                    <img
+                      className="note-img-large"
+                      src={NOTES_IMAGES[key]}
+                      alt={n}
+                    />
+                  </div>
+                  <span className="note-label-large">{n}</span>
                 </div>
-                <span className="note-label-large">{n.note}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
@@ -69,18 +75,21 @@ export default function FragranceNotes({ notes }) {
           </div>
 
           <div className="notes-grid">
-            {notes.base.map((n, i) => (
-              <div key={i} className="note-item-large">
-                <div className="note-icon-large">
-                  <img
-                    className="note-img-large"
-                    src={NOTES_IMAGES[n.note.toLowerCase()]}
-                    alt={n.note}
-                  />
+            {notes.base.map((n, i) => {
+              const key = n.toLowerCase();
+              return (
+                <div key={i} className="note-item-large">
+                  <div className="note-icon-large">
+                    <img
+                      className="note-img-large"
+                      src={NOTES_IMAGES[key]}
+                      alt={n}
+                    />
+                  </div>
+                  <span className="note-label-large">{n}</span>
                 </div>
-                <span className="note-label-large">{n.note}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
