@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { getBranchItems } from "./data/merge";
 import { BRANCHES } from "./data/branches";
-
+import MASTER_FRAGRANCES from "./data/MASTER_FRAGRANCES";
+import NOTES_IMAGES from "./data/NOTES_IMAGES";
 import Header from "./Component/Header/Header";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
@@ -20,9 +21,17 @@ import "./App.css";
 
 export default function App() {
   const branchNames = Object.keys(BRANCHES);
-  const savedBranch = localStorage.getItem("selectedBranch") || branchNames[0];
 
-  const [branch, setBranch] = useState(savedBranch);
+  // ⭐ FIXED — load branch from localStorage
+  const [branch, setBranch] = useState(() => {
+    return localStorage.getItem("selectedBranch") || branchNames[0];
+  });
+
+  // ⭐ FIXED — save branch to localStorage
+  useEffect(() => {
+    localStorage.setItem("selectedBranch", branch);
+  }, [branch]);
+
   const [nameQuery, setNameQuery] = useState("");
   const [selectedNotes, setSelectedNotes] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -55,7 +64,6 @@ export default function App() {
 
   const items = getBranchItems(branch);
 
-  // ⭐ FIXED — notes are now strings, not objects
   const ALL_NOTES = new Set();
   items.forEach((item) => {
     item.notes.top.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
@@ -65,7 +73,6 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
-  // ⭐ FIXED — perfumeNotes now uses n.toLowerCase()
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -83,12 +90,15 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
+      // ⭐ NOTES FILTER
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
 
+      // ⭐ NAME SEARCH (brand, fragrance, id, brand_short)
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
         item.brand.toLowerCase().includes(nameQ) ||
-        item.id.toString().includes(nameQ);
+        item.id.toString().includes(nameQ) ||
+        item.brand_short?.toLowerCase().includes(nameQ); // ⭐ NEW
 
       if (nameQ && selectedNotes.length > 0) return matchName;
       if (nameQ) return matchName;
@@ -171,3 +181,29 @@ export default function App() {
     </>
   );
 }
+
+
+function findMissingNotesImages() {
+  const allNotes = new Set();
+
+  // جمع جميع النوتات من MASTER_FRAGRANCES
+  Object.values(MASTER_FRAGRANCES).forEach((frag) => {
+    if (!frag.notes) return;
+
+    [...(frag.notes.top || []), ...(frag.notes.middle || []), ...(frag.notes.base || [])]
+      .forEach((note) => allNotes.add(note.toLowerCase()));
+  });
+
+  // مقارنة النوتات مع NOTES_IMAGES
+  const missing = [];
+  allNotes.forEach((note) => {
+    if (!NOTES_IMAGES[note]) {
+      missing.push(note);
+    }
+  });
+
+  console.log("🔴 Missing Notes Images:", missing);
+  console.log("Total missing:", missing.length);
+}
+
+findMissingNotesImages();
