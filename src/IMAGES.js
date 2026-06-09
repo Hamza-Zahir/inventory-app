@@ -37,9 +37,12 @@ export const IMAGES = {
   megamare: "/images/fragrances/megamare.jpg",
   one_million: "/images/fragrances/one_million.jpg",
   invictus: "/images/fragrances/invictus.jpg",
+
   shaik_opulent_no_77: "/images/fragrances/shaik_opulent_no_77.jpg",
   accento: "/images/fragrances/accento.jpg",
   erba_pura: "/images/fragrances/erba_pura.jpg",
+
+
   kirke: "/images/fragrances/kirke.jpg",
   f_fabulous: "/images/fragrances/f_fabulous.jpg",
   tobacco_vanille: "/images/fragrances/tobacco_vanille.jpg",
@@ -120,6 +123,10 @@ export const IMAGES = {
   oud_rosewood: "/images/fragrances/oud_rosewood.jpg",
   absolu_aventus: "/images/fragrances/absolu_aventus.jpg",
   joy: "/images/fragrances/joy.jpg",
+
+
+
+
   pacific_chill: "/images/fragrances/pacific_chill.jpg",
   grand_soir: "/images/fragrances/grand_soir.jpg",
   flora_gorgeous_orchid: "/images/fragrances/flora_gorgeous_orchid.jpg",
@@ -162,6 +169,8 @@ export const IMAGES = {
   the_one_for_her: "/images/fragrances/the_one_for_her.jpg",
   velvet_infusion: "/images/fragrances/velvet_infusion.jpg",
   apple_brandy: "/images/fragrances/apple_brandy.jpg",
+
+
   blue_moon_ginger_dash: "/images/fragrances/blue_moon_ginger_dash.jpg",
   rolling_in_love: "/images/fragrances/rolling_in_love.jpg",
   sunkissed_goddess: "/images/fragrances/sunkissed_goddess.jpg",
@@ -244,6 +253,9 @@ export const IMAGES = {
   decision: "/images/fragrances/decision.jpg",
   existence: "/images/fragrances/existence.jpg",
   purpose_50: "/images/fragrances/purpose_50.jpg",
+
+
+
   opus_xiv_royal_tobacco: "/images/fragrances/opus_xiv_royal_tobacco.jpg",
   million_gold_parfum_her: "/images/fragrances/million_gold_parfum_her.jpg",
   power_of_you: "/images/fragrances/power_of_you.jpg",
@@ -310,11 +322,11 @@ export const IMAGES = {
   ani: "/images/fragrances/ani.jpg",
   gumin: "/images/fragrances/gumin.jpg",
   tobacco_oud: "/images/fragrances/tobacco_oud.jpg",
-  eros: "/images/fragrances/eros.jpg",
+  garcon_manque: "/images/fragrances/garcon_manque.jpg",
   barenia: "/images/fragrances/barenia.jpg",
   light_blue_intense: "/images/fragrances/light_blue_intense.jpg",
   straight_to_heaven: "/images/fragrances/straight_to_heaven.jpg",
   african_leather: "/images/fragrances/african_leather.jpg",
-
+// garcon_manque
 
 };

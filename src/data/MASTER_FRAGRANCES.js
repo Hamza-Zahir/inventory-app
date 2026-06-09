@@ -5022,8 +5022,12 @@ african_leather: {
     base: ["Vetiver", "Patchouli", "Musk"]
   }
 },
-
-// lily of the valley
+// garcon_manque
+// Apple Brandy
+// Ambre Eternel Guerlain
+// Musc Oli Caron
+// 1872 Masculine Clive Christian
+// Gucci Guilty Eau de Parfum Gucci
 
 
 };
