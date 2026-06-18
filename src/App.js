@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { getBranchItems } from "./data/merge";
 import { BRANCHES } from "./data/branches";
-import MASTER_FRAGRANCES from "./data/MASTER_FRAGRANCES";
-import NOTES_IMAGES from "./data/NOTES_IMAGES";
+// import MASTER_FRAGRANCES from "./data/MASTER_FRAGRANCES";
+// import NOTES_IMAGES from "./data/NOTES_IMAGES";
 import Header from "./Component/Header/Header";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
@@ -183,27 +183,27 @@ export default function App() {
 }
 
 
-function findMissingNotesImages() {
-  const allNotes = new Set();
+// function findMissingNotesImages() {
+//   const allNotes = new Set();
 
-  // جمع جميع النوتات من MASTER_FRAGRANCES
-  Object.values(MASTER_FRAGRANCES).forEach((frag) => {
-    if (!frag.notes) return;
+//   // جمع جميع النوتات من MASTER_FRAGRANCES
+//   Object.values(MASTER_FRAGRANCES).forEach((frag) => {
+//     if (!frag.notes) return;
 
-    [...(frag.notes.top || []), ...(frag.notes.middle || []), ...(frag.notes.base || [])]
-      .forEach((note) => allNotes.add(note.toLowerCase()));
-  });
+//     [...(frag.notes.top || []), ...(frag.notes.middle || []), ...(frag.notes.base || [])]
+//       .forEach((note) => allNotes.add(note.toLowerCase()));
+//   });
 
-  // مقارنة النوتات مع NOTES_IMAGES
-  const missing = [];
-  allNotes.forEach((note) => {
-    if (!NOTES_IMAGES[note]) {
-      missing.push(note);
-    }
-  });
+//   // مقارنة النوتات مع NOTES_IMAGES
+//   const missing = [];
+//   allNotes.forEach((note) => {
+//     if (!NOTES_IMAGES[note]) {
+//       missing.push(note);
+//     }
+//   });
 
-  console.log("🔴 Missing Notes Images:", missing);
-  console.log("Total missing:", missing.length);
-}
+//   console.log("🔴 Missing Notes Images:", missing);
+//   console.log("Total missing:", missing.length);
+// }
 
-findMissingNotesImages();
+// findMissingNotesImages();

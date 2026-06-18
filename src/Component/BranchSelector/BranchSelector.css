@@ -3,8 +3,10 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: auto; /* ⭐ باش يجي مناسب للهيدر */
-  margin: 0;   /* ⭐ نحيدو المسافة اللي كانت كتخرب الheader */
+  width: auto;
+  /* ⭐ باش يجي مناسب للهيدر */
+  margin: 0;
+  /* ⭐ نحيدو المسافة اللي كانت كتخرب الheader */
 }
 
 /* main button */
@@ -54,14 +56,14 @@
   position: absolute;
   top: calc(100% + 4px);
 
-  min-width: 220px;
+  /* min-width: 220px; */
   width: 100%;
 
   background: rgba(0, 0, 0, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
   z-index: 20;
   overflow: hidden;
 }
@@ -73,6 +75,8 @@
   color: white;
   cursor: pointer;
   transition: 0.2s ease;
+  border-bottom: 1px solid #fadca43a;
+
 }
 
 .branch-menu-item:hover {
@@ -82,13 +86,15 @@
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .branch-menu-button {
-    min-width: 180px;
-    font-size: 15px;
-    padding: 9px 14px;
+    min-width: 150px;
+    font-size: 13px;
+    padding: 8px 10px;
   }
 
   .branch-menu-item {
-    font-size: 14px;
-    padding: 10px 14px;
+    font-size: 13px;
+    padding: 8px 14px;
+    /* border-bottom: 1px solid #fadca43a; */
+
   }
 }

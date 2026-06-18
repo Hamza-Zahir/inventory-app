@@ -2,16 +2,17 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #ffffff;
-  color: #000;
+  background: #f5b847;
+  color: #000000;
   border: none;
   padding: 10px 14px;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  /* box-shadow: 0 0 10px #0a090963; */
   transition: 0.25s;
-  z-index: 9999;
+  z-index: 999999;
+  /* margin-bottom: 130px; */
 }
 
 .scroll-btn:hover {

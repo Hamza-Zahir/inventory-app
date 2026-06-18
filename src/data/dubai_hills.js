@@ -191,10 +191,10 @@ export const DUBAI_HILLS = [
   { id: 173, code: "gentleman_society_extreme" },
   { id: 174, code: "linterdit" },
   { id: 175, code: "garcon_manque" },
-  { id: 176, code: "ambre_eternel" },
+  { id: 176, code: "gentleman_edp_givenchy" },
   { id: 177, code: "ambre_royal" },
   { id: 178, code: "ambre_narguile" },
-  { id: 179, code: "ambre_passion" },
+  { id: 179, code: "barenia_hermes" },
   { id: 180, code: "ambre_russe" },
 
   { id: 181, code: "vanilla_28" },
@@ -307,5 +307,5 @@ export const DUBAI_HILLS = [
 { id: 279, code: "cedrus" },
 { id: 280, code: "twilly_dhermes" },
 
-
+// Guilty
 ];

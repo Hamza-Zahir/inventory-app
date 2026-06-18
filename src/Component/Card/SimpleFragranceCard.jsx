@@ -4,7 +4,7 @@ export default function SimpleFragranceCard({ item, onClick }) {
   const { fragrance, brand, image, id, gender } = item;
 
   return (
-    <div className="simple-card" onClick={onClick}>
+    <div className={`simple-card ${gender?.toLowerCase()}`} onClick={onClick}>
       
       {/* ⭐ Image wrapper with gender background */}
       <div className={`img-wrapper ${gender?.toLowerCase()}`}>

@@ -9,7 +9,7 @@
 .search-tabs {
   display: flex;
   gap: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -18,7 +18,7 @@
   flex: 1;
   min-width: 180px;
   margin: 0 20px;
-  padding: 14px 18px;
+      padding: 8px;
   text-align: center;
   border-radius: 14px;
 
@@ -54,17 +54,19 @@
 /* ⭐ PHONE PORTRAIT */
 @media (max-width: 768px) and (orientation: portrait) {
   .search-tabs {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 10px;
+    /* flex-direction: column; */
+    /* gap: 10px;
+    padding: 0 10px; */
   }
 
   .search-tab {
     width: 100%;
     min-width: unset;
-    font-size: 14px;
-    padding: 12px;
+    font-size: 9px;
+    padding: 8px 5px;
     margin: 0px;
+  border-radius: 10px;
+
   }
 }
 
@@ -105,7 +107,7 @@
 /* INPUT */
 .search-input {
   width: 100%;
-  padding: 14px 18px;
+  padding: 10px 14px;
   border-radius: 12px;
 
   background: rgba(0, 0, 0, 0.815);
@@ -230,6 +232,7 @@
   color: #f5e9d0;
   cursor: pointer;
   transition: 0.2s ease;
+  border-bottom: 1px solid #ffefa931;
 }
 
 .suggestion-item:hover {
@@ -242,7 +245,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
+  /* padding: 10px 14px; */
 }
 
 .note-icon {

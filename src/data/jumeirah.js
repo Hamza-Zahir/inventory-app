@@ -244,7 +244,7 @@ export const JUMEIRAH = [
     { id: 220, code: "valentino_poudre" },
 
     { id: 221, code: "orchidee_vanille" },
-    { id: 222, code: "eros" },
+    { id: 222, code: "eros_men" },
     { id: 223, code: "crystal_noir" },
     { id: 224, code: "spicebomb" },
     { id: 225, code: "flowerbomb_extreme_2025" },
@@ -254,7 +254,7 @@ export const JUMEIRAH = [
     { id: 229, code: "y_elixir" },
     { id: 230, code: "black_pepper_amber_neroli" },
 
-    { id: 231, code: "barenia" },
+    { id: 231, code: "barenia_hermes" },
     { id: 232, code: "by_the_fireplace" },
     { id: 233, code: "bois_imperial" },
     { id: 234, code: "light_blue_intense" },
@@ -308,20 +308,6 @@ export const JUMEIRAH = [
     { id: 278, code: "acne_studios" },
     { id: 279, code: "on_a_date" },
     { id: 280, code: "opus_xiv_royal_tobacco" },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ];

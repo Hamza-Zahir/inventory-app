@@ -16,7 +16,7 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
     .filter((n) => allNotes.includes(n));
 
   return (
-    <div className="card" onClick={onClick}>
+    <div className={`card ${gender?.toLowerCase()}`} onClick={onClick}>
 
       {/* ⭐ SEE MORE ICON — TOP RIGHT */}
       <div className="see-more-icon">➜</div>
@@ -25,7 +25,7 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
       <div className="card-header">
 
         {/* IMAGE */}
-        <div className={`image-box ${gender}`}>
+        <div className="image-box">
           <img src={image} alt={fragrance} className="small-img" />
         </div>
 

@@ -26,6 +26,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+      
 }
 
 .header-left {
@@ -54,15 +55,13 @@
     row-gap: 12px;
   }
 
-  .header-left,
-  .header-right {
-    flex: 1 1 50%;
-  }
 
   .header-center {
     flex: 1 1 100%;
     order: 3;
     justify-content: center;
+    /* padding: 10px; */
+    /* background: #000; */
   }
 
   .header-title {
@@ -72,21 +71,8 @@
 
 /* MOBILE — each item in its own row */
 @media (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .header-left,
-  .header-center,
-  .header-right {
-    flex: none;
-    width: 100%;
-    justify-content: center;
-  }
-
+  
   .header-title {
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
   }
 }
