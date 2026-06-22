@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import "./SearchBox.css";
 import NOTES_IMAGES from "../../data/NOTES_IMAGES";
-
+// list
 export default function SearchBox({
   nameQuery,
   setNameQuery,

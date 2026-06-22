@@ -75,7 +75,6 @@
   overflow: hidden;
 
   border: 1px solid rgba(255, 255, 255, 0.35);
-  background: #727272a9;   /* ⭐ أوضح من قبل */
 
   display: flex;
   justify-content: center;
@@ -83,9 +82,9 @@
 
   position: relative;
   z-index: 5;
-  isolation: isolate;
+  /* isolation: isolate; */
 
-  transition: 0.25s ease;
+  /* transition: 0.25s ease; */
 }
 
 .note-img-large {
@@ -93,7 +92,7 @@
   height: 100%;
   object-fit: cover;
 
-  filter: brightness(1.45) contrast(1.28);   /* ⭐ أقوى باش الصور يبانوا */
+  /* filter: brightness(1.45) contrast(1.28);   ⭐ أقوى باش الصور يبانوا */
 }
 
 /* LABEL */

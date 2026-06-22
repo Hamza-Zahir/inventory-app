@@ -40,7 +40,6 @@
   margin-top: 15px;
   transition: 0.25s ease;
   justify-items: center;
-  /* background: #000; */
 }
 
 .notes-grid {
@@ -48,25 +47,49 @@
   gap: 22px;
 }
 
-/* SCROLL BUTTON */
- /*.scroll-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #ffffff;
+/* MIX BUTTON */
+.mix-button {
+  /* margin: 10px 0 10px 0; */
+  padding: 6px 12px;
+  background: #c9a86a;
   color: #000;
   border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 18px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-  transition: 0.25s; 
-}*/
+  transition: 0.2s;
+}
 
-/* .scroll-btn:hover {
-  transform: scale(1.1);
-} */
+.mix-button:hover {
+  background: #e1c58a;
+}
+
+/* BACK BUTTON */
+.back-button {
+  /* margin: 10px 0 10px 0; */
+  padding: 4px 10px;
+  border: 1px solid #c9a86a;
+  border-radius: 4px;
+  background: #c9a86a;
+  color: #000;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.back-button:hover {
+  background: #e1c58a;
+
+}
+
+/* TABLE VIEW WRAPPER */
+.table-view {
+  margin-top: 15px;
+}
 
 /* MOBILE */
 @media (max-width: 768px) {

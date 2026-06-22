@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -12,12 +13,18 @@ export default function Footer() {
 
       <div className="footer-divider"></div>
 
-      <p className="footer-author">
-        Created by <strong>Hamza Zahir</strong> — 
-        <a href="mailto:hamzahir1998@gmail.com" className="footer-mail">
-          hamzahir1998@gmail.com
+      <div className="footer-author-line">
+        <p className="footer-author">
+          Created by <strong>Hamza Zahir</strong>
+        </p>
+
+        <a 
+          href="mailto:hamzahir1998@gmail.com" 
+          className="footer-mail-icon"
+        >
+          <FaEnvelope className="mail-icon" />
         </a>
-      </p>
+      </div>
 
     </footer>
   );

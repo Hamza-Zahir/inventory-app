@@ -1,8 +1,8 @@
-import NOTES_IMAGES from "../../data/NOTES_IMAGES";
+import BG_NOTES_IMAGES from "../../data/BG_NOTES_IMAGES";
 import { memo } from "react";
 
 function LuxuryBackground() {
-  const notesArray = Object.values(NOTES_IMAGES);
+  const notesArray = Object.values(BG_NOTES_IMAGES);
 
   return (
     <div className="luxury-bg-root">

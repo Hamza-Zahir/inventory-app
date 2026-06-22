@@ -2,115 +2,104 @@
   width: 100%;
 }
 
-/* BLOCK */
-.section-block {
-  margin-bottom: 20px;
+.notes-section-mini {
+  margin-bottom: 12px;
 }
 
 /* TITLE */
-.mini-title {
+.notes-title-mini {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  margin: 12px 0;
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-
-  width: 100%;
-  margin: 12px 0;
 }
 
-.title-text {
-  color: #fff;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  white-space: nowrap;
+.notes-title-mini span {
+  padding: 0 8px;
+  z-index: 2;
 }
 
 /* LINES */
-.line-block {
-  flex-grow: 1;
-  flex-shrink: 0;
-  min-width: 25px;
-  height: 0;
-  border-bottom: 1px dashed #fce3b646;
+.line-mini {
+  flex: 1;
+  height: 1px;
+  min-width: 18px;
+
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.35) 50%,
+    rgba(255,255,255,0) 100%
+  );
 }
 
-.line-block::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -3px;
-  border-bottom: 1px solid rgba(255,255,255,0.25);
-}
+.line-mini.left { margin-right: 6px; }
+.line-mini.right { margin-left: 6px; }
 
-/* CONTENT GRID */
-.section-content {
+/* GRID */
+.notes-grid-mini {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 /* ITEM */
-.note-item {
+.note-item-mini {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 /* ICON */
-.note-icon {
-  width: 36px;
-  height: 36px;
+.note-icon-mini {
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
   overflow: hidden;
 
-  border: 1px solid rgba(255,255,255,0.35);
-  background: #727272a9;   /* ⭐ أوضح باش الصور يبانوا */
-  /* backdrop-filter: blur(6px); */
+  border: 1px solid rgba(255, 255, 255, 0.35);
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: relative;
-  z-index: 5;
-  isolation: isolate;
 }
 
-.note-icon img {
+.note-icon-mini img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  filter: brightness(1.45) contrast(1.28);   /* ⭐ نفس الستايل ديال large */
 }
 
-/* MATCHED */
-.note-icon.matched {
+/* MATCHED ICON */
+.note-icon-mini.matched {
   border: 1.5px solid #c9a86a;
-  box-shadow: 0 0 6px rgba(201,168,106,0.6);
 }
 
-.note-label {
-  margin-top: 4px;
-  font-size: 9.5px;
+/* LABEL */
+.note-label-mini {
+  margin-top: 3px;
+  font-size: 9px;
   color: #f0f0f0;
   opacity: 0.95;
+  letter-spacing: 0.12px;
 }
 
-.note-label.matched {
+/* MATCHED LABEL */
+.note-label-mini.matched {
   color: #c9a86a;
   font-weight: 600;
   opacity: 1;
-}
-
-/* EMPTY */
-.note-empty {
-  font-size: 10px;
-  opacity: 0.35;
-  width: 100%;
-  text-align: center;
 }

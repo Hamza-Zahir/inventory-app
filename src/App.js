@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { getBranchItems } from "./data/merge";
 import { BRANCHES } from "./data/branches";
-// import MASTER_FRAGRANCES from "./data/MASTER_FRAGRANCES";
-// import NOTES_IMAGES from "./data/NOTES_IMAGES";
+
 import Header from "./Component/Header/Header";
 import SearchBox from "./Component/SearchBox/SearchBox";
 import ModalCard from "./Component/ModalCard/ModalCard";
@@ -12,6 +11,7 @@ import AnimatedNotesCard from "./Component/Card/AnimatedNotesCard";
 import SimpleFragranceCard from "./Component/Card/SimpleFragranceCard";
 
 import FragranceTable from "./Component/FragranceTable/FragranceTable";
+import MixingTable from "./Component/MixingTable/MixingTable";
 
 import LuxuryBackground from "./Component/LuxuryBackground/LuxuryBackground";
 import Footer from "./Component/Footer/Footer";
@@ -22,12 +22,10 @@ import "./App.css";
 export default function App() {
   const branchNames = Object.keys(BRANCHES);
 
-  // ⭐ FIXED — load branch from localStorage
   const [branch, setBranch] = useState(() => {
     return localStorage.getItem("selectedBranch") || branchNames[0];
   });
 
-  // ⭐ FIXED — save branch to localStorage
   useEffect(() => {
     localStorage.setItem("selectedBranch", branch);
   }, [branch]);
@@ -40,6 +38,7 @@ export default function App() {
   const [view, setView] = useState(savedView);
 
   const [forcedNotesMode, setForcedNotesMode] = useState(false);
+  const [showMixTable, setShowMixTable] = useState(false);
 
   useEffect(() => {
     if (!forcedNotesMode) {
@@ -59,8 +58,22 @@ export default function App() {
       setForcedNotesMode(false);
       const saved = localStorage.getItem("selectedView") || "cards";
       setView(saved);
+      setShowMixTable(false);
     }
   }, [selectedNotes, forcedNotesMode]);
+
+  // ⭐ Matching logic
+  function isNoteMatch(note, selected) {
+    const n = note.toLowerCase();
+    const s = selected.toLowerCase();
+
+    if (n === s) return true;
+    if (n.startsWith(s + " ")) return true;
+    if (n.endsWith(" " + s)) return true;
+    if (n.includes(" " + s + " ")) return true;
+
+    return false;
+  }
 
   const items = getBranchItems(branch);
 
@@ -73,6 +86,7 @@ export default function App() {
 
   const notesList = Array.from(ALL_NOTES);
 
+  // ⭐ FILTERING
   const filtered = items
     .map((item) => {
       const perfumeNotes = [
@@ -81,8 +95,8 @@ export default function App() {
         ...item.notes.base,
       ].map((n) => n.toLowerCase());
 
-      const matchCount = selectedNotes.filter((n) =>
-        perfumeNotes.includes(n)
+      const matchCount = selectedNotes.filter((selected) =>
+        perfumeNotes.some((note) => isNoteMatch(note, selected))
       ).length;
 
       return { ...item, matchCount };
@@ -90,15 +104,13 @@ export default function App() {
     .filter((item) => {
       const nameQ = nameQuery.toLowerCase().trim();
 
-      // ⭐ NOTES FILTER
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
 
-      // ⭐ NAME SEARCH (brand, fragrance, id, brand_short)
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
         item.brand.toLowerCase().includes(nameQ) ||
         item.id.toString().includes(nameQ) ||
-        item.brand_short?.toLowerCase().includes(nameQ); // ⭐ NEW
+        item.brand_short?.toLowerCase().includes(nameQ);
 
       if (nameQ && selectedNotes.length > 0) return matchName;
       if (nameQ) return matchName;
@@ -132,7 +144,25 @@ export default function App() {
               onModeChange={() => setSelectedNotes([])}
             />
 
-            {selectedNotes.length > 0 ? (
+            {/* ⭐ MIX BUTTONS */}
+            {selectedNotes.length > 2 && !showMixTable && (
+              <button className="mix-button" onClick={() => setShowMixTable(true)}>
+                What if you mix?
+              </button>
+            )}
+
+            {showMixTable && (
+              <button className="back-button" onClick={() => setShowMixTable(false)}>
+                back
+              </button>
+            )}
+
+            {/* ⭐ VIEW SWITCHING */}
+            {showMixTable ? (
+              <div className="table-view">
+                <MixingTable selectedNotes={selectedNotes} />
+              </div>
+            ) : selectedNotes.length > 0 ? (
               <div className="grid notes-grid">
                 {filtered.map((item) => (
                   <AnimatedNotesCard
@@ -181,29 +211,3 @@ export default function App() {
     </>
   );
 }
-
-
-// function findMissingNotesImages() {
-//   const allNotes = new Set();
-
-//   // جمع جميع النوتات من MASTER_FRAGRANCES
-//   Object.values(MASTER_FRAGRANCES).forEach((frag) => {
-//     if (!frag.notes) return;
-
-//     [...(frag.notes.top || []), ...(frag.notes.middle || []), ...(frag.notes.base || [])]
-//       .forEach((note) => allNotes.add(note.toLowerCase()));
-//   });
-
-//   // مقارنة النوتات مع NOTES_IMAGES
-//   const missing = [];
-//   allNotes.forEach((note) => {
-//     if (!NOTES_IMAGES[note]) {
-//       missing.push(note);
-//     }
-//   });
-
-//   console.log("🔴 Missing Notes Images:", missing);
-//   console.log("Total missing:", missing.length);
-// }
-
-// findMissingNotesImages();

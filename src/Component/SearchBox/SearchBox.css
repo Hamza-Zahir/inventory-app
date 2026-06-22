@@ -18,7 +18,7 @@
   flex: 1;
   min-width: 180px;
   margin: 0 20px;
-      padding: 8px;
+      padding: 5px;
   text-align: center;
   border-radius: 14px;
 
@@ -166,9 +166,9 @@
 .chip {
   background: #f5d08a;
   color: #111;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
+  padding: 6px;
+  border-radius: 15px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   gap: 6px;

@@ -292,7 +292,7 @@ export const JUMEIRAH = [
     { id: 263, code: "oud_zarian" },
     { id: 264, code: "gris_charnel_extrait" },
     { id: 265, code: "impadia" },
-    { id: 266, code: "guilty_for_her" },
+    { id: 266, code: "guilty_edp_gucci" },
     { id: 267, code: "town_and_country" },
     { id: 268, code: "_1872_masculine" },
     { id: 269, code: "matsukita" },

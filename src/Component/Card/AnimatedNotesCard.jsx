@@ -4,16 +4,30 @@ import FragranceNotesMini from "../FragranceNotes/FragranceNotesMini";
 export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
   const { fragrance, brand, image, notes, gender, id } = item;
 
-  // ⭐ FIXED — notes are strings, not objects
+  // ⭐ FUNCTION — نفس logic ديال App.js
+  function isNoteMatch(note, selected) {
+    const n = note.toLowerCase();
+    const s = selected.toLowerCase();
+
+    if (n === s) return true;
+    if (n.startsWith(s + " ")) return true;
+    if (n.endsWith(" " + s)) return true;
+    if (n.includes(" " + s + " ")) return true;
+
+    return false;
+  }
+
+  // ⭐ جميع النوتات ديال العطر
   const allNotes = [
     ...notes.top.map((n) => n.toLowerCase()),
     ...notes.middle.map((n) => n.toLowerCase()),
     ...notes.base.map((n) => n.toLowerCase())
   ];
 
-  const matchedNotes = selectedNotes
-    .map((n) => n.toLowerCase())
-    .filter((n) => allNotes.includes(n));
+  // ⭐ matched intelligent (vanilla → black vanilla husk)
+  const matchedNotes = selectedNotes.filter((sel) =>
+    allNotes.some((note) => isNoteMatch(note, sel))
+  );
 
   return (
     <div className={`card ${gender?.toLowerCase()}`} onClick={onClick}>
