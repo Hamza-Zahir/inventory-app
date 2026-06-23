@@ -1524,7 +1524,7 @@ rosendo_mateu_no_5: {
   code: "rosendo_mateu_no_5",
   brand: "Rosendo Mateu Olfactive Expressions",
   brand_short: ".Rosendo",
-  fragrance: "Rosendo Mateu Nº 5 Floral, Amber, Sensual Musk",
+  fragrance: " Mateu Nº 5",
   fragrantica_link: "https://www.fragrantica.com/perfume/Rosendo-Mateu-Olfactive-Expressions/Rosendo-Mateu-No-5-Floral-Amber-Sensual-Musk-46115.html",
   family: "Oriental Floral",
   gender: "unisex",
@@ -1704,7 +1704,7 @@ stronger_with_you_oud: {
   code: "stronger_with_you_oud",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Emporio Armani Stronger With You Oud",
+  fragrance: "Stronger With You Oud",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Oud-76171.html",
   family: "Woody Aromatic",
   gender: "men",
@@ -1938,7 +1938,7 @@ attrape_reves: {
   code: "attrape_reves",
   brand: "Louis Vuitton",
   brand_short: ".LV",
-  fragrance: "Attrape-Rêves",
+  fragrance: "Attrape Reves",
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Attrape-Reves-51016.html",
   family: "Oriental Floral",
   gender: "women",
@@ -2515,7 +2515,7 @@ stronger_with_you_tobacco: {
   code: "stronger_with_you_tobacco",
   brand: "Giorgio Armani",
   brand_short: ".EA",
-  fragrance: "Emporio Armani Stronger With You Tobacco",
+  fragrance: "Stronger With You Tobacco",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Tobacco-90333.html",
   family: "Oriental Spicy",
   gender: "men",
@@ -2533,7 +2533,7 @@ stronger_with_you: {
   code: "stronger_with_you",
   brand: "Giorgio Armani",
   brand_short: ".EA",
-  fragrance: "Emporio Armani Stronger With You",
+  fragrance: "Stronger With You",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
   family: "Aromatic Fougere",
   gender: "men",
@@ -2768,7 +2768,7 @@ garcon_manque: {
   code: "garcon_manque",
   brand: "Givenchy",
   brand_short: ".Givenchy",
-  fragrance: "Garçon Manqué",
+  fragrance: "Garcon Manque",
   fragrantica_link: "https://www.fragrantica.com/perfume/Givenchy/Garcon-Manque-60356.html",
   family: "Leather",
   gender: "unisex",
@@ -3669,7 +3669,7 @@ rose_d_arabie: {
   code: "rose_d_arabie",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Armani Privé Rose d'Arabie",
+  fragrance: "Rose d'Arabie",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Prive-Rose-d-Arabie-10886.html",
   family: "Oriental Floral",
   gender: "unisex",
@@ -4253,36 +4253,6 @@ poison: {
     base: ["Vanille", "Amber", "Sandalwood", "Heliotrope", "Musk", "Vetiver", "Virginia Cedar"]
   }
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 sakura: {
@@ -5461,7 +5431,7 @@ stronger_with_you_spices: {
   code: "stronger_with_you_spices",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Emporio Armani Stronger With You Spices",
+  fragrance: "Stronger With You Spices",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Spices-122057.html",
   family: "Amber Spicy",
   gender: "men",
@@ -5889,11 +5859,11 @@ ink_mark: {
 
 moon_tale: {
   code: "moon_tale",
-  brand: "",
+  brand: "Louis Vuitton",
   brand_short: ".LV",
-  fragrance: "",
+  fragrance: "Moon Tale",
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Moon-Tale-115408.html",
-  family: "",
+  family: "Floral Fruity Fragrance",
   gender: "unisex",
   image: IMAGES.moon_tale,
   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115408.jpeg",
@@ -5907,11 +5877,11 @@ moon_tale: {
 
 rain_tea: {
   code: "rain_tea",
-  brand: "",
+  brand: "Louis Vuitton",
   brand_short: ".LV",
-  fragrance: "",
+  fragrance: "Rain Tea",
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Rain-Tea-115406.html",
-  family: "",
+  family: "Aromatic Green Fragrance",
   gender: "unisex",
   image: IMAGES.rain_tea,
   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115406.jpeg",
@@ -5942,7 +5912,7 @@ sun_song_2025: {
 },
 
 
-
+// stronger with you sp
 
 
 

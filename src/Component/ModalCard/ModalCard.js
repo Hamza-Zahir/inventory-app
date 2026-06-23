@@ -28,7 +28,7 @@ export default function ModalCard({ item, onClose }) {
 
           {/* TITLE */}
           <div className="modal-title-line">
-            {fragrance} {brand}
+            {fragrance} <span className="brand_name"> {brand}</span>
           </div>
 
           {/* GENDER */}

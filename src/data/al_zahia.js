@@ -271,7 +271,29 @@ export const AL_ZAHIA = [
 { id: 245, code: "this_is_not_gaba" },
  { id: 246, code: "guilty_edp_gucci" },
 
-// eros
+{ id: 247, code: "sun_song_2025" },
+{ id: 248, code: "gentleman_edp_givenchy" },
+{ id: 249, code: "the_queen_and_the_viper" },
+{ id: 250, code: "aventus_for_her" },
+{ id: 251, code: "acne_studios" },
+{ id: 252, code: "ink_mark" },
+{ id: 253, code: "alien_pulp" },
+{ id: 254, code: "born_in_roma_extradose_donna" },
+{ id: 255, code: "city_of_stars" },
+{ id: 256, code: "million_gold_parfum_her" },
+{ id: 257, code: "mr_sam" },
+{ id: 258, code: "apple_brandy" },
+{ id: 259, code: "original_vetiver_2024" },
+{ id: 260, code: "les_sables_roses" },
+{ id: 261, code: "torino21" },
+{ id: 262, code: "freedom_musk_matcha_45" },
+{ id: 263, code: "camomille_satin" },
+{ id: 264, code: "dan_paris" },
+{ id: 265, code: "cactus_garden" },
+{ id: 266, code: "stronger_with_you_spices" },
+{ id: 267, code: "libre_vanille_couture" },
+{ id: 268, code: "rain_tea" },
+{ id: 269, code: "moon_tale" },
 
 
 
