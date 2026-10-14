@@ -15,7 +15,8 @@ export default function FragranceTable({ data }) {
           {data.map((row) => (
             <tr key={row.id}>
               <td>{row.id}</td>
-              <td>{row.fragrance} – {row.brand}</td>
+              <td>{row.fragrance} – {row.brand} </td>
+              {/* <td>{row.fragrance} – {row.brand} - {row.gender} </td> */}
             </tr>
           ))}
         </tbody>

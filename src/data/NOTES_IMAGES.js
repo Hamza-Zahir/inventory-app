@@ -277,6 +277,7 @@ export const NOTES_IMAGES = {
   "nectarine": "https://fimgs.net/mdimg/sastojci/t.197.jpg",
   "nectarine blossom": "https://fimgs.net/mdimg/sastojci/t.635.jpg",
   "neroli": "https://fimgs.net/mdimg/sastojci/t.17.jpg",
+  "neroli essence": "https://fimgs.net/mdimg/sastojci/t.17.jpg",
   "nigerian ginger": "https://fimgs.net/mdimg/sastojci/t.62.jpg",
   "night blooming cereus": "https://fimgs.net/mdimg/sastojci/t.338.jpg",
   "nutmeg": "https://fimgs.net/mdimg/sastojci/t.59.jpg",
@@ -444,6 +445,11 @@ export const NOTES_IMAGES = {
   "wood barrel": "https://fimgs.net/mdimg/sastojci/t.1480.jpg",
   "woody notes": "https://fimgs.net/mdimg/sastojci/t.315.jpg",
   "ylang ylang": "https://fimgs.net/mdimg/sastojci/t.24.jpg",
-  "yuzu": "https://fimgs.net/mdimg/sastojci/t.83.jpg"
+  "yuzu": "https://fimgs.net/mdimg/sastojci/t.83.jpg",
+  "red fruits": "https://fimgs.net/mdimg/sastojci/t.726.jpg",
+  "pine needles":"https://fimgs.net/mdimg/sastojci/t.204.jpg",
+  "white suede":"https://fimgs.net/mdimg/sastojci/t.196.jpg",
+  
+  
 };
 export default NOTES_IMAGES;

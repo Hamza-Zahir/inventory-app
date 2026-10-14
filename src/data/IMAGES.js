@@ -340,5 +340,11 @@ export const IMAGES = {
   guilty_edp_gucci : "/images/fragrances/guilty_edp_gucci.jpg",
   barenia_hermes  : "/images/fragrances/barenia_hermes.jpg",
   eros_pour_femme  : "/images/fragrances/eros_pour_femme.jpg",
+  paradaxe  : "/images/fragrances/paradaxe.jpg",
+  pure_musc_for_her  : "/images/fragrances/pure_musc_for_her.jpg",
+  spicebomb_metallic_musk  : "/images/fragrances/spicebomb_metallic_musk.jpg",
+  bombshell  : "/images/fragrances/bombshell.jpg",
+  gypsy_water_absolu  : "/images/fragrances/gypsy_water_absolu.jpg",
+  eau_de_lacoste_l1212_white  : "/images/fragrances/eau_de_lacoste_l1212_white.jpg",
 
 };

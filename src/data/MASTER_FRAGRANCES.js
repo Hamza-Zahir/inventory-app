@@ -1,7 +1,7 @@
 import { IMAGES } from "./IMAGES"
 
 export const MASTER_FRAGRANCES = {
-
+// alth
 afternoon_swim: {
   code: "afternoon_swim",
   brand: "Louis Vuitton",
@@ -42,7 +42,7 @@ acqua_di_gio_profumo: {
   code: "acqua_di_gio_profumo",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Acqua di Giò Profumo",
+  fragrance: "Acqua di Gio Profumo",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profumo-29727.html",
   family: "Aromatic Aquatic",
   gender: "men",
@@ -312,7 +312,7 @@ limperatrice_3: {
   code: "limperatrice_3",
   brand: "Dolce&Gabbana",
   brand_short: ".D&G",
-  fragrance: "D&G Anthology L'Imperatrice 3",
+  fragrance: "L'Imperatrice 3",
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/D-G-Anthology-L-Imperatrice-3-6086.html",
   family: "Floral Aquatic",
   gender: "women",
@@ -402,9 +402,9 @@ gran_ballo: {
 
 la_vie_est_belle_leclat: {
   code: "la_vie_est_belle_leclat",
-  brand: "Lancôme",
+  brand: "Lancome",
   brand_short: ".Lancome",
-  fragrance: "La Vie est Belle L'Éclat",
+  fragrance: "La Vie est Belle L'Eclat",
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Eclat-45892.html",
   family: "Oriental Floral",
   gender: "women",
@@ -476,7 +476,7 @@ matiere_noire: {
   code: "matiere_noire",
   brand: "Louis Vuitton",
   brand_short: ".LV",
-  fragrance: "Matière Noire",
+  fragrance: "Matiere Noire",
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Matiere-Noire-40496.html",
   family: "Oriental Woody",
   gender: "women",
@@ -620,7 +620,7 @@ one_million: {
   code: "one_million",
   brand: "Rabanne",
   brand_short: ".PR",
-  fragrance: "1 Million",
+  fragrance: "One Million",
   fragrantica_link: "https://www.fragrantica.com/perfume/Rabanne/1-Million-3747.html",
   family: "Woody Spicy",
   gender: "men",
@@ -711,7 +711,7 @@ kirke: {
   code: "kirke",
   brand: "Tiziana Terenzi",
   brand_short: ".Terenzi",
-  fragrance: "Kirkè",
+  fragrance: "Kirke",
   fragrantica_link: "https://www.fragrantica.com/perfume/Tiziana-Terenzi/Kirke-32172.html",
   family: "Chypre Fruity",
   gender: "unisex",
@@ -891,7 +891,7 @@ ombre_leather: {
   code: "ombre_leather",
   brand: "Tom Ford",
   brand_short: ".TF",
-  fragrance: "Ombré Leather (2018)",
+  fragrance: "Ombre Leather (2018)",
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Ombre-Leather-2018-50239.html",
   family: "Leather",
   gender: "unisex",
@@ -961,9 +961,9 @@ jazz_club: {
 
 terre_dhermes: {
   code: "terre_dhermes",
-  brand: "Hermès",
+  brand: "Hermes",
   brand_short: ".Hermes",
-  fragrance: "Terre d'Hermès",
+  fragrance: "Terre d'Hermes",
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
   family: "Woody Spicy",
   gender: "men",
@@ -1217,7 +1217,7 @@ si_passione: {
   code: "si_passione",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Sì Passione",
+  fragrance: "Si Passione",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Si-Passione-48002.html",
   family: "Floral Fruity",
   gender: "women",
@@ -1666,9 +1666,9 @@ sauvage_elixir: {
 
 la_nuit_tresor: {
   code: "la_nuit_tresor",
-  brand: "Lancôme",
+  brand: "Lancome",
   brand_short: ".Lancome",
-  fragrance: "La Nuit Trésor",
+  fragrance: "La Nuit Tresor",
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/La-Nuit-Tresor-29157.html",
   family: "Oriental Vanilla",
   gender: "women",
@@ -1722,7 +1722,7 @@ limmensite: {
   code: "limmensite",
   brand: "Louis Vuitton",
   brand_short: ".LV",
-  fragrance: "L’Immensité",
+  fragrance: "L’Immensite",
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/L-Immensite-49751.html",
   family: "Oriental Spicy",
   gender: "men",
@@ -1992,7 +1992,7 @@ angels_share: {
   code: "angels_share",
   brand: "By Kilian",
   brand_short: ".Kilian",
-  fragrance: "Angels' Share",
+  fragrance: "Angels Share",
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Angels-Share-62615.html",
   family: "Oriental Vanilla",
   gender: "unisex",
@@ -2353,7 +2353,7 @@ althair: {
   code: "althair",
   brand: "Parfums de Marly",
   brand_short: ".PDM",
-  fragrance: "Althaïr",
+  fragrance: "Althair",
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Althair-84109.html",
   family: "Oriental Vanilla",
   gender: "men",
@@ -2728,24 +2728,6 @@ dior_homme_parfum: {
 },
 
 
-oud_wood_intense: {
-  code: "oud_wood_intense",
-  brand: "Tom Ford",
-  brand_short: ".TF",
-  fragrance: "Oud Wood Intense",
-  fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-Intense-46767.html",
-  family: "Oriental Woody",
-  gender: "unisex",
-  image: IMAGES.oud_wood_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46767.jpeg",
-  Our_Name: "",
-  notes: {
-    top: ["Castoreum", "Agarwood (Oud)", "Cypress", "Juniper", "Angelica", "Ginger"],
-    middle: [],
-    base: []
-  }
-},
-
 linterdit: {
   code: "linterdit",
   brand: "Givenchy",
@@ -2820,7 +2802,7 @@ ambre_royal: {
 
 ambre_narguile: {
   code: "ambre_narguile",
-  brand: "Hermès",
+  brand: "Hermes",
   brand_short: ".Hermes",
   fragrance: "Hermessence Ambre Narguile",
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Hermessence-Ambre-Narguile-2669.html",
@@ -2836,29 +2818,12 @@ ambre_narguile: {
   }
 },
 
-ambre_russe: {
-  code: "ambre_russe",
-  brand: "Parfum d'Empire",
-  brand_short: ".PdE",
-  fragrance: "Ambre Russe",
-  fragrantica_link: "https://www.fragrantica.com/perfume/Parfum-d-Empire/Ambre-Russe-5258.html",
-  family: "Oriental Spicy",
-  gender: "unisex",
-  image: IMAGES.ambre_russe,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-5258.jpeg",
-  Our_Name: "",
-  notes: {
-    top: ["Vodka", "Champagne"],
-    middle: ["Cinnamon", "Russian Leather", "Tea", "Coriander", "Birch", "Juniper"],
-    base: ["Amber", "Incense", "Musk"]
-  }
-},
 
 vanilla_28: {
   code: "vanilla_28",
   brand: "Kayali Fragrances",
   brand_short: ".Kayali",
-  fragrance: "Vanilla | 28",
+  fragrance: "Vanilla 28",
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Vanilla-28-52616.html",
   family: "Oriental Vanilla",
   gender: "unisex",
@@ -2928,9 +2893,9 @@ eden_juicy_apple_01: {
 
 idole: {
   code: "idole",
-  brand: "Lancôme",
+  brand: "Lancome",
   brand_short: ".Lancome",
-  fragrance: "Idôle",
+  fragrance: "Idole",
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
   family: "Chypre Floral",
   gender: "women",
@@ -3092,7 +3057,7 @@ bois_imperial: {
   code: "bois_imperial",
   brand: "Essential Parfums",
   brand_short: ".EP",
-  fragrance: "Bois Impérial",
+  fragrance: "Bois Imperial",
   fragrantica_link: "https://www.fragrantica.com/perfume/Essential-Parfums/Bois-Imperial-64338.html",
   family: "Aromatic",
   gender: "unisex",
@@ -3363,7 +3328,7 @@ orchidee_vanille: {
   code: "orchidee_vanille",
   brand: "Van Cleef & Arpels",
   brand_short: ".VCA",
-  fragrance: "Orchidée Vanille",
+  fragrance: "Orchidee Vanille",
   fragrantica_link: "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Orchidee-Vanille-6463.html",
   family: "Floral",
   gender: "women",
@@ -4022,9 +3987,9 @@ cedrus: {
 
 twilly_dhermes: {
   code: "twilly_dhermes",
-  brand: "Hermès",
+  brand: "Hermes",
   brand_short: ".Hermes",
-  fragrance: "Twilly d’Hermès",
+  fragrance: "Twilly d’Hermes",
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Twilly-d-Hermes-46145.html",
   family: "Floral",
   gender: "women",
@@ -4096,7 +4061,7 @@ stronger_with_you_intensely: {
   code: "stronger_with_you_intensely",
   brand: "Giorgio Armani",
   brand_short: ".GA",
-  fragrance: "Emporio Armani Stronger With You Intensely",
+  fragrance: "Stronger With You Intensely",
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Intensely-52802.html",
   family: "Oriental Fougere",
   gender: "men",
@@ -4473,7 +4438,7 @@ bergamot_22: {
 
 oud_bouquet: {
   code: "oud_bouquet",
-  brand: "Lancôme",
+  brand: "Lancome",
   brand_short: ".Lancome",
   fragrance: "Oud Bouquet",
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/Oud-Bouquet-39739.html",
@@ -5071,17 +5036,17 @@ rouge_trafalgar: {
   code: "rouge_trafalgar",
   brand: "Dior",
   brand_short: ".DIOR",
-  fragrance: "Rouge Trafalgar",
-  fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Rouge-Trafalgar-58665.html",
+  fragrance: "Rouge Trafalgar Esprit De Parfum",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Rouge-Trafalgar-Esprit-De-Parfum-95983.html",
   family: "Chypre Fruity",
-  gender: "women",
+  gender: "unisex",
   image: IMAGES.rouge_trafalgar,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-58665.jpeg",
+  image_url: "https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.95983.avif",
   Our_Name: "",
   notes: {
-    top: ["Raspberry", "Strawberry", "Cherry", "Mandarin Orange"],
-    middle: ["Black Currant", "Grapefruit"],
-    base: ["Musk", "Patchouli"]
+    top: [ "Cherry", "Pink Pepper"],
+    middle: ["Bulgarian Rose", "Turkish Rose"],
+    base: ["Red Fruits"]
   }
 },
 
@@ -5160,7 +5125,7 @@ angels_share_on_the_rocks: {
   code: "angels_share_on_the_rocks",
   brand: "Kilian",
   brand_short: ".KILIAN",
-  fragrance: "Angel's Share On The Rocks",
+  fragrance: "Angels Share On The Rocks",
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Angel-s-Share-On-The-Rocks-113083.html",
   family: "Amber Woody",
   gender: "unisex",
@@ -5635,9 +5600,9 @@ brand_short: ".GUERLAIN",
 
 barenia_hermes: {
   code: "barenia_hermes",
-  brand: "Hermès",
+  brand: "Hermes",
 brand_short: ".HERMES",
-  fragrance: "Barénia",
+  fragrance: "Barenia",
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Barenia-96428.html",
   family: "Chypre",
   gender: "women",
@@ -5743,8 +5708,6 @@ acqua_di_gio_elixir: {
   }
 },
 
-
-// .................................................
 
 new_look_2024: {
   code: "new_look_2024",
@@ -5910,13 +5873,145 @@ sun_song_2025: {
     base: ["Musk"]
   }
 },
-
-
-// stronger with you sp
-
-
-
+paradaxe: {
+  code: "paradaxe",
+  brand: "Prada",
+  brand_short: ".PR",
+  fragrance: "Paradoxe",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
+  family: "Oriental Floral",
+  gender: "women",
+  image: IMAGES.paradaxe,
+  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-75668.jpeg",
+  Our_Name: "",
+  notes: {
+    top: ["Pear", "Tangerine", "Bergamot"],
+    middle: ["Orange Blossom", "Neroli Essence", "Neroli", "Jasmine Sambac"],
+    base: ["Bourbon Vanilla", "Amber", "White Musk", "Benzoin"]
+  }
+},
+pure_musc_for_her: {
+  code: "pure_musc_for_her",
+  brand: "Narciso Rodriguez",
+  brand_short: ".NR",
+  fragrance: "Pure Musc For Her",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Pure-Musc-For-Her-53441.html",
+  family: "Floral Woody Musk",
+  gender: "women",
+  image: IMAGES.pure_musc_for_her,
+  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53441.jpeg",
+  Our_Name: "",
+  notes: {
+    top: ["Musk"],
+    middle: ["Jasmine", "Ylang Ylang", "Orange Blossom"],
+    base: ["Cashmeran"]
+  }
+},
+spicebomb_metallic_musk: {
+  code: "spicebomb_metallic_musk",
+  brand: "Viktor&Rolf",
+  brand_short: ".V&R",
+  fragrance: "Spicebomb Metallic Musk",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Metallic-Musk-104937.html",
+  family: "Oriental Spicy",
+  gender: "men",
+  image: IMAGES.spicebomb_metallic_musk,
+  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-104937.jpeg",
+  Our_Name: "",
+  notes: {
+    top: ["Aldehydes", "Black Pepper", "Elemi", "Bergamot"],
+    middle: ["Pepper", "Cinnamon", "Lavender"],
+    base: ["Musk", "Leather", "Ambrette", "Labdanum"]
+  }
+},
+bombshell: {
+  code: "bombshell",
+  brand: "Victoria's Secret",
+  brand_short: ".VS",
+  fragrance: "Bombshell",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Victoria-s-Secret/Bombshell-10190.html",
+  family: "Floral Fruity",
+  gender: "women",
+  image: IMAGES.bombshell,
+  image_url: "https://fimgs.net/mdimg/perfume-thumbs/375x500.10190.jpg",
+  Our_Name: "",
+  notes: {
+    top: ["Passionfruit", "Grapefruit", "Pineapple", "Tangerine", "Big Strawberry"],
+    middle: ["Peony", "Vanilla Orchid", "Red Berries", "Jasmine", "Lily of the Valley"],
+    base: ["Musk", "Woody Notes", "Oakmoss"]
+  }
+},
+gypsy_water_absolu: {
+  code: "gypsy_water_absolu",
+  brand: "Byredo",
+  brand_short: ".BY",
+  fragrance: "Gypsy Water Absolu",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Gypsy-Water-Absolu-121784.html",
+  family: "Oriental Woody",
+  gender: "unisex",
+  image: IMAGES.gypsy_water_absolu,
+  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-121784.jpeg",
+  Our_Name: "",
+  notes: {
+    top: ["Pine Needles", "Black Pepper", "Bergamot"],
+    middle: ["Incense", "Orris", "Carrot Seeds"],
+    base: ["White Suede", "Vanilla Absolute", "Ambroxan"]
+  }
+},
+eau_de_lacoste_l1212_white: {
+  code: "eau_de_lacoste_l1212_white",
+  brand: "Lacoste",
+  brand_short: ".LAC",
+  fragrance: "Eau de Lacoste L.12.12. White",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Lacoste/Eau-de-Lacoste-L-12-12-White-11043.html",
+  family: "Woody Aromatic",
+  gender: "men",
+  image: IMAGES.eau_de_lacoste_l1212_white,
+  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-11043.jpeg",
+  Our_Name: "",
+  notes: {
+    top: ["Grapefruit", "Rosemary", "Cardamom"],
+    middle: ["Ylang Ylang", "Tuberose"],
+    base: ["Virginia Cedar", "Suede", "Vetiver", "Leather"]
+  }
+},
 };
 export default MASTER_FRAGRANCES;
 
+// oud_wood_intense: {
+//   code: "oud_wood_intense",
+//   brand: "Tom Ford",
+//   brand_short: ".TF",
+//   fragrance: "Oud Wood Intense",
+//   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-Intense-46767.html",
+//   family: "Oriental Woody",
+//   gender: "unisex",
+//   image: IMAGES.oud_wood_intense,
+//   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46767.jpeg",
+//   Our_Name: "",
+//   notes: {
+//     top: ["Castoreum", "Agarwood (Oud)", "Cypress", "Juniper", "Angelica", "Ginger"],
+//     middle: [],
+//     base: []
+//   }
+// },
 
+// ambre_russe: {
+//   code: "ambre_russe",
+//   brand: "Parfum d'Empire",
+//   brand_short: ".PdE",
+//   fragrance: "Ambre Russe",
+//   fragrantica_link: "https://www.fragrantica.com/perfume/Parfum-d-Empire/Ambre-Russe-5258.html",
+//   family: "Oriental Spicy",
+//   gender: "unisex",
+//   image: IMAGES.ambre_russe,
+//   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-5258.jpeg",
+//   Our_Name: "",
+//   notes: {
+//     top: ["Vodka", "Champagne"],
+//     middle: ["Cinnamon", "Russian Leather", "Tea", "Coriander", "Birch", "Juniper"],
+//     base: ["Amber", "Incense", "Musk"]
+//   }
+// },
+
+// Bois Orchidée
