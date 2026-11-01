@@ -8,12 +8,12 @@ export default function SimpleFragranceCard({ item, onClick }) {
       
       {/* ⭐ Image wrapper with gender background */}
       <div className={`img-wrapper ${gender?.toLowerCase()}`}>
-        <img src={image} alt={fragrance} className="simple-card-img" />
+        {image && <img src={image} alt={fragrance} className="simple-card-img" />}
       </div>
 
       <div className="simple-card-content">
         <div className="frag">{fragrance}</div>
-        <div className="brand">({brand})</div>
+        {brand && <div className="brand">({brand})</div>}
       </div>
 
       {/* ⭐ Footer same style as image wrapper */}

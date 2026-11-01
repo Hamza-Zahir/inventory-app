@@ -79,9 +79,12 @@ export default function App() {
 
   const ALL_NOTES = new Set();
   items.forEach((item) => {
-    item.notes.top.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
-    item.notes.middle.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
-    item.notes.base.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
+    const notes = item.notes.all || [
+      ...item.notes.top,
+      ...item.notes.middle,
+      ...item.notes.base,
+    ];
+    notes.forEach((n) => ALL_NOTES.add(n.toLowerCase()));
   });
 
   const notesList = Array.from(ALL_NOTES);
@@ -89,11 +92,11 @@ export default function App() {
   // ⭐ FILTERING
   const filtered = items
     .map((item) => {
-      const perfumeNotes = [
+      const perfumeNotes = (item.notes.all || [
         ...item.notes.top,
         ...item.notes.middle,
         ...item.notes.base,
-      ].map((n) => n.toLowerCase());
+      ]).map((n) => n.toLowerCase());
 
       const matchCount = selectedNotes.filter((selected) =>
         perfumeNotes.some((note) => isNoteMatch(note, selected))

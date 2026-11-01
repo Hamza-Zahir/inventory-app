@@ -18,11 +18,11 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
   }
 
   // ⭐ جميع النوتات ديال العطر
-  const allNotes = [
+  const allNotes = (notes.all || [
     ...notes.top.map((n) => n.toLowerCase()),
     ...notes.middle.map((n) => n.toLowerCase()),
     ...notes.base.map((n) => n.toLowerCase())
-  ];
+  ]).map((n) => n.toLowerCase());
 
   // ⭐ matched intelligent (vanilla → black vanilla husk)
   const matchedNotes = selectedNotes.filter((sel) =>
@@ -40,7 +40,7 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
 
         {/* IMAGE */}
         <div className="image-box">
-          <img src={image} alt={fragrance} className="small-img" />
+          {image && <img src={image} alt={fragrance} className="small-img" />}
         </div>
 
         {/* TITLE + ID */}
@@ -49,7 +49,7 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
 
           <div className="title-box">
             <div className="frag">{fragrance}</div>
-            <div className="brand">({brand})</div>
+            {brand && <div className="brand">({brand})</div>}
           </div>
         </div>
 

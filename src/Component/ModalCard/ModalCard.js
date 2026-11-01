@@ -17,7 +17,7 @@ export default function ModalCard({ item, onClose }) {
 
         {/* LEFT SIDE */}
         <div className="modal-left">
-          <img src={image} alt={fragrance} className="modal-big-img" />
+          {image && <img src={image} alt={fragrance} className="modal-big-img" />}
         </div>
 
         {/* RIGHT SIDE */}
@@ -47,7 +47,7 @@ export default function ModalCard({ item, onClose }) {
           </div>
 
           {/* FAMILY */}
-          <p className="family-line">{family} fragrance</p>
+          {family && <p className="family-line">{family} fragrance</p>}
 
           {/* NOTES */}
           <FragranceNotes notes={notes} />

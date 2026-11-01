@@ -1,5 +1,3 @@
-import { IMAGES } from "./IMAGES"
-
 export const MASTER_FRAGRANCES = {
 // alth
 afternoon_swim: {
@@ -10,8 +8,7 @@ afternoon_swim: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Afternoon-Swim-53947.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.afternoon_swim,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53947.jpeg",
+  image: "/images/fragrances/afternoon_swim.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Sicilian Orange", "Bergamot", "Ambergris", "Ginger"],
@@ -28,8 +25,7 @@ si_armani: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Si-18453.html",
   family: "Chypre Fruity",
   gender: "women",
-  image: IMAGES.si,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18453.jpeg",
+  image: "/images/fragrances/si.jpg",
   Our_Name: "",
   notes: {
     top: ["Cassis"],
@@ -46,8 +42,7 @@ acqua_di_gio_profumo: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profumo-29727.html",
   family: "Aromatic Aquatic",
   gender: "men",
-  image: IMAGES.acqua_di_gio_profumo,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-29727.jpeg",
+  image: "/images/fragrances/acqua_di_gio_profumo.jpg",
   Our_Name: "",
   notes: {
     top: ["Sea Notes", "Bergamot"],
@@ -64,8 +59,7 @@ vip_black: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.vip_black,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46093.jpeg",
+  image: "/images/fragrances/vip_black.jpg",
   Our_Name: "",
   notes: {
     top: ["Absinthe", "Anise", "Fennel"],
@@ -82,8 +76,7 @@ allure_homme_sport: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Allure-Homme-Sport-607.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.allure_homme_sport,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-607.jpeg",
+  image: "/images/fragrances/allure_homme_sport.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Sea Notes", "Aldehydes", "Blood Mandarin"],
@@ -100,8 +93,7 @@ bleu_de_chanel: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-9099.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.bleu_de_chanel,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-9099.jpeg",
+  image: "/images/fragrances/bleu_de_chanel.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Lemon", "Mint", "Pink Pepper"],
@@ -118,8 +110,7 @@ coromandel_chanel: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Coromandel-Eau-de-Parfum-41783.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.coromandel_chanel,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41783.jpeg",
+  image: "/images/fragrances/coromandel.jpg",
   Our_Name: "",
   notes: {
     top: ["Bitter Orange", "Citruses", "Neroli"],
@@ -136,8 +127,7 @@ chanel_no_5: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Chanel-No-5-Eau-de-Parfum-40069.html",
   family: "Floral Aldehyde",
   gender: "women",
-  image: IMAGES.chanel_no_5,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-40069.jpeg",
+  image: "/images/fragrances/chanel_no_5.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "Ylang Ylang", "Neroli", "Bergamot", "Peach"],
@@ -154,8 +144,7 @@ coco_mademoiselle_intense: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Coco-Mademoiselle-Intense-48310.html",
   family: "Oriental Woody",
   gender: "women",
-  image: IMAGES.coco_mademoiselle_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48310.jpeg",
+  image: "/images/fragrances/coco_mademoiselle_intense.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Orange", "Calabrian Bergamot", "Lemon"],
@@ -172,8 +161,7 @@ egoiste_platinum: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Egoiste-Platinum-614.html",
   family: "Woody Floral Musk",
   gender: "men",
-  image: IMAGES.egoiste_platinum,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-614.jpeg",
+  image: "/images/fragrances/egoiste_platinum.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Rosemary", "Neroli", "Petitgrain"],
@@ -190,8 +178,7 @@ aventus: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Aventus-9828.html",
   family: "Chypre Fruity",
   gender: "men",
-  image: IMAGES.aventus,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-9828.jpeg",
+  image: "/images/fragrances/aventus.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Black Currant", "Apple", "Lemon", "Pink Pepper"],
@@ -208,8 +195,7 @@ silver_mountain_water: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Silver-Mountain-Water-472.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.silver_mountain_water,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-472.jpeg",
+  image: "/images/fragrances/silver_mountain_water.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Mandarin Orange"],
@@ -226,8 +212,7 @@ sauvage: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Sauvage-31861.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.sauvage,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31861.jpeg",
+  image: "/images/fragrances/sauvage.jpg",
   Our_Name: "",
   notes: {
     top: ["Calabrian Bergamot", "Pepper"],
@@ -244,8 +229,7 @@ ambre_nuit: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Ambre-Nuit-7092.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.ambre_nuit,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-7092.jpeg",
+  image: "/images/fragrances/ambre_nuit.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Grapefruit"],
@@ -262,8 +246,7 @@ gris_dior: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Gris-Dior-48387.html",
   family: "Floral",
   gender: "unisex",
-  image: IMAGES.gris_dior,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48387.jpeg",
+  image: "/images/fragrances/gris_dior.jpg",
   Our_Name: "",
   notes: {
     top: ["Oakmoss", "Rose", "Patchouli", "Bergamot", "Cedar", "Amber", "Sandalwood"],
@@ -280,8 +263,7 @@ light_blue: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.light_blue,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-485.jpeg",
+  image: "/images/fragrances/light_blue.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Lemon", "Apple", "Cedar", "Bellflower"],
@@ -298,8 +280,7 @@ velvet_desert_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/Velvet-Desert-Oud-18165.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.velvet_desert_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18165.jpeg",
+  image: "/images/fragrances/velvet_desert_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Incense", "Agarwood (Oud)", "Amber", "Musk"],
@@ -316,8 +297,7 @@ limperatrice_3: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/D-G-Anthology-L-Imperatrice-3-6086.html",
   family: "Floral Aquatic",
   gender: "women",
-  image: IMAGES.limperatrice_3,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6086.jpeg",
+  image: "/images/fragrances/limperatrice_3.jpg",
   Our_Name: "",
   notes: {
     top: ["Kiwi", "Rhuburb", "Pink Pepper"],
@@ -334,8 +314,7 @@ molecule_02: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Escentric-Molecules/Molecule-02-3606.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.molecule_02,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-3606.jpeg",
+  image: "/images/fragrances/molecule_02.jpg",
   Our_Name: "",
   notes: {
     top: ["Ambroxan"],
@@ -352,8 +331,7 @@ fleur_narcotique: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Ex-Nihilo/Fleur-Narcotique-27571.html",
   family: "Floral Fruity",
   gender: "unisex",
-  image: IMAGES.fleur_narcotique,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-27571.jpeg",
+  image: "/images/fragrances/fleur_narcotique.jpg",
   Our_Name: "",
   notes: {
     top: ["Litchi", "Bergamot", "Peach"],
@@ -372,8 +350,7 @@ imagination_lv: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Imagination-67370.html",
   family: "Citrus Aromatic",
   gender: "men",
-  image: IMAGES.imagination_lv,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-67370.jpeg",
+  image: "/images/fragrances/imagination_lv.jpg",
   Our_Name: "",
   notes: {
     top: ["Citron", "Calabrian Bergamot", "Sicilian Orange"],
@@ -390,8 +367,7 @@ gran_ballo: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Casamorati-1888/Gran-Ballo-26708.html",
   family: "Floral Fruity Gourmand",
   gender: "women",
-  image: IMAGES.gran_ballo,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-26708.jpeg",
+  image: "/images/fragrances/gran_ballo.jpg",
   Our_Name: "",
   notes: {
     top: ["Red Berries", "Tangerine"],
@@ -408,8 +384,7 @@ la_vie_est_belle_leclat: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Eclat-45892.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.la_vie_est_belle_leclat,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-45892.jpeg",
+  image: "/images/fragrances/la_vie_est_belle_leclat.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Bergamot", "Freesia"],
@@ -426,8 +401,7 @@ another_13: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Le-Labo/Another-13-10131.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.another_13,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-10131.jpeg",
+  image: "/images/fragrances/another_13.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Apple", "Citruses"],
@@ -444,8 +418,7 @@ santal_33: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Le-Labo/Santal-33-12201.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.santal_33,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-12201.jpeg",
+  image: "/images/fragrances/santal_33.jpg",
   Our_Name: "",
   notes: {
     top: ["Sandalwood", "Leather", "Papyrus", "Virginia Cedar", "Cardamom", "Violet", "Iris", "Amber"],
@@ -462,8 +435,7 @@ ombre_nomade: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Ombre-Nomade-49755.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.ombre_nomade,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-49755.jpeg",
+  image: "/images/fragrances/ombre_nomade.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Rose", "Incense", "Raspberry", "Saffron", "Amberwood", "Benzoin", "Birch", "Geranium"],
@@ -480,8 +452,7 @@ matiere_noire: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Matiere-Noire-40496.html",
   family: "Oriental Woody",
   gender: "women",
-  image: IMAGES.matiere_noire,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-40496.jpeg",
+  image: "/images/fragrances/matiere_noire.jpg",
   Our_Name: "",
   notes: {
     top: ["Blackcurrant Syrup", "Watery Notes"],
@@ -498,8 +469,7 @@ nouveau_monde: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Nouveau-Monde-49753.html",
   family: "Oriental",
   gender: "men",
-  image: IMAGES.nouveau_monde,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-49753.jpeg",
+  image: "/images/fragrances/nouveau_monde.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Leather", "Cacao", "Rose", "Saffron", "Caramel", "Vanilla", "Amberwood", "Olibanum", "Patchouli", "Black Currant"],
@@ -516,8 +486,7 @@ baccarat_rouge_540: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Baccarat-Rouge-540-33519.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.baccarat_rouge_540,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-33519.jpeg",
+  image: "/images/fragrances/baccarat_rouge_540.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Jasmine"],
@@ -534,8 +503,7 @@ irish_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Memo-Paris/Irish-Leather-18393.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.irish_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18393.jpeg",
+  image: "/images/fragrances/irish_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Juniper Berry", "Pepper", "Mandarin"],
@@ -552,8 +520,7 @@ poudree: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Poudree-36679.html",
   family: "Woody Floral Musk",
   gender: "women",
-  image: IMAGES.poudree,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-36679.jpeg",
+  image: "/images/fragrances/poudree.jpg",
   Our_Name: "",
   notes: {
     top: ["Jasmine", "Bulgarian Rose", "Orange Blossom"],
@@ -570,8 +537,7 @@ black_afgano: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Nasomatto/Black-Afgano-6472.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.black_afgano,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6472.jpeg",
+  image: "/images/fragrances/black_afgano.jpg",
   Our_Name: "",
   notes: {
     top: ["Cannabis", "Green Notes", "Davana", "Saffron", "Thyme"],
@@ -588,8 +554,7 @@ montabaco: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Ormonde-Jayne/Montabaco-16896.html",
   family: "Oriental Fougere",
   gender: "unisex",
-  image: IMAGES.montabaco,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16896.jpeg",
+  image: "/images/fragrances/montabaco.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Mountain Air", "Juniper", "Bergamot", "Clary Sage", "Orange"],
@@ -606,8 +571,7 @@ megamare: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Orto-Parisi/Megamare-53471.html",
   family: "Aromatic Aquatic",
   gender: "unisex",
-  image: IMAGES.megamare,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53471.jpeg",
+  image: "/images/fragrances/megamare.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Lemon"],
@@ -624,8 +588,7 @@ one_million: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Rabanne/1-Million-3747.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.one_million,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-3747.jpeg",
+  image: "/images/fragrances/one_million.jpg",
   Our_Name: "",
   notes: {
     top: ["Blood Mandarin", "Grapefruit", "Mint"],
@@ -642,8 +605,7 @@ invictus: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Rabanne/Invictus-18471.html",
   family: "Woody Aquatic",
   gender: "men",
-  image: IMAGES.invictus,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18471.jpeg",
+  image: "/images/fragrances/invictus.jpg",
   Our_Name: "",
   notes: {
     top: ["Sea Notes", "Grapefruit", "Mandarin Orange"],
@@ -660,8 +622,7 @@ shaik_opulent_no_77: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Shaik/Opulent-Shaik-Classic-No-77-2777.html",
   family: "Oriental",
   gender: "men",
-  image: IMAGES.shaik_opulent_no_77,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-2777.jpeg",
+  image: "/images/fragrances/shaik_opulent_no_77.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Bergamot", "Lemon", "Basil"],
@@ -678,8 +639,7 @@ accento: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Sospiro-Perfumes/Accento-13816.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.accento,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-13816.jpeg",
+  image: "/images/fragrances/accento.jpg",
   Our_Name: "",
   notes: {
     top: ["Pineapple", "Hyacinth"],
@@ -696,8 +656,7 @@ erba_pura: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Sospiro-Perfumes/Erba-Pura-18652.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.erba_pura,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18652.jpeg",
+  image: "/images/fragrances/erba_pura.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Bergamot", "Lemon"],
@@ -715,8 +674,7 @@ kirke: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tiziana-Terenzi/Kirke-32172.html",
   family: "Chypre Fruity",
   gender: "unisex",
-  image: IMAGES.kirke,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-32172.jpeg",
+  image: "/images/fragrances/kirke.jpg",
   Our_Name: "",
   notes: {
     top: ["Passionfruit", "Peach", "Pear", "Raspberry", "Cassis", "Sand"],
@@ -733,8 +691,7 @@ f_fabulous: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Fabulous-46513.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.f_fabulous,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46513.jpeg",
+  image: "/images/fragrances/f_fabulous.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Clary Sage"],
@@ -751,8 +708,7 @@ tobacco_vanille: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Tobacco-Vanille-1825.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.tobacco_vanille,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1825.jpeg",
+  image: "/images/fragrances/tobacco_vanille.jpg",
   Our_Name: "",
   notes: {
     top: ["Tobacco Leaf", "Spicy Notes"],
@@ -769,8 +725,7 @@ tuscan_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Tuscan-Leather-1849.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.tuscan_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1849.jpeg",
+  image: "/images/fragrances/tuscan_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Saffron", "Thyme"],
@@ -787,8 +742,7 @@ yasep: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bvlgari/Yasep-53562.html",
   family: "Oriental",
   gender: "men",
-  image: IMAGES.yasep,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53562.jpeg",
+  image: "/images/fragrances/yasep.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Mandarin", "Sichuan Pepper"],
@@ -805,8 +759,7 @@ versace_pour_homme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Versace/Versace-Pour-Homme-2318.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.versace_pour_homme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-2318.jpeg",
+  image: "/images/fragrances/versace_pour_homme.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemon", "Bergamot", "Neroli", "Rose De Mai"],
@@ -823,8 +776,7 @@ tuxedo: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Tuxedo-32269.html",
   family: "Chypre",
   gender: "unisex",
-  image: IMAGES.tuxedo,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-32269.jpeg",
+  image: "/images/fragrances/tuxedo.jpg",
   Our_Name: "",
   notes: {
     top: ["Violet Leaf", "Coriander", "Bergamot"],
@@ -841,8 +793,7 @@ black_opium: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Black-Opium-25324.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.black_opium,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-25324.jpeg",
+  image: "/images/fragrances/black_opium.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Pink Pepper", "Orange Blossom"],
@@ -859,8 +810,7 @@ homme_intense_2011: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Dior-Homme-Intense-2011-13016.html",
   family: "Woody Floral Musk",
   gender: "men",
-  image: IMAGES.homme_intense_2011,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-13016.jpeg",
+  image: "/images/fragrances/homme_intense_2011.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender"],
@@ -877,8 +827,7 @@ halfeti: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Penhaligon-s/Halfeti-31396.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.halfeti,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31396.jpeg",
+  image: "/images/fragrances/halfeti.jpg",
   Our_Name: "",
   notes: {
     top: ["Cypress Leaf", "Saffron", "Cardamom", "Artemisia", "Bergamot", "Grapefruit"],
@@ -895,8 +844,7 @@ ombre_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Ombre-Leather-2018-50239.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.ombre_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-50239.jpeg",
+  image: "/images/fragrances/ombre_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom"],
@@ -913,8 +861,7 @@ voice_of_the_snake: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/The-Voice-Of-The-Snake-53088.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.voice_of_the_snake,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53088.jpeg",
+  image: "/images/fragrances/voice_of_the_snake.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Saffron", "Patchouli"],
@@ -931,8 +878,7 @@ mojave_ghost: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Mojave-Ghost-27040.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.mojave_ghost,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-27040.jpeg",
+  image: "/images/fragrances/mojave_ghost.jpg",
   Our_Name: "",
   notes: {
     top: ["Sapodilla", "Ambrette (Musk Mallow)"],
@@ -949,8 +895,7 @@ jazz_club: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/Jazz-Club-20541.html",
   family: "Leather",
   gender: "men",
-  image: IMAGES.jazz_club,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-20541.jpeg",
+  image: "/images/fragrances/jazz_club.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Neroli", "Lemon"],
@@ -967,8 +912,7 @@ terre_dhermes: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.terre_dhermes,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-17.jpeg",
+  image: "/images/fragrances/terre_dhermes.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Grapefruit"],
@@ -985,8 +929,7 @@ pegasus: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Pegasus-16938.html",
   family: "Oriental Fougere",
   gender: "men",
-  image: IMAGES.pegasus,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16938.jpeg",
+  image: "/images/fragrances/pegasus.jpg",
   Our_Name: "",
   notes: {
     top: ["Heliotrope", "Cumin", "Bergamot", "Pink Pepper"],
@@ -1003,8 +946,7 @@ black_orchid: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Black-Orchid-1018.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.black_orchid,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1018.jpeg",
+  image: "/images/fragrances/black_orchid.jpg",
   Our_Name: "",
   notes: {
     top: ["Truffle", "Gardenia", "Black Currant", "Ylang Ylang", "Jasmine", "Bergamot", "Mandarin Orange", "Amalfi Lemon"],
@@ -1021,8 +963,7 @@ good_girl_gone_bad: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Good-Girl-Gone-Bad-15924.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.good_girl_gone_bad,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15924.jpeg",
+  image: "/images/fragrances/good_girl_gone_bad.jpg",
   Our_Name: "",
   notes: {
     top: ["Osmanthus", "Peach", "Neroli", "Bergamot", "Mandarin", "Cinnamon"],
@@ -1039,8 +980,7 @@ oud_ispahan: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Oud-Ispahan-15231.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.oud_ispahan,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15231.jpeg",
+  image: "/images/fragrances/oud_ispahan.jpg",
   Our_Name: "",
   notes: {
     top: ["Labdanum"],
@@ -1059,8 +999,7 @@ good_girl: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-39681.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.good_girl,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-39681.jpeg",
+  image: "/images/fragrances/good_girl.jpg",
   Our_Name: "",
   notes: {
     top: ["Almond", "Coffee", "Bergamot", "Lemon"],
@@ -1077,8 +1016,7 @@ sekushi_no_7: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lengling/Sekushi-No-7-35338.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.sekushi_no_7,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-35338.jpeg",
+  image: "/images/fragrances/sekushi_no_7.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Leather", "Cotton Candy", "Apricot", "Patchouli", "Olibanum", "Musk", "Lily Of The Valley"],
@@ -1095,8 +1033,7 @@ chance: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Chance-Eau-de-Parfum-31351.html",
   family: "Chypre Floral",
   gender: "women",
-  image: IMAGES.chance,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31351.jpeg",
+  image: "/images/fragrances/chance.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper"],
@@ -1113,8 +1050,7 @@ sycomore: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Sycomore-Eau-de-Parfum-41780.html",
   family: "Woody Chypre",
   gender: "unisex",
-  image: IMAGES.sycomore,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41780.jpeg",
+  image: "/images/fragrances/sycomore.jpg",
   Our_Name: "",
   notes: {
     top: ["Vetiver", "Cypress", "Juniper", "Sandalwood", "Spices", "Pink Pepper", "Tobacco", "Aldehydes", "Violet"],
@@ -1131,8 +1067,7 @@ fahrenheit: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Fahrenheit-228.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.fahrenheit,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-228.jpeg",
+  image: "/images/fragrances/fahrenheit.jpg",
   Our_Name: "",
   notes: {
     top: ["Nutmeg Flower", "Lavender", "Cedar", "Mandarin Orange", "Chamomile", "Bergamot", "Hawthorn", "Lemon"],
@@ -1149,8 +1084,7 @@ jadore: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/J-adore-210.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.jadore,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-210.jpeg",
+  image: "/images/fragrances/jadore.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Melon", "Magnolia", "Peach", "Mandarin Orange", "Bergamot"],
@@ -1167,8 +1101,7 @@ bois_dargent: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Bois-d-Argent-1377.html",
   family: "Woody Chypre",
   gender: "unisex",
-  image: IMAGES.bois_dargent,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1377.jpeg",
+  image: "/images/fragrances/bois_dargent.jpg",
   Our_Name: "",
   notes: {
     top: ["Iris", "Cypress", "Juniper Berries"],
@@ -1185,8 +1118,7 @@ flora: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Parfum-7610.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.flora,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-7610.jpeg",
+  image: "/images/fragrances/flora.jpg",
   Our_Name: "",
   notes: {
     top: ["Peony", "Citruses", "Mandarin Orange"],
@@ -1203,8 +1135,7 @@ oud_wood: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-1826.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.oud_wood,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1826.jpeg",
+  image: "/images/fragrances/oud_wood.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Brazilian Rosewood", "Cardamom", "Sandalwood", "Sichuan Pepper", "Vanilla", "Vetiver", "Tonka Bean", "Amber"],
@@ -1221,8 +1152,7 @@ si_passione: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Si-Passione-48002.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.si_passione,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48002.jpeg",
+  image: "/images/fragrances/si_passione.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Black Currant", "Pink Pepper", "Grapefruit"],
@@ -1239,8 +1169,7 @@ stellar_times: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Stellar-Times-68356.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.stellar_times,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-68356.jpeg",
+  image: "/images/fragrances/stellar_times.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange Blossom", "Amber", "Woody Notes"],
@@ -1257,8 +1186,7 @@ tygar: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bvlgari/Tygar-41222.html",
   family: "Citrus Aromatic",
   gender: "men",
-  image: IMAGES.tygar,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41222.jpeg",
+  image: "/images/fragrances/tygar.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit"],
@@ -1275,8 +1203,7 @@ coco_mademoiselle: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Coco-Mademoiselle-611.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.coco_mademoiselle,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-611.jpeg",
+  image: "/images/fragrances/coco_mademoiselle.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Mandarin Orange", "Bergamot", "Orange Blossom"],
@@ -1293,8 +1220,7 @@ green_irish_tweed: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Green-Irish-Tweed-474.html",
   family: "Woody Floral Musk",
   gender: "men",
-  image: IMAGES.green_irish_tweed,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-474.jpeg",
+  image: "/images/fragrances/green_irish_tweed.jpg",
   Our_Name: "",
   notes: {
     top: ["Iris", "Vervain"],
@@ -1311,8 +1237,7 @@ miss_dior_blooming_bouquet: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Miss-Dior-Blooming-Bouquet-23280.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.miss_dior_blooming_bouquet,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-23280.jpeg",
+  image: "/images/fragrances/miss_dior_blooming_bouquet.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Mandarin"],
@@ -1329,8 +1254,7 @@ myrrh_tonka: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Myrrh-Tonka-42027.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.myrrh_tonka,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-42027.jpeg",
+  image: "/images/fragrances/myrrh_tonka.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender"],
@@ -1347,8 +1271,7 @@ aventus_cologne: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Aventus-Cologne-51692.html",
   family: "Aromatic Fruity",
   gender: "men",
-  image: IMAGES.aventus_cologne,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51692.jpeg",
+  image: "/images/fragrances/aventus_cologne.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Ginger", "Pink Pepper", "Bergamot", "Spearmint"],
@@ -1365,8 +1288,7 @@ the_one_for_men: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-for-Men-2056.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.the_one_for_men,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-2056.jpeg",
+  image: "/images/fragrances/the_one_for_men.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Coriander", "Basil"],
@@ -1383,8 +1305,7 @@ bloom: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Gucci-Bloom-44894.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.bloom,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-44894.jpeg",
+  image: "/images/fragrances/bloom.jpg",
   Our_Name: "",
   notes: {
     top: ["Jasmine"],
@@ -1402,8 +1323,7 @@ the_night: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Frederic-Malle/The-Night-28407.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.the_night,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-28407.jpeg",
+  image: "/images/fragrances/the_night.jpg",
   Our_Name: "",
   notes: {
     top: ["Turkish Rose", "Saffron"],
@@ -1420,8 +1340,7 @@ bamboo: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Gucci-Bamboo-30815.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.bamboo,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-30815.jpeg",
+  image: "/images/fragrances/bamboo.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot"],
@@ -1438,8 +1357,7 @@ italian_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Memo-Paris/Italian-Leather-21771.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.italian_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-21771.jpeg",
+  image: "/images/fragrances/italian_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Leather", "Tomato Leaf", "Vanilla"],
@@ -1456,8 +1374,7 @@ narciso_rodriguez_for_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Rodriguez-For-Her-209.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.narciso_rodriguez_for_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-209.jpeg",
+  image: "/images/fragrances/narciso_rodriguez_for_her.jpg",
   Our_Name: "",
   notes: {
     top: ["African Orange Flower", "Osmanthus", "Bergamot"],
@@ -1474,8 +1391,7 @@ greenwich_village: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bond-No-9/Greenwich-Village-54157.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.greenwich_village,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-54157.jpeg",
+  image: "/images/fragrances/greenwich_village.jpg",
   Our_Name: "",
   notes: {
     top: ["Litchi", "Cassis", "Peach", "Tangerine"],
@@ -1492,8 +1408,7 @@ lost_cherry: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Lost-Cherry-51411.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.lost_cherry,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51411.jpeg",
+  image: "/images/fragrances/lost_cherry.jpg",
   Our_Name: "",
   notes: {
     top: ["Bitter Almond", "Black Cherry", "Cherry Liqueur"],
@@ -1510,8 +1425,7 @@ ganymede: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/Ganymede-54720.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.ganymede,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-54720.jpeg",
+  image: "/images/fragrances/ganymede.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Italian Mandarin"],
@@ -1528,8 +1442,7 @@ rosendo_mateu_no_5: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Rosendo-Mateu-Olfactive-Expressions/Rosendo-Mateu-No-5-Floral-Amber-Sensual-Musk-46115.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.rosendo_mateu_no_5,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46115.jpeg",
+  image: "/images/fragrances/rosendo_mateu_no_5.jpg",
   Our_Name: "",
   notes: {
     top: ["Spices", "Exotic Floral Notes"],
@@ -1546,8 +1459,7 @@ pur_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Pur-Oud-66436.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.pur_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-66436.jpeg",
+  image: "/images/fragrances/pur_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Ambrettolide", "Helvetolide"],
@@ -1564,8 +1476,7 @@ burberry_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html",
   family: "Floral Fruity Gourmand",
   gender: "women",
-  image: IMAGES.burberry_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51694.jpeg",
+  image: "/images/fragrances/burberry_her.jpg",
   Our_Name: "",
   notes: {
     top: ["Strawberry", "Raspberry", "Blackberry", "Sour Cherry", "Black Currant", "Mandarin Orange", "Lemon"],
@@ -1582,8 +1493,7 @@ love_dont_be_shy: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Love-Don-t-Be-Shy-4322.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.love_dont_be_shy,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-4322.jpeg",
+  image: "/images/fragrances/love_dont_be_shy.jpg",
   Our_Name: "",
   notes: {
     top: ["Neroli", "Bergamot", "Pink Pepper", "Coriander"],
@@ -1600,8 +1510,7 @@ the_noir_29: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Le-Labo/The-Noir-29-31872.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.the_noir_29,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31872.jpeg",
+  image: "/images/fragrances/the_noir_29.jpg",
   Our_Name: "",
   notes: {
     top: ["Fig", "Bay Leaf", "Bergamot"],
@@ -1618,8 +1527,7 @@ bal_dafrique: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Bal-d-Afrique-6458.html",
   family: "Floral",
   gender: "unisex",
-  image: IMAGES.bal_dafrique,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6458.jpeg",
+  image: "/images/fragrances/bal_dafrique.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "African Marigold", "Buchu Or Agathosma"],
@@ -1636,8 +1544,7 @@ portrait_of_a_lady: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Frederic-Malle-Editions-de-Parfums/Portrait-of-a-Lady-10464.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.portrait_of_a_lady,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-10464.jpeg",
+  image: "/images/fragrances/portrait_of_a_lady.jpg",
   Our_Name: "",
   notes: {
     top: ["Rose", "Clove", "Raspberry", "Black Currant", "Cinnamon", "Red Berries"],
@@ -1654,8 +1561,7 @@ sauvage_elixir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Sauvage-Elixir-68415.html",
   family: "Aromatic",
   gender: "men",
-  image: IMAGES.sauvage_elixir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-68415.jpeg",
+  image: "/images/fragrances/sauvage_elixir.jpg",
   Our_Name: "",
   notes: {
     top: ["Nutmeg", "Cinnamon", "Cardamom", "Grapefruit"],
@@ -1672,8 +1578,7 @@ la_nuit_tresor: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/La-Nuit-Tresor-29157.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.la_nuit_tresor,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-29157.jpeg",
+  image: "/images/fragrances/la_nuit_tresor.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Tangerine", "Bergamot"],
@@ -1690,8 +1595,7 @@ la_nuit_de_lhomme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/La-Nuit-de-l-Homme-5521.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.la_nuit_de_lhomme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-5521.jpeg",
+  image: "/images/fragrances/la_nuit_de_lhomme.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom"],
@@ -1708,8 +1612,7 @@ stronger_with_you_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Oud-76171.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.stronger_with_you_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-76171.jpeg",
+  image: "/images/fragrances/stronger_with_you_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla", "Agarwood (Oud)", "Lavender Extract"],
@@ -1726,8 +1629,7 @@ limmensite: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/L-Immensite-49751.html",
   family: "Oriental Spicy",
   gender: "men",
-  image: IMAGES.limmensite,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-49751.jpeg",
+  image: "/images/fragrances/limmensite.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Bergamot", "Ginger"],
@@ -1744,8 +1646,7 @@ delina_exclusif: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Delina-Exclusif-50370.html",
   family: "Oriental",
   gender: "women",
-  image: IMAGES.delina_exclusif,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-50370.jpeg",
+  image: "/images/fragrances/delina_exclusif.jpg",
   Our_Name: "",
   notes: {
     top: ["Litchi", "Pear", "Bergamot", "Pink Pepper", "Grapefruit"],
@@ -1762,8 +1663,7 @@ elysium_pour_homme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Roja-Dove/Elysium-Pour-Homme-Parfum-Cologne-46296.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.elysium_pour_homme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46296.jpeg",
+  image: "/images/fragrances/elysium_pour_homme.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Lemon", "Bergamot", "Lime", "Thyme", "Artemisia", "Galbanum"],
@@ -1780,8 +1680,7 @@ libre: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   family: "Oriental Fougere",
   gender: "women",
-  image: IMAGES.libre,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-56077.jpeg",
+  image: "/images/fragrances/libre.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Mandarin Orange", "Black Currant", "Petitgrain"],
@@ -1798,8 +1697,7 @@ bitter_peach: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Bitter-Peach-62707.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.bitter_peach,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-62707.jpeg",
+  image: "/images/fragrances/bitter_peach.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Blood Orange", "Cardamom", "Heliotrope"],
@@ -1816,8 +1714,7 @@ terroni: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Orto-Parisi/Terroni-45475.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.terroni,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-45475.jpeg",
+  image: "/images/fragrances/terroni.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry"],
@@ -1834,8 +1731,7 @@ layton: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Layton-39314.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.layton,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-39314.jpeg",
+  image: "/images/fragrances/layton.jpg",
   Our_Name: "",
   notes: {
     top: ["Apple", "Lavender", "Bergamot", "Mandarin Orange"],
@@ -1852,8 +1748,7 @@ black_saffron: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Black-Saffron-16220.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.black_saffron,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16220.jpeg",
+  image: "/images/fragrances/black_saffron.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Juniper Berries", "Chinese Grapefruit"],
@@ -1870,8 +1765,7 @@ mefisto: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Xerjoff/Mefisto-6310.html",
   family: "Citrus Aromatic",
   gender: "men",
-  image: IMAGES.mefisto,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6310.jpeg",
+  image: "/images/fragrances/mefisto.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Bergamot", "Amalfi Lemon"],
@@ -1888,8 +1782,7 @@ purple_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Purple-Oud-48376.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.purple_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48376.jpeg",
+  image: "/images/fragrances/purple_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Agarwood (Oud)", "Pink Pepper", "Saffron"],
@@ -1906,8 +1799,7 @@ rose_milano: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Rose-Milano-58911.html",
   family: "Chypre Floral",
   gender: "women",
-  image: IMAGES.rose_milano,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-58911.jpeg",
+  image: "/images/fragrances/rose_milano.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Bergamot", "Lemon"],
@@ -1924,8 +1816,7 @@ naxos_1861: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Xerjoff/XJ-1861-Naxos-30529.html",
   family: "Citrus Gourmand",
   gender: "unisex",
-  image: IMAGES.naxos_1861,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-30529.jpeg",
+  image: "/images/fragrances/naxos_1861.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Bergamot", "Lemon"],
@@ -1942,8 +1833,7 @@ attrape_reves: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Attrape-Reves-51016.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.attrape_reves,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51016.jpeg",
+  image: "/images/fragrances/attrape_reves.jpg",
   Our_Name: "",
   notes: {
     top: ["Litchi", "Bergamot", "Ginger"],
@@ -1960,8 +1850,7 @@ orage: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Orage-49752.html",
   family: "Woody",
   gender: "men",
-  image: IMAGES.orage,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-49752.jpeg",
+  image: "/images/fragrances/orage.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Grapefruit"],
@@ -1978,8 +1867,7 @@ supreme_bouquet: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Supreme-Bouquet-18369.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.supreme_bouquet,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-18369.jpeg",
+  image: "/images/fragrances/supreme_bouquet.jpg",
   Our_Name: "",
   notes: {
     top: ["Fruity Notes", "Pear", "Pink Pepper"],
@@ -1996,8 +1884,7 @@ angels_share: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Angels-Share-62615.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.angels_share,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-62615.jpeg",
+  image: "/images/fragrances/angels_share.jpg",
   Our_Name: "",
   notes: {
     top: ["Cognac"],
@@ -2014,8 +1901,7 @@ black_phantom: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Black-Phantom-43632.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.black_phantom,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-43632.jpeg",
+  image: "/images/fragrances/black_phantom.jpg",
   Our_Name: "",
   notes: {
     top: ["Rum"],
@@ -2032,8 +1918,7 @@ falkar: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bvlgari/Falkar-53560.html",
   family: "Oriental Woody",
   gender: "men",
-  image: IMAGES.falkar,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53560.jpeg",
+  image: "/images/fragrances/falkar.jpg",
   Our_Name: "",
   notes: {
     top: ["Nutmeg", "Cinnamon"],
@@ -2050,8 +1935,7 @@ onekh: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bvlgari/Onekh-41220.html",
   family: "Leather",
   gender: "men",
-  image: IMAGES.onekh,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41220.jpeg",
+  image: "/images/fragrances/onekh.jpg",
   Our_Name: "",
   notes: {
     top: ["Leather", "Spices", "Labdanum"],
@@ -2068,8 +1952,7 @@ oud_rosewood: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Oud-Rosewood-60318.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.oud_rosewood,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-60318.jpeg",
+  image: "/images/fragrances/oud_rosewood.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Quince"],
@@ -2086,8 +1969,7 @@ joy: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Joy-by-Dior-51285.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.joy,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51285.jpeg",
+  image: "/images/fragrances/joy.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Mandarin Orange"],
@@ -2105,8 +1987,7 @@ pacific_chill: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Pacific-Chill-81423.html",
   family: "Aromatic Fruity",
   gender: "unisex",
-  image: IMAGES.pacific_chill,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-81423.jpeg",
+  image: "/images/fragrances/pacific_chill.jpg",
   Our_Name: "",
   notes: {
     top: ["Citron", "Orange", "Lemon", "Mint", "Black Currant", "Coriander"],
@@ -2123,8 +2004,7 @@ grand_soir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Grand-Soir-40816.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.grand_soir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-40816.jpeg",
+  image: "/images/fragrances/grand_soir.jpg",
   Our_Name: "",
   notes: {
     top: ["Spanish Labdanum", "Orange"],
@@ -2141,8 +2021,7 @@ flora_gorgeous_orchid: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Orchid-94979.html",
   family: "Floral Fruity Gourmand",
   gender: "women",
-  image: IMAGES.flora_gorgeous_orchid,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-94979.jpeg",
+  image: "/images/fragrances/flora_gorgeous_orchid.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla"],
@@ -2159,8 +2038,7 @@ blonde_amber: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Clive-Christian/Blonde-Amber-73595.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.blonde_amber,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-73595.jpeg",
+  image: "/images/fragrances/blonde_amber.jpg",
   Our_Name: "",
   notes: {
     top: ["Rum", "Olibanum", "Bitter Orange", "Cardamom", "Pink Pepper", "Ginger", "Bergamot", "Grapefruit"],
@@ -2177,8 +2055,7 @@ red_tobacco: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Mancera/Red-Tobacco-46663.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.red_tobacco,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46663.jpeg",
+  image: "/images/fragrances/red_tobacco.jpg",
   Our_Name: "",
   notes: {
     top: ["Cinnamon", "Agarwood (Oud)", "Incense", "Saffron", "Nutmeg", "Green Apple", "White Pear"],
@@ -2195,8 +2072,7 @@ english_pear_sweet_pea: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/English-Pear-Sweet-Pea-84035.html",
   family: "Aromatic Fruity",
   gender: "unisex",
-  image: IMAGES.english_pear_sweet_pea,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84035.jpeg",
+  image: "/images/fragrances/english_pear_sweet_pea.jpg",
   Our_Name: "",
   notes: {
     top: ["Williams Pear"],
@@ -2213,8 +2089,7 @@ bianco_latte: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giardini-Di-Toscana/Bianco-Latte-64757.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.bianco_latte,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-64757.jpeg",
+  image: "/images/fragrances/bianco_latte.jpg",
   Our_Name: "",
   notes: {
     top: ["Caramel"],
@@ -2231,8 +2106,7 @@ lovers: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/LV-Lovers-93785.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.lovers,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-93785.jpeg",
+  image: "/images/fragrances/lovers.jpg",
   Our_Name: "",
   notes: {
     top: ["Galbanum", "Bergamot"],
@@ -2249,8 +2123,7 @@ blanche_bete: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Les-Liquides-Imaginaires/Blanche-Bete-70189.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.blanche_bete,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-70189.jpeg",
+  image: "/images/fragrances/blanche_bete.jpg",
   Our_Name: "",
   notes: {
     top: ["Milk", "Ambrette (Musk Mallow)", "Mystikal"],
@@ -2267,8 +2140,7 @@ babycat: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Babycat-73149.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.babycat,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-73149.jpeg",
+  image: "/images/fragrances/babycat.jpg",
   Our_Name: "",
   notes: {
     top: ["Black And Pink Pepper", "Black Pepper", "Elemi", "Pink Pepper"],
@@ -2285,8 +2157,7 @@ interlude_man: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Interlude-Man-15294.html",
   family: "Oriental Woody",
   gender: "men",
-  image: IMAGES.interlude_man,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15294.jpeg",
+  image: "/images/fragrances/interlude_man.jpg",
   Our_Name: "",
   notes: {
     top: ["Oregano", "Pepper", "Bergamot"],
@@ -2303,8 +2174,7 @@ god_of_fire: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/God-of-Fire-72381.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.god_of_fire,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-72381.jpeg",
+  image: "/images/fragrances/god_of_fire.jpg",
   Our_Name: "",
   notes: {
     top: ["Mango", "Lemon", "Ginger", "Red Berries"],
@@ -2321,8 +2191,7 @@ vanilla_sex: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Vanilla-88588.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.vanilla_sex,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-88588.jpeg",
+  image: "/images/fragrances/vanilla_sex.jpg",
   Our_Name: "",
   notes: {
     top: ["Indian Vanilla", "Vanilla Absolute", "Sandalwood", "Animal Notes", "Orris Root", "Jasmine"],
@@ -2339,8 +2208,7 @@ oud_maracuja: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Crivelli/Oud-Maracuja-83842.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.oud_maracuja,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-83842.jpeg",
+  image: "/images/fragrances/oud_maracuja.jpg",
   Our_Name: "",
   notes: {
     top: ["Passionfruit", "Fruity Notes", "Saffron", "Turkish Rose"],
@@ -2357,8 +2225,7 @@ althair: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Althair-84109.html",
   family: "Oriental Vanilla",
   gender: "men",
-  image: IMAGES.althair,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84109.jpeg",
+  image: "/images/fragrances/althair.jpg",
   Our_Name: "",
   notes: {
     top: ["Cinnamon", "Orange Blossom", "Cardamom", "Bergamot"],
@@ -2375,8 +2242,7 @@ soleil_blanc: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Soleil-Blanc-34893.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.soleil_blanc,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-34893.jpeg",
+  image: "/images/fragrances/soleil_blanc.jpg",
   Our_Name: "",
   notes: {
     top: ["Pistachio", "Bergamot", "Cardamom", "Pink Pepper"],
@@ -2393,8 +2259,7 @@ oud_satin_mood: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Oud-Satin-Mood-30352.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.oud_satin_mood,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-30352.jpeg",
+  image: "/images/fragrances/oud_satin_mood.jpg",
   Our_Name: "",
   notes: {
     top: ["Bulgarian Rose", "Violet", "Strawberry"],
@@ -2411,8 +2276,7 @@ tobacco_honey: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Guerlain/Tobacco-Honey-84518.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.tobacco_honey,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84518.jpeg",
+  image: "/images/fragrances/tobacco_honey.jpg",
   Our_Name: "",
   notes: {
     top: ["Honey", "Cloves", "Anise"],
@@ -2429,8 +2293,7 @@ wood_sage_sea_salt: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Wood-Sage-Sea-Salt-25529.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.wood_sage_sea_salt,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-25529.jpeg",
+  image: "/images/fragrances/wood_sage_sea_salt.jpg",
   Our_Name: "",
   notes: {
     top: ["Sea Salt", "Sage", "Grapefruit", "Ambrette (Musk Mallow)", "Seaweed"],
@@ -2447,8 +2310,7 @@ valaya: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Valaya-78574.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.valaya,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-78574.jpeg",
+  image: "/images/fragrances/valaya.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "White Peach", "Bergamot", "Mandarin Orange"],
@@ -2465,8 +2327,7 @@ side_effect: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Side-Effect-42260.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.side_effect,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-42260.jpeg",
+  image: "/images/fragrances/side_effect.jpg",
   Our_Name: "",
   notes: {
     top: ["Rum", "Tobacco", "Cinnamon", "Saffron", "Sandalwood", "Hedione"],
@@ -2483,8 +2344,7 @@ rose_31: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Le-Labo/Rose-31-3678.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.rose_31,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-3678.jpeg",
+  image: "/images/fragrances/rose_31.jpg",
   Our_Name: "",
   notes: {
     top: ["Rose", "Cumin"],
@@ -2501,8 +2361,7 @@ most_wanted_intense: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Azzaro/The-Most-Wanted-Intense-90953.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.most_wanted_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-90953.jpeg",
+  image: "/images/fragrances/most_wanted_intense.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot"],
@@ -2519,8 +2378,7 @@ stronger_with_you_tobacco: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Tobacco-90333.html",
   family: "Oriental Spicy",
   gender: "men",
-  image: IMAGES.stronger_with_you_tobacco,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-90333.jpeg",
+  image: "/images/fragrances/stronger_with_you_tobacco.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Black Pepper", "Cardamom", "Elemi", "Sage"],
@@ -2537,8 +2395,7 @@ stronger_with_you: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.stronger_with_you,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-45258.jpeg",
+  image: "/images/fragrances/stronger_with_you.jpg",
   Our_Name: "",
   notes: {
     top: ["Chestnut", "Sugar"],
@@ -2555,8 +2412,7 @@ royal_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Royal-Oud-12317.html",
   family: "Oriental Fougere",
   gender: "unisex",
-  image: IMAGES.royal_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-12317.jpeg",
+  image: "/images/fragrances/royal_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Lemon", "Sicilian Bergamot"],
@@ -2573,8 +2429,7 @@ aventus_for_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Aventus-for-Her-38497.html",
   family: "Chypre Fruity",
   gender: "women",
-  image: IMAGES.aventus_for_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-38497.jpeg",
+  image: "/images/fragrances/aventus_for_her.jpg",
   Our_Name: "",
   notes: {
     top: ["Green Apple", "Bergamot", "Lemon", "Patchouli", "Pink Pepper", "Violet"],
@@ -2591,8 +2446,7 @@ carmina: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Carmina-84206.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.carmina,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84206.jpeg",
+  image: "/images/fragrances/carmina.jpg",
   Our_Name: "",
   notes: {
     top: ["Black Cherry", "Saffron", "Pink Pepper"],
@@ -2609,8 +2463,7 @@ the_one_for_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.the_one_for_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-698.jpeg",
+  image: "/images/fragrances/the_one_for_her.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Litchi", "Mandarin Orange", "Bergamot"],
@@ -2627,8 +2480,7 @@ apple_brandy: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Apple-Brandy-22614.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.apple_brandy,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-22614.jpeg",
+  image: "/images/fragrances/apple_brandy.jpg",
   Our_Name: "",
   notes: {
     top: ["Apple", "Rum", "Sugar", "Plum"],
@@ -2645,8 +2497,7 @@ rolling_in_love: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Rolling-in-Love-56402.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.rolling_in_love,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-56402.jpeg",
+  image: "/images/fragrances/rolling_in_love.jpg",
   Our_Name: "",
   notes: {
     top: ["Almond Milk", "Ambrette (Musk Mallow)"],
@@ -2663,8 +2514,7 @@ sunkissed_goddess: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Sunkissed-Goddess-90336.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.sunkissed_goddess,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-90336.jpeg",
+  image: "/images/fragrances/sunkissed_goddess.jpg",
   Our_Name: "",
   notes: {
     top: ["Neroli", "Bergamot"],
@@ -2681,8 +2531,7 @@ vanilla_diorama: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Vanilla-Diorama-68198.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.vanilla_diorama,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-68198.jpeg",
+  image: "/images/fragrances/vanilla_diorama.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange", "Pink Pepper", "Lemon"],
@@ -2699,8 +2548,7 @@ poison_girl_edt: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Poison-Girl-Eau-De-Toilette-41809.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.poison_girl_edt,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41809.jpeg",
+  image: "/images/fragrances/poison_girl_edt.jpg",
   Our_Name: "",
   notes: {
     top: ["Frosted Orange", "Bitter Orange", "Lemon"],
@@ -2717,8 +2565,7 @@ dior_homme_parfum: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Dior-Homme-Parfum-27417.html",
   family: "Leather",
   gender: "men",
-  image: IMAGES.dior_homme_parfum,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-27417.jpeg",
+  image: "/images/fragrances/dior_homme_parfum.jpg",
   Our_Name: "",
   notes: {
     top: ["Tuscan Iris", "Italian Orange"],
@@ -2736,8 +2583,7 @@ linterdit: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Givenchy/L-Interdit-Eau-de-Parfum-51488.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.linterdit,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-51488.jpeg",
+  image: "/images/fragrances/linterdit.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Bergamot"],
@@ -2754,8 +2600,7 @@ garcon_manque: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Givenchy/Garcon-Manque-60356.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.garcon_manque,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-60356.jpeg",
+  image: "/images/fragrances/garcon_manque.jpg",
   Our_Name: "",
   notes: {
     top: ["Leather", "Osmanthus"],
@@ -2772,8 +2617,7 @@ gentleman_edp_givenchy: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Givenchy/Gentleman-Eau-de-Parfum-48476.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.gentleman_edp_givenchy,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48476.jpeg",
+  image: "/images/fragrances/gentleman_edp_givenchy.jpg",
   Our_Name: "",
   notes: {
     top: ["Black Pepper", "Lavender", "Bergamot"],
@@ -2790,8 +2634,7 @@ ambre_royal: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Ormonde-Jayne/Ambre-Royal-42026.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.ambre_royal,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-42026.jpeg",
+  image: "/images/fragrances/ambre_royal.jpg",
   Our_Name: "",
   notes: {
     top: ["Ambroxan", "Amber", "Osmanthus", "Cedar", "Musk", "Iris", "Orchid"],
@@ -2808,8 +2651,7 @@ ambre_narguile: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Hermessence-Ambre-Narguile-2669.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.ambre_narguile,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-2669.jpeg",
+  image: "/images/fragrances/ambre_narguile.jpg",
   Our_Name: "",
   notes: {
     top: ["Cinnamon", "Honey", "Rum", "Caramel", "Tonka Bean", "Vanilla", "Benzoin", "Tobacco", "Labdanum", "Coumarin", "Sesame", "Musk", "White Orchid"],
@@ -2827,8 +2669,7 @@ vanilla_28: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Vanilla-28-52616.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.vanilla_28,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-52616.jpeg",
+  image: "/images/fragrances/vanilla_28.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla Orchid", "Jasmine"],
@@ -2845,8 +2686,7 @@ vanilla_candy_rock_sugar_42: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Vanilla-Candy-Rock-Sugar-42-92258.html",
   family: "Floral Fruity Gourmand",
   gender: "women",
-  image: IMAGES.vanilla_candy_rock_sugar_42,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-92258.jpeg",
+  image: "/images/fragrances/vanilla_candy_rock_sugar_42.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla", "Pear", "Marshmallow", "Rum", "Violet Leaves", "Ylang Ylang"],
@@ -2863,8 +2703,7 @@ eden_sparkling_lychee_39: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Eden-Sparkling-Lychee-39-Eau-de-Parfum-88197.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.eden_sparkling_lychee_39,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-88197.jpeg",
+  image: "/images/fragrances/eden_sparkling_lychee_39.jpg",
   Our_Name: "",
   notes: {
     top: ["Litchi", "Black Currant", "Red Apple", "Italian Lemon"],
@@ -2881,8 +2720,7 @@ eden_juicy_apple_01: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Eden-Juicy-Apple-01-Eau-De-Parfum-70875.html",
   family: "Floral Fruity Gourmand",
   gender: "unisex",
-  image: IMAGES.eden_juicy_apple_01,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-70875.jpeg",
+  image: "/images/fragrances/eden_juicy_apple_01.jpg",
   Our_Name: "",
   notes: {
     top: ["Red Apple", "Litchi", "Black Currant", "Pink Grapefruit"],
@@ -2899,8 +2737,7 @@ idole: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
   family: "Chypre Floral",
   gender: "women",
-  image: IMAGES.idole,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-55795.jpeg",
+  image: "/images/fragrances/idole.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Bergamot", "Pink Pepper"],
@@ -2917,8 +2754,7 @@ myriad: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Myriad-85363.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.myriad,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-85363.jpeg",
+  image: "/images/fragrances/myriad.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron"],
@@ -2935,8 +2771,7 @@ les_sables_roses: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Les-Sables-Roses-55040.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.les_sables_roses,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-55040.jpeg",
+  image: "/images/fragrances/les_sables_roses.jpg",
   Our_Name: "",
   notes: {
     top: ["Rose", "Bulgarian Rose", "Agarwood (Oud)", "Ambergris", "Saffron", "Black Pepper"],
@@ -2953,8 +2788,7 @@ symphony: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Symphony-68357.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.symphony,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-68357.jpeg",
+  image: "/images/fragrances/symphony.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Bergamot", "Ginger"],
@@ -2971,8 +2805,7 @@ marfa: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Memo-Paris/Marfa-37185.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.marfa,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-37185.jpeg",
+  image: "/images/fragrances/marfa.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Mandarin"],
@@ -2989,8 +2822,7 @@ california_dream: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/California-Dream-60388.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.california_dream,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-60388.jpeg",
+  image: "/images/fragrances/california_dream.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Musk", "Pear", "Ambrette (Musk Mallow)", "Benzoin"],
@@ -3007,8 +2839,7 @@ city_of_stars: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/City-Of-Stars-73344.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.city_of_stars,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-73344.jpeg",
+  image: "/images/fragrances/city_of_stars.jpg",
   Our_Name: "",
   notes: {
     top: ["Blood Orange", "Lime", "Blood Mandarin", "Lemon", "Bergamot"],
@@ -3025,8 +2856,7 @@ cactus_garden: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Cactus-Garden-53946.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.cactus_garden,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53946.jpeg",
+  image: "/images/fragrances/cactus_garden.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemongrass", "Calabrian Bergamot", "Mate"],
@@ -3043,8 +2873,7 @@ hacivat: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Nishane/Hacivat-44174.html",
   family: "Chypre",
   gender: "unisex",
-  image: IMAGES.hacivat,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-44174.jpeg",
+  image: "/images/fragrances/hacivat.jpg",
   Our_Name: "",
   notes: {
     top: ["Pineapple", "Grapefruit", "Bergamot"],
@@ -3061,8 +2890,7 @@ bois_imperial: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Essential-Parfums/Bois-Imperial-64338.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.bois_imperial,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-64338.jpeg",
+  image: "/images/fragrances/bois_imperial.jpg",
   Our_Name: "",
   notes: {
     top: ["Akigalawood", "Woody Notes", "Basil", "Vetiver", "Timur", "Ambroxan", "Patchouli"],
@@ -3080,8 +2908,7 @@ arabians_tonka: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Montale/Arabians-Tonka-57384.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.arabians_tonka,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-57384.jpeg",
+  image: "/images/fragrances/arabians_tonka.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Bergamot"],
@@ -3098,8 +2925,7 @@ goddess: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Burberry/Goddess-83483.html",
   family: "Aromatic",
   gender: "women",
-  image: IMAGES.goddess,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-83483.jpeg",
+  image: "/images/fragrances/goddess.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla", "Lavender", "Cacao", "Ginger"],
@@ -3116,8 +2942,7 @@ tilia: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/Tilia-91688.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.tilia,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-91688.jpeg",
+  image: "/images/fragrances/tilia.jpg",
   Our_Name: "",
   notes: {
     top: ["Lime (Linden) Blossom", "Jasmine Sambac", "Broom"],
@@ -3134,8 +2959,7 @@ the_world_according_to_arthur: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Penhaligon-s/The-World-According-to-Arthur-71646.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.the_world_according_to_arthur,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-71646.jpeg",
+  image: "/images/fragrances/the_world_according_to_arthur.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla", "Incense", "Grapefruit"],
@@ -3152,8 +2976,7 @@ crystal_saffron: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Matiere-Premiere/Crystal-Saffron-76131.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.crystal_saffron,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-76131.jpeg",
+  image: "/images/fragrances/crystal_saffron.jpg",
   Our_Name: "",
   notes: {
     top: ["Musk"],
@@ -3170,8 +2993,7 @@ greenley: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Greenley-62101.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.greenley,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-62101.jpeg",
+  image: "/images/fragrances/greenley.jpg",
   Our_Name: "",
   notes: {
     top: ["Green Apple", "Calabrian Bergamot", "Mandarin Orange"],
@@ -3188,8 +3010,7 @@ herod: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Herod-16939.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.herod,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16939.jpeg",
+  image: "/images/fragrances/herod.jpg",
   Our_Name: "",
   notes: {
     top: ["Cinnamon", "Pepperwood™"],
@@ -3206,8 +3027,7 @@ molecule_04: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Escentric-Molecules/Molecule-04-44315.html",
   family: "Woody",
   gender: "unisex",
-  image: IMAGES.molecule_04,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-44315.jpeg",
+  image: "/images/fragrances/molecule_04.jpg",
   Our_Name: "",
   notes: {
     top: ["Sandalwood"],
@@ -3224,8 +3044,7 @@ the_tragedy_of_lord_george: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Penhaligon-s/The-Tragedy-of-Lord-George-40716.html",
   family: "Oriental",
   gender: "men",
-  image: IMAGES.the_tragedy_of_lord_george,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-40716.jpeg",
+  image: "/images/fragrances/the_tragedy_of_lord_george.jpg",
   Our_Name: "",
   notes: {
     top: ["Woody Notes", "Brandy", "Amber", "Tonka Bean"],
@@ -3242,8 +3061,7 @@ mr_sam: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Penhaligon-s/The-Blazing-Mr-Sam-50255.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.mr_sam,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-50255.jpeg",
+  image: "/images/fragrances/mr_sam.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Cinnamon"],
@@ -3260,8 +3078,7 @@ valentino_poudre: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Valentino/Valentina-Poudre-34936.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.valentino_poudre,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-34936.jpeg",
+  image: "/images/fragrances/valentino_poudre.jpg",
   Our_Name: "",
   notes: {
     top: ["Powdery Notes", "Ambrette (Musk Mallow)"],
@@ -3278,8 +3095,7 @@ neroli_portofino: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Neroli-Portofino-12192.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.neroli_portofino,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-12192.jpeg",
+  image: "/images/fragrances/neroli_portofino.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Mandarin Orange", "Lemon", "Bitter Orange", "Lavender", "Rosemary", "Myrtle"],
@@ -3296,8 +3112,7 @@ noir_de_noir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Noir-de-Noir-1822.html",
   family: "Chypre",
   gender: "unisex",
-  image: IMAGES.noir_de_noir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-1822.jpeg",
+  image: "/images/fragrances/noir_de_noir.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron"],
@@ -3314,8 +3129,7 @@ white_suede: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/White-Suede-6386.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.white_suede,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6386.jpeg",
+  image: "/images/fragrances/white_suede.jpg",
   Our_Name: "",
   notes: {
     top: ["Thyme", "Tea"],
@@ -3332,8 +3146,7 @@ orchidee_vanille: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Orchidee-Vanille-6463.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.orchidee_vanille,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6463.jpeg",
+  image: "/images/fragrances/orchidee_vanille.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin", "Lychee"],
@@ -3350,8 +3163,7 @@ eros_men: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Versace/Eros-16657.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.eros_men,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16657.jpeg",
+  image: "/images/fragrances/eros_men.jpg",
   Our_Name: "",
   notes: {
     top: ["Mint", "Green Apple", "Lemon"],
@@ -3368,8 +3180,7 @@ crystal_noir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Versace/Crystal-Noir-631.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.crystal_noir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-631.jpeg",
+  image: "/images/fragrances/crystal_noir.jpg",
   Our_Name: "",
   notes: {
     top: ["Pepper", "Ginger", "Cardamom"],
@@ -3386,8 +3197,7 @@ spicebomb: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-13857.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.spicebomb,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-13857.jpeg",
+  image: "/images/fragrances/spicebomb.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Elemi", "Bergamot", "Grapefruit"],
@@ -3404,8 +3214,7 @@ my_burberry: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Burberry/My-Burberry-25836.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.my_burberry,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-25836.jpeg",
+  image: "/images/fragrances/my_burberry.jpg",
   Our_Name: "",
   notes: {
     top: ["Sweet Pea", "Bergamot", "Mandarin Orange", "Grapefruit", "Lemon"],
@@ -3422,8 +3231,7 @@ by_the_fireplace: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/By-the-Fireplace-31623.html",
   family: "Woody",
   gender: "unisex",
-  image: IMAGES.by_the_fireplace,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31623.jpeg",
+  image: "/images/fragrances/by_the_fireplace.jpg",
   Our_Name: "",
   notes: {
     top: ["Cloves", "Pink Pepper", "Orange Blossom"],
@@ -3440,8 +3248,7 @@ on_a_date: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/On-A-Date-78292.html",
   family: "Floral Fruity",
   gender: "unisex",
-  image: IMAGES.on_a_date,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-78292.jpeg",
+  image: "/images/fragrances/on_a_date.jpg",
   Our_Name: "",
   notes: {
     top: ["Blackcurrant Syrup", "Pink Pepper", "Bergamot"],
@@ -3458,8 +3265,7 @@ dan_paris: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Celine/Dans-Paris-57921.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.dan_paris,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-57921.jpeg",
+  image: "/images/fragrances/dan_paris.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla", "Laurel Blossom", "Musk", "Coriander", "Bergamot"],
@@ -3476,8 +3282,7 @@ torino21: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Xerjoff/Torino21-70424.html",
   family: "Aromatic Green",
   gender: "unisex",
-  image: IMAGES.torino21,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-70424.jpeg",
+  image: "/images/fragrances/torino21.jpg",
   Our_Name: "",
   notes: {
     top: ["Mint", "Lemon", "Basil", "Thyme"],
@@ -3494,8 +3299,7 @@ alexandria_ii: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Xerjoff/Alexandria-II-17786.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.alexandria_ii,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-17786.jpeg",
+  image: "/images/fragrances/alexandria_ii.jpg",
   Our_Name: "",
   notes: {
     top: ["Palisander Rosewood", "Lavender", "Apple", "Cinnamon"],
@@ -3512,8 +3316,7 @@ more_than_words: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Xerjoff/More-Than-Words-16450.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.more_than_words,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16450.jpeg",
+  image: "/images/fragrances/more_than_words.jpg",
   Our_Name: "",
   notes: {
     top: ["Agarwood (Oud)", "Fruity Notes", "Floral Notes", "Oriental Notes", "Ambergris", "Woody Notes", "Olibanum", "Labdanum"],
@@ -3530,8 +3333,7 @@ musc_oil: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Caron/Musc-Oli-78717.html",
   family: "Woody Floral Musk",
   gender: "unisex",
-  image: IMAGES.musc_oil,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-78717.jpeg",
+  image: "/images/fragrances/musc_oil.jpg",
   Our_Name: "",
   notes: {
     top: ["Damask Rose"],
@@ -3548,8 +3350,7 @@ gris_charnel_extrait: {
   fragrantica_link: "https://www.fragrantica.com/perfume/BDK-Parfums/Gris-Charnel-Extrait-73645.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.gris_charnel_extrait,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-73645.jpeg",
+  image: "/images/fragrances/gris_charnel_extrait.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Fig", "Black Tea"],
@@ -3566,8 +3367,7 @@ pas_ce_soir_extrait: {
   fragrantica_link: "https://www.fragrantica.com/perfume/BDK-Parfums/Pas-Ce-Soir-Extrait-83663.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.pas_ce_soir_extrait,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-83663.jpeg",
+  image: "/images/fragrances/pas_ce_soir_extrait.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Ginger", "Mandarin Orange", "Black Pepper", "Cacao Pod"],
@@ -3584,8 +3384,7 @@ guidance: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Guidance-78656.html",
   family: "Floral Fruity",
   gender: "unisex",
-  image: IMAGES.guidance,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-78656.jpeg",
+  image: "/images/fragrances/guidance.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Hazelnut", "Olibanum"],
@@ -3602,8 +3401,7 @@ opus_xiv_royal_tobacco: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Opus-XIV-Royal-Tobacco-75064.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.opus_xiv_royal_tobacco,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-75064.jpeg",
+  image: "/images/fragrances/opus_xiv_royal_tobacco.jpg",
   Our_Name: "",
   notes: {
     top: ["Olibanum", "Anise", "Elemi Resin", "Cardamom", "Basil", "Bergamot"],
@@ -3620,8 +3418,7 @@ my_way: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/My-Way-62036.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.my_way,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-62036.jpeg",
+  image: "/images/fragrances/my_way.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange Blossom", "Bergamot"],
@@ -3638,8 +3435,7 @@ rose_d_arabie: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Prive-Rose-d-Arabie-10886.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.rose_d_arabie,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-10886.jpeg",
+  image: "/images/fragrances/rose_d_arabie.jpg",
   Our_Name: "",
   notes: {
     top: ["Rose", "Patchouli", "Agarwood (Oud)", "Vanille"],
@@ -3656,8 +3452,7 @@ acqua_di_gio_men: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-410.html",
   family: "Aromatic Aquatic",
   gender: "men",
-  image: IMAGES.acqua_di_gio_men,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-410.jpeg",
+  image: "/images/fragrances/acqua_di_gio_men.jpg",
   Our_Name: "",
   notes: {
     top: ["Lime", "Lemon", "Bergamot", "Jasmine", "Orange", "Mandarin Orange", "Neroli"],
@@ -3674,8 +3469,7 @@ sundazed: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Sundazed-54747.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.sundazed,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-54747.jpeg",
+  image: "/images/fragrances/sundazed.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Californian Lemon"],
@@ -3692,8 +3486,7 @@ la_panthere: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Cartier/La-Panthere-23295.html",
   family: "Chypre Floral",
   gender: "women",
-  image: IMAGES.la_panthere,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-23295.jpeg",
+  image: "/images/fragrances/la_panthere.jpg",
   Our_Name: "",
   notes: {
     top: ["Dried Fruits", "Rhubarb", "Big Strawberry", "Anise", "Bergamot"],
@@ -3710,8 +3503,7 @@ chance_eau_tendre: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Chance-Eau-Tendre-8069.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.chance_eau_tendre,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-8069.jpeg",
+  image: "/images/fragrances/chance_eau_tendre.jpg",
   Our_Name: "",
   notes: {
     top: ["Quince", "Grapefruit"],
@@ -3728,8 +3520,7 @@ _1957_edp: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES._1957_edp,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-52483.jpeg",
+  image: "/images/fragrances/1957_edp.jpg",
   Our_Name: "",
   notes: {
     top: ["White Musk", "Aldehydes", "Bergamot", "Pink Pepper", "Coriander"],
@@ -3746,8 +3537,7 @@ musk_silk: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Ajmal/Musk-Silk-58837.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.musk_silk,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-58837.jpeg",
+  image: "/images/fragrances/musk_silk.jpg",
   Our_Name: "",
   notes: {
     top: ["Lily Of The Valley", "Tolu Balsam", "Powdery Notes", "Vanilla"],
@@ -3764,8 +3554,7 @@ this_is_not_gaba: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Hormone-Paris/This-is-Not-GABA-80679.html",
   family: "Aromatic Spicy",
   gender: "unisex",
-  image: IMAGES.this_is_not_gaba,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-80679.jpeg",
+  image: "/images/fragrances/this_is_not_gaba.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin", "Passionfruit"],
@@ -3813,8 +3602,7 @@ acne_studios: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Frederic-Malle-Editions-de-Parfums/Acne-Studios-91209.html",
   family: "Floral Aldehyde",
   gender: "unisex",
-  image: IMAGES.acne_studios,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-91209.jpeg",
+  image: "/images/fragrances/acne_studios.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "Mandarin", "Bergamot"],
@@ -3831,8 +3619,7 @@ amberful: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Mancera/Amberful-93337.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.amberful,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-93337.jpeg",
+  image: "/images/fragrances/amberful.jpg",
   Our_Name: "",
   notes: {
     top: ["Yuzu", "Calabrian Bergamot", "Pink Pepper", "Nutmeg"],
@@ -3849,8 +3636,7 @@ cedrat_boise: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Mancera/Cedrat-Boise-15211.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.cedrat_boise,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15211.jpeg",
+  image: "/images/fragrances/cedrat_boise.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Lemon", "Bergamot", "Black Currant", "Spicy Notes"],
@@ -3867,8 +3653,7 @@ noir_extreme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Noir-Extreme-29675.html",
   family: "Oriental Woody",
   gender: "men",
-  image: IMAGES.noir_extreme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-29675.jpeg",
+  image: "/images/fragrances/noir_extreme.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Nutmeg", "Saffron", "Mandarin Orange", "Neroli"],
@@ -3885,8 +3670,7 @@ black_pepper_amber_neroli: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Zielinski-Rozen/Black-Pepper-Amber-Neroli-65074.html",
   family: "Aromatic Spicy",
   gender: "unisex",
-  image: IMAGES.black_pepper_amber_neroli,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-65074.jpeg",
+  image: "/images/fragrances/black_pepper_amber_neroli.jpg",
   Our_Name: "",
   notes: {
     top: ["Black Pepper", "Amber", "Neroli"],
@@ -3903,8 +3687,7 @@ town_and_country: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Clive-Christian/Town-Country-83240.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.town_and_country,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-83240.jpeg",
+  image: "/images/fragrances/town_and_country.jpg",
   Our_Name: "",
   notes: {
     top: ["Clary Sage"],
@@ -3921,8 +3704,7 @@ matsukita: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Clive-Christian/Matsukita-65983.html",
   family: "Woody Chypre",
   gender: "unisex",
-  image: IMAGES.matsukita,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-65983.jpeg",
+  image: "/images/fragrances/matsukita.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Pink Pepper", "Nutmeg"],
@@ -3939,8 +3721,7 @@ _1872_masculine: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Clive-Christian/1872-For-Men-4646.html",
   family: "Citrus Aromatic",
   gender: "men",
-  image: IMAGES._1872_masculine,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-4646.jpeg",
+  image: "/images/fragrances/1872_masculine.jpg",
   Our_Name: "",
   notes: {
     top: ["Petitgrain", "Lime", "Lavender", "Grapefruit", "Rosemary", "Bergamot", "Galbanum", "Pepper", "Mandarin Orange", "Peach", "Pineapple", "Nutmeg"],
@@ -3957,8 +3738,7 @@ isola_blu: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Roja-Dove/Isola-Blu-80177.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.isola_blu,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-80177.jpeg",
+  image: "/images/fragrances/isola_blu.jpg",
   Our_Name: "",
   notes: {
     top: ["Lime", "Bergamot", "Lemon", "Lavender", "Thyme"],
@@ -3975,8 +3755,7 @@ cedrus: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chloe/Cedrus-57246.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.cedrus,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-57246.jpeg",
+  image: "/images/fragrances/cedrus.jpg",
   Our_Name: "",
   notes: {
     top: ["Woody Notes", "Vetiver", "Moss", "Cardamom", "Sandalwood"],
@@ -3993,8 +3772,7 @@ twilly_dhermes: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Twilly-d-Hermes-46145.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.twilly_dhermes,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46145.jpeg",
+  image: "/images/fragrances/twilly_dhermes.jpg",
   Our_Name: "",
   notes: {
     top: ["Ginger", "Bitter Orange", "Bergamot"],
@@ -4011,8 +3789,7 @@ maraschino: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Sospiro-Perfumes/Maraschino-89902.html",
   family: "Floral Fruity",
   gender: "unisex",
-  image: IMAGES.maraschino,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-89902.jpeg",
+  image: "/images/fragrances/maraschino.jpg",
   Our_Name: "",
   notes: {
     top: ["Cherry", "Strawberry", "Peach", "Apple", "Almond"],
@@ -4029,8 +3806,7 @@ delicate_rose: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.delicate_rose,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-16241.jpeg",
+  image: "/images/fragrances/delicate_rose.jpg",
   Our_Name: "",
   notes: {
     top: ["Yuzu", "Bamboo", "Kumquat"],
@@ -4047,8 +3823,7 @@ honour_woman: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Honour-Woman-12762.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.honour_woman,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-12762.jpeg",
+  image: "/images/fragrances/honour_woman.jpg",
   Our_Name: "",
   notes: {
     top: ["Rhuburb", "Pepper", "Coriander"],
@@ -4065,8 +3840,7 @@ stronger_with_you_intensely: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Intensely-52802.html",
   family: "Oriental Fougere",
   gender: "men",
-  image: IMAGES.stronger_with_you_intensely,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-52802.jpeg",
+  image: "/images/fragrances/stronger_with_you_intensely.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Juniper", "Violet"],
@@ -4083,8 +3857,7 @@ gabrielle: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Gabrielle-43718.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.gabrielle,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-43718.jpeg",
+  image: "/images/fragrances/gabrielle.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Mandarin Orange", "Black Currant"],
@@ -4101,8 +3874,7 @@ orom: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Bvlgari/Le-Gemme-Orom-72618.html",
   family: "Oriental Vanilla",
   gender: "men",
-  image: IMAGES.orom,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-72618.jpeg",
+  image: "/images/fragrances/orom.jpg",
   Our_Name: "",
   notes: {
     top: ["Bourbon Vanilla"],
@@ -4119,8 +3891,7 @@ bibliotheque: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Bibliotheque-43324.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.bibliotheque,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-43324.jpeg",
+  image: "/images/fragrances/bibliotheque.jpg",
   Our_Name: "",
   notes: {
     top: ["Plum", "Peach"],
@@ -4137,8 +3908,7 @@ la_tulipe: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/La-Tulipe-8441.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.la_tulipe,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-8441.jpeg",
+  image: "/images/fragrances/la_tulipe.jpg",
   Our_Name: "",
   notes: {
     top: ["Freesia", "Cyclamen", "Rhuburb"],
@@ -4155,8 +3925,7 @@ declaration: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Cartier/Declaration-307.html",
   family: "Woody Floral Musk",
   gender: "men",
-  image: IMAGES.declaration,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-307.jpeg",
+  image: "/images/fragrances/declaration.jpg",
   Our_Name: "",
   notes: {
     top: ["Bitter Orange", "Caraway", "Birch", "Bergamot", "Coriander", "Mandarin Orange", "Neroli", "Artemisia"],
@@ -4173,8 +3942,7 @@ coco_noir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Coco-Noir-15963.html",
   family: "Oriental Woody",
   gender: "women",
-  image: IMAGES.coco_noir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15963.jpeg",
+  image: "/images/fragrances/coco_noir.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Bergamot", "Orange"],
@@ -4191,8 +3959,7 @@ addict: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.addict,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-215.jpeg",
+  image: "/images/fragrances/addict.jpg",
   Our_Name: "",
   notes: {
     top: ["Blackberry", "Mandarin Leaf", "Silk Tree Blossom"],
@@ -4209,8 +3976,7 @@ poison: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Poison-218.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.poison,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-218.jpeg",
+  image: "/images/fragrances/poison.jpg",
   Our_Name: "",
   notes: {
     top: ["Plum", "Wild Berries", "Coriander", "Anise", "Brazilian Rosewood"],
@@ -4228,8 +3994,7 @@ sakura: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Sakura-48379.html",
   family: "Floral",
   gender: "unisex",
-  image: IMAGES.sakura,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-48379.jpeg",
+  image: "/images/fragrances/sakura.jpg",
   Our_Name: "",
   notes: {
     top: ["Green Notes"],
@@ -4246,8 +4011,7 @@ spice_blend: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Spice-Blend-56055.html",
   family: "Oriental Spicy",
   gender: "unisex",
-  image: IMAGES.spice_blend,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-56055.jpeg",
+  image: "/images/fragrances/spice_blend.jpg",
   Our_Name: "",
   notes: {
     top: ["Rum", "Ginger"],
@@ -4264,8 +4028,7 @@ tobacolor: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Tobacolor-65551.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.tobacolor,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-65551.jpeg",
+  image: "/images/fragrances/tobacolor.jpg",
   Our_Name: "",
   notes: {
     top: ["Tobacco", "Tobacco Leaf", "Honey", "Smoke", "Plum", "Amber", "Oriental Notes", "White Tobacco", "Peach", "Citruses"],
@@ -4282,8 +4045,7 @@ tam_dao: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Diptyque/Tam-Dao-Eau-de-Parfum-49104.html",
   family: "Woody",
   gender: "unisex",
-  image: IMAGES.tam_dao,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-49104.jpeg",
+  image: "/images/fragrances/tam_dao.jpg",
   Our_Name: "",
   notes: {
     top: ["Sandalwood", "Cedar", "Amberwood", "Coriander", "Musk", "Lime", "Vanilla", "Ginger"],
@@ -4300,8 +4062,7 @@ guilty_elixir_pour_homme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Guilty-Elixir-de-Parfum-pour-Homme-84547.html",
   family: "Oriental Woody",
   gender: "men",
-  image: IMAGES.guilty_elixir_pour_homme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84547.jpeg",
+  image: "/images/fragrances/guilty_elixir_pour_homme.jpg",
   Our_Name: "",
   notes: {
     top: ["Orange Blossom", "Nutmeg", "Pimento Seeds"],
@@ -4318,8 +4079,7 @@ g_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Gucci-Oud-25946.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.g_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-25946.jpeg",
+  image: "/images/fragrances/g_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Saffron", "Pear"],
@@ -4336,8 +4096,7 @@ g_rush: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Gucci-Rush-686.html",
   family: "Chypre Fruity",
   gender: "women",
-  image: IMAGES.g_rush,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-686.jpeg",
+  image: "/images/fragrances/g_rush.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Californian Gardenia", "African Freesia Petals"],
@@ -4354,8 +4113,7 @@ le_male_elixir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-Elixir-81642.html",
   family: "Oriental Fougere",
   gender: "men",
-  image: IMAGES.le_male_elixir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-81642.jpeg",
+  image: "/images/fragrances/le_male_elixir.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Mint"],
@@ -4372,8 +4130,7 @@ le_male: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-430.html",
   family: "Oriental Fougere",
   gender: "men",
-  image: IMAGES.le_male,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-430.jpeg",
+  image: "/images/fragrances/le_male.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Mint", "Cardamom", "Bergamot", "Artemisia"],
@@ -4390,8 +4147,7 @@ scandal: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-45651.html",
   family: "Chypre Floral",
   gender: "women",
-  image: IMAGES.scandal,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-45651.jpeg",
+  image: "/images/fragrances/scandal.jpg",
   Our_Name: "",
   notes: {
     top: ["Blood Orange", "Mandarin Orange"],
@@ -4408,8 +4164,7 @@ nectarine_blossom_honey: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Nectarine-Blossom-amp-Honey-3782.html",
   family: "Floral Fruity Gourmand",
   gender: "unisex",
-  image: IMAGES.nectarine_blossom_honey,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-3782.jpeg",
+  image: "/images/fragrances/nectarine_blossom_honey.jpg",
   Our_Name: "",
   notes: {
     top: ["Green Notes", "Black Currant", "Petitgrain"],
@@ -4426,8 +4181,7 @@ bergamot_22: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Le-Labo/Bergamote-22-6327.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.bergamot_22,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-6327.jpeg",
+  image: "/images/fragrances/bergamot_22.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Vetiver", "Grapefruit", "Orange Blossom", "Petitgrain", "Musk", "Cedar", "Vanilla", "Amber"],
@@ -4444,8 +4198,7 @@ oud_bouquet: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lancome/Oud-Bouquet-39739.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.oud_bouquet,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-39739.jpeg",
+  image: "/images/fragrances/oud_bouquet.jpg",
   Our_Name: "",
   notes: {
     top: ["Praline", "Agarwood (Oud)", "Vanilla", "Rose", "Guaiac Wood", "Copahu Balm"],
@@ -4462,8 +4215,7 @@ roses_vanille: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Mancera/Roses-Vanille-15210.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.roses_vanille,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-15210.jpeg",
+  image: "/images/fragrances/roses_vanille.jpg",
   Our_Name: "",
   notes: {
     top: ["Italian Lemon"],
@@ -4480,8 +4232,7 @@ falcon_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Matiere-Premiere/Falcon-Leather-59057.html",
   family: "Oriental",
   gender: "unisex",
-  image: IMAGES.falcon_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-59057.jpeg",
+  image: "/images/fragrances/falcon_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Labdanum"],
@@ -4498,8 +4249,7 @@ ani: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Nishane/Ani-54785.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.ani,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-54785.jpeg",
+  image: "/images/fragrances/ani.jpg",
   Our_Name: "",
   notes: {
     top: ["Ginger", "Bergamot", "Pink Pepper", "Green Notes"],
@@ -4516,8 +4266,7 @@ tobacco_oud: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Tobacco-Oud-21402.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.tobacco_oud,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-21402.jpeg",
+  image: "/images/fragrances/tobacco_oud.jpg",
   Our_Name: "",
   notes: {
     top: ["Whiskey"],
@@ -4534,8 +4283,7 @@ eros_pour_femme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Versace/Eros-Pour-Femme-28958.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.eros_pour_femme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-28958.jpeg",
+  image: "/images/fragrances/eros_pour_femme.jpg",
   Our_Name: "",
   notes: {
     top: ["Sicilian Lemon", "Pomegranate", "Calabrian Bergamot"],
@@ -4552,8 +4300,7 @@ light_blue_intense: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.light_blue_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-44034.jpeg",
+  image: "/images/fragrances/light_blue_intense.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemon", "Granny Smith Apple"],
@@ -4570,8 +4317,7 @@ straight_to_heaven: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
   family: "Woody Spicy",
   gender: "men",
-  image: IMAGES.straight_to_heaven,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-4323.jpeg",
+  image: "/images/fragrances/straight_to_heaven.jpg",
   Our_Name: "",
   notes: {
     top: ["Rum", "Dried Fruits"],
@@ -4588,8 +4334,7 @@ african_leather: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Memo-Paris/African-Leather-31383.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.african_leather,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-31383.jpeg",
+  image: "/images/fragrances/african_leather.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Geranium", "Pink Pepper"],
@@ -4606,8 +4351,7 @@ viking: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Viking-41698.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.viking,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-41698.jpeg",
+  image: "/images/fragrances/viking.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Peppermint", "Bergamot", "Lemon", "Absinthe", "Orange"],
@@ -4624,8 +4368,7 @@ imperial_gold: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Orientica-Premium/Imperial-Gold-69360.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.imperial_gold,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-69360.jpeg",
+  image: "/images/fragrances/imperial_gold.jpg",
   Our_Name: "",
   notes: {
     top: ["Citruses", "Bergamot", "Lime"],
@@ -4642,8 +4385,7 @@ comete: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Comete-90434.html",
   family: "Floral",
   gender: "unisex",
-  image: IMAGES.comete,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-90434.jpeg",
+  image: "/images/fragrances/comete.jpg",
   Our_Name: "",
   notes: {
     top: ["Cherry Blossom", "Aldehydes"],
@@ -4660,8 +4402,7 @@ sellier: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Sellier-58572.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.sellier,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-58572.jpeg",
+  image: "/images/fragrances/sellier.jpg",
   Our_Name: "",
   notes: {
     top: ["Cashmeran", "Black Tea"],
@@ -4678,8 +4419,7 @@ libre_intense: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Intense-62318.html",
   family: "Oriental Fougere",
   gender: "women",
-  image: IMAGES.libre_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-62318.jpeg",
+  image: "/images/fragrances/libre_intense.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Mandarin Orange", "Bergamot"],
@@ -4715,8 +4455,7 @@ guilty_pour_homme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Guilty-Pour-Homme-11037.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.guilty_pour_homme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-11037.jpeg",
+  image: "/images/fragrances/guilty_pour_homme.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Amalfi Lemon"],
@@ -4733,8 +4472,7 @@ chocolate_greedy: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Montale/Chocolate-Greedy-2186.html",
   family: "Oriental Vanilla",
   gender: "unisex",
-  image: IMAGES.chocolate_greedy,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-2186.jpeg",
+  image: "/images/fragrances/chocolate_greedy.jpg",
   Our_Name: "",
   notes: {
     top: ["Cacao", "Vanilla", "Tonka Bean", "Bitter Orange", "Dried Fruits", "Coffee"],
@@ -4751,8 +4489,7 @@ guilty_edp_gucci: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Gucci-Guilty-Eau-de-Parfum-52481.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.guilty_edp_gucci,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-52481.jpeg",
+  image: "/images/fragrances/guilty_edp_gucci.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Mandarin Orange", "Bergamot"],
@@ -4769,8 +4506,7 @@ oud_for_greatness: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Oud-for-Greatness-53641.html",
   family: "Amber Woody",
   gender: "unisex",
-  image: IMAGES.oud_for_greatness,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53641.jpeg",
+  image: "/images/fragrances/oud_for_greatness.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Nutmeg", "Lavender"],
@@ -4787,8 +4523,7 @@ meydan: {
   fragrantica_link: "https://www.fragrantica.com/perfume/The-Spirit-of-Dubai/Meydan-30526.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.meydan,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-30526.jpeg",
+  image: "/images/fragrances/meydan.jpg",
   Our_Name: "",
   notes: {
     top: ["Saffron", "Lavender", "Cypress", "Styrax", "Cardamom", "Nutmeg", "Bergamot", "Artemisia", "Cinnamon", "Grapefruit", "Apple"],
@@ -4805,8 +4540,7 @@ cuir_intense: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Guerlain/Cuir-Intense-96469.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.cuir_intense,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-96469.jpeg",
+  image: "/images/fragrances/cuir_intense.jpg",
   Our_Name: "",
   notes: {
     top: ["Leather", "Tobacco", "Cedar", "Osmanthus", "Sandalwood"],
@@ -4823,8 +4557,7 @@ absolu_aventus: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Absolu-Aventus-2023-84112.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.absolu_aventus,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84112.jpeg",
+  image: "/images/fragrances/absolu_aventus.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Bergamot", "Pink Pepper", "Black Currant", "Pineapple", "Nutmeg", "Cloves"],
@@ -4841,8 +4574,7 @@ hibiscus_mahajad: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Crivelli/Hibiscus-Mahajad-69069.html",
   family: "Amber Floral",
   gender: "unisex",
-  image: IMAGES.hibiscus_mahajad,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-69069.jpeg",
+  image: "/images/fragrances/hibiscus_mahajad.jpg",
   Our_Name: "",
   notes: {
     top: ["Hibiscus", "Damask Rose", "Vanilla", "Cassis", "Leather", "Peppermint", "Ambrette (Musk Mallow)", "Cinnamon"],
@@ -4859,8 +4591,7 @@ y_elixir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Y-Elixir-90024.html",
   family: "Aromatic Fougere",
   gender: "men",
-  image: IMAGES.y_elixir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-90024.jpeg",
+  image: "/images/fragrances/y_elixir.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender"],
@@ -4877,8 +4608,7 @@ libre_flowers: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Flowers-Flames-95623.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.libre_flowers,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-95623.jpeg",
+  image: "/images/fragrances/libre_flowers.jpg",
   Our_Name: "",
   notes: {
     top: ["Lavender", "Bergamot"],
@@ -4895,8 +4625,7 @@ vanilla_powder: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Matiere-Premiere/Vanilla-Powder-84933.html",
   family: "Amber Vanilla",
   gender: "unisex",
-  image: IMAGES.vanilla_powder,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84933.jpeg",
+  image: "/images/fragrances/vanilla_powder.jpg",
   Our_Name: "",
   notes: {
     top: ["Coconut Powder", "Heliotrope"],
@@ -4913,8 +4642,7 @@ strawberry_letter: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Phlur/Strawberry-Letter-89909.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.strawberry_letter,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-89909.jpeg",
+  image: "/images/fragrances/strawberry_letter.jpg",
   Our_Name: "",
   notes: {
     top: ["Strawberry", "Plum", "Cassis"],
@@ -4931,8 +4659,7 @@ heavy_cream: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Phlur/Heavy-Cream-97027.html",
   family: "Amber Vanilla",
   gender: "unisex",
-  image: IMAGES.heavy_cream,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-97027.jpeg",
+  image: "/images/fragrances/heavy_cream.jpg",
   Our_Name: "",
   notes: {
     top: ["Marshmallow", "Sugar", "Lemon", "Orange"],
@@ -4949,8 +4676,7 @@ vanilla_skin: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Phlur/Vanilla-Skin-95817.html",
   family: "Floral",
   gender: "unisex",
-  image: IMAGES.vanilla_skin,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-95817.jpeg",
+  image: "/images/fragrances/vanilla_skin.jpg",
   Our_Name: "",
   notes: {
     top: ["Sugar", "Pink Pepper", "Apple"],
@@ -4967,8 +4693,7 @@ original_vetiver_2024: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Original-Vetiver-2024-99804.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.original_vetiver_2024,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-99804.jpeg",
+  image: "/images/fragrances/original_vetiver_2024.jpg",
   Our_Name: "",
   notes: {
     top: ["Green Notes", "Lemon", "Ginger"],
@@ -4985,8 +4710,7 @@ oud_zarian: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Oud-Zarian-111224.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.oud_zarian,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-111224.jpeg",
+  image: "/images/fragrances/oud_zarian.jpg",
   Our_Name: "",
   notes: {
     top: ["Spices", "Frankincense", "Ginger", "Bergamot"],
@@ -5003,8 +4727,7 @@ eladaria: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Eladaria-103066.html",
   family: "Floral",
   gender: "women",
-  image: IMAGES.eladaria,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-103066.jpeg",
+  image: "/images/fragrances/eladaria.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Mandarin", "Bergamot"],
@@ -5021,8 +4744,7 @@ limperatrice_royale: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/L-Imperatrice-Royale-102672.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.limperatrice_royale,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-102672.jpeg",
+  image: "/images/fragrances/limperatrice_royale.jpg",
   Our_Name: "",
   notes: {
     top: ["Cranberry"],
@@ -5040,8 +4762,7 @@ rouge_trafalgar: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Rouge-Trafalgar-Esprit-De-Parfum-95983.html",
   family: "Chypre Fruity",
   gender: "unisex",
-  image: IMAGES.rouge_trafalgar,
-  image_url: "https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.95983.avif",
+  image: "/images/fragrances/rouge_trafalgar.jpg",
   Our_Name: "",
   notes: {
     top: [ "Cherry", "Pink Pepper"],
@@ -5058,8 +4779,7 @@ cuir_infrarouge: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Crivelli/Cuir-InfraRouge-96781.html",
   family: "Leather",
   gender: "unisex",
-  image: IMAGES.cuir_infrarouge,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-96781.jpeg",
+  image: "/images/fragrances/cuir_infrarouge.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Cinnamon", "Bergamot"],
@@ -5076,8 +4796,7 @@ kurky: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Kurky-103517.html",
   family: "Floral Fruity Gourmand",
   gender: "unisex",
-  image: IMAGES.kurky,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-103517.jpeg",
+  image: "/images/fragrances/kurky.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Raspberry"],
@@ -5093,8 +4812,7 @@ velvet_infusion: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dolce-Gabbana/Velvet-Infusion-97831.html",
   family: "Aromatic Green",
   gender: "unisex",
-  image: IMAGES.velvet_infusion,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-97831.jpeg",
+  image: "/images/fragrances/velvet_infusion.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Italian Mandarin", "Pink Pepper"],
@@ -5111,8 +4829,7 @@ blue_moon_ginger_dash: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Blue-Moon-Ginger-Dash-79731.html",
   family: "Aromatic Citrus",
   gender: "unisex",
-  image: IMAGES.blue_moon_ginger_dash,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-79731.jpeg",
+  image: "/images/fragrances/blue_moon_ginger_dash.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemon", "Calone", "Mint", "Aldehydes"],
@@ -5129,8 +4846,7 @@ angels_share_on_the_rocks: {
   fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Angel-s-Share-On-The-Rocks-113083.html",
   family: "Amber Woody",
   gender: "unisex",
-  image: IMAGES.angels_share_on_the_rocks,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-113083.jpeg",
+  image: "/images/fragrances/angels_share_on_the_rocks.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Italian Lemon", "Bitter Orange", "Bergamot", "Mandarin", "Ice", "Aldehydes"],
@@ -5148,8 +4864,7 @@ wavechild: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Room-1015/Wavechild-91364.html",
   family: "Aromatic Aquatic",
   gender: "unisex",
-  image: IMAGES.wavechild,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-91364.jpeg",
+  image: "/images/fragrances/wavechild.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Orange", "Lemon"],
@@ -5166,8 +4881,7 @@ balm_of_calm: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Penhaligon-s/A-Balm-Of-Calm-84257.html",
   family: "Aromatic",
   gender: "unisex",
-  image: IMAGES.balm_of_calm,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84257.jpeg",
+  image: "/images/fragrances/balm_of_calm.jpg",
   Our_Name: "",
   notes: {
     top: ["Clary Sage", "Lavender", "Cardamom"],
@@ -5184,8 +4898,7 @@ sand_dance: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Sand-Dance-72384.html",
   family: "Amber Vanilla",
   gender: "unisex",
-  image: IMAGES.sand_dance,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-72384.jpeg",
+  image: "/images/fragrances/sand_dance.jpg",
   Our_Name: "",
   notes: {
     top: ["Whiskey", "Coriander", "Mandarin Orange", "Sesame", "Anise"],
@@ -5203,8 +4916,7 @@ the_queen_and_the_viper: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/The-Queen-and-the-Viper-115147.html",
   family: "Amber Woody",
   gender: "unisex",
-  image: IMAGES.the_queen_and_the_viper,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115147.jpeg",
+  image: "/images/fragrances/the_queen_and_the_viper.jpg",
   Our_Name: "",
   notes: {
     top: ["Black Currant", "Osmanthus", "Incense"],
@@ -5221,8 +4933,7 @@ born_in_roma_extradose_donna: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Valentino/Born-in-Roma-Extradose-Donna-101384.html",
   family: "Amber Vanilla",
   gender: "women",
-  image: IMAGES.born_in_roma_extradose_donna,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-101384.jpeg",
+  image: "/images/fragrances/born_in_roma_extradose_donna.jpg",
   Our_Name: "",
   notes: {
     top: ["Black Currant"],
@@ -5238,8 +4949,7 @@ flowerbomb_extreme_2025: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Viktor-Rolf/Flowerbomb-Extreme-2025-101990.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.flowerbomb_extreme_2025,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-101990.jpeg",
+  image: "/images/fragrances/flowerbomb_extreme_2025.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry"],
@@ -5256,8 +4966,7 @@ libre_vanille_couture: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Vanille-Couture-113623.html",
   family: "Oriental Vanilla",
   gender: "women",
-  image: IMAGES.libre_vanille_couture,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-113623.jpeg",
+  image: "/images/fragrances/libre_vanille_couture.jpg",
   Our_Name: "",
   notes: {
     top: ["Bourbon Vanilla", "Orange Blossom", "Vanilla Caviar", "Lavender", "Rum"],
@@ -5274,8 +4983,7 @@ blouse_impertinent_rose: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Blouse-Impertinent-Rose-104943.html",
   family: "Floral Green",
   gender: "unisex",
-  image: IMAGES.blouse_impertinent_rose,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-104943.jpeg",
+  image: "/images/fragrances/blouse_impertinent_rose.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Galbanum", "Pink Pepper"],
@@ -5292,8 +5000,7 @@ impadia: {
   fragrantica_link: "https://www.fragrantica.com/perfume/BDK-Parfums/Impadia-104764.html",
   family: "Floral Fruity Gourmand",
   gender: "unisex",
-  image: IMAGES.impadia,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-104764.jpeg",
+  image: "/images/fragrances/impadia.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Bergamot", "Mandarin"],
@@ -5310,8 +5017,7 @@ decision: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Decision-103892.html",
   family: "Woody Aromatic",
   gender: "unisex",
-  image: IMAGES.decision,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-103892.jpeg",
+  image: "/images/fragrances/decision.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Bergamot", "Pink Pepper"],
@@ -5328,8 +5034,7 @@ existence: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Existence-103893.html",
   family: "Oriental Floral",
   gender: "unisex",
-  image: IMAGES.existence,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-103893.jpeg",
+  image: "/images/fragrances/existence.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "Lily Of The Valley", "Rose"],
@@ -5346,8 +5051,7 @@ purpose_50: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Purpose-50-100897.html",
   family: "Woody Spicy",
   gender: "unisex",
-  image: IMAGES.purpose_50,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-100897.jpeg",
+  image: "/images/fragrances/purpose_50.jpg",
   Our_Name: "",
   notes: {
     top: ["Frankincense", "Pimento", "Pink Pepper", "Bergamot"],
@@ -5364,8 +5068,7 @@ million_gold_parfum_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Rabanne/Million-Gold-For-Her-Parfum-113430.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.million_gold_parfum_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-113430.jpeg",
+  image: "/images/fragrances/million_gold_parfum_her.jpg",
   Our_Name: "",
   notes: {
     top: ["Jasmine", "Rose", "Citruses", "Lemon"],
@@ -5382,8 +5085,7 @@ power_of_you: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Power-Of-You-121870.html",
   family: "Amber Fougere",
   gender: "women",
-  image: IMAGES.power_of_you,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-121870.jpeg",
+  image: "/images/fragrances/power_of_you.jpg",
   Our_Name: "",
   notes: {
     top: ["Pink Pepper", "Cardamom", "Bergamot"],
@@ -5400,8 +5102,7 @@ stronger_with_you_spices: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Spices-122057.html",
   family: "Amber Spicy",
   gender: "men",
-  image: IMAGES.stronger_with_you_spices,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-122057.jpeg",
+  image: "/images/fragrances/stronger_with_you_spices.jpg",
   Our_Name: "",
   notes: {
     top: ["Cardamom", "Pink Pepper"],
@@ -5418,8 +5119,7 @@ ella_ella: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Cacharel/Ella-Ella-101823.html",
   family: "Amber Floral",
   gender: "women",
-  image: IMAGES.ella_ella,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-101823.jpeg",
+  image: "/images/fragrances/ella_ella.jpg",
   Our_Name: "",
   notes: {
     top: ["Coconut", "Bergamot", "Orange Blossom"],
@@ -5436,8 +5136,7 @@ blue_talisman: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Ex-Nihilo/Blue-Talisman-84224.html",
   family: "Citrus Aromatic",
   gender: "unisex",
-  image: IMAGES.blue_talisman,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-84224.jpeg",
+  image: "/images/fragrances/blue_talisman.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Mandarin Orange", "Pear", "Ginger"],
@@ -5453,8 +5152,7 @@ pacific_rock_flower: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Pacific-Rock-Flower-105847.html",
   family: "Aromatic Aquatic",
   gender: "unisex",
-  image: IMAGES.pacific_rock_flower,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-105847.jpeg",
+  image: "/images/fragrances/pacific_rock_flower.jpg",
   Our_Name: "",
   notes: {
     top: ["Tea", "Lemon", "Eucalyptus"],
@@ -5470,8 +5168,7 @@ black_sea: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lorenzo-Pazzaglia/Black-Sea-69652.html",
   family: "Aromatic Aquatic",
   gender: "unisex",
-  image: IMAGES.black_sea,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-69652.jpeg",
+  image: "/images/fragrances/black_sea.jpg",
   Our_Name: "",
   notes: {
     top: ["Salt", "Ozonic Notes", "Watery Notes", "Myrtle", "Bergamot"],
@@ -5488,8 +5185,7 @@ seven_two_four: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/724-75754.html",
   family: "Floral Musky",
   gender: "unisex",
-  image: IMAGES.seven_two_four,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-75754.jpeg",
+  image: "/images/fragrances/seven_two_four.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "Calabrian Bergamot"],
@@ -5506,8 +5202,7 @@ gumin: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Tiziana-Terenzi/Gumin-40440.html",
   family: "Aromatic Fruity",
   gender: "unisex",
-  image: IMAGES.gumin,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-40440.jpeg",
+  image: "/images/fragrances/gumin.jpg",
   Our_Name: "",
   notes: {
     top: ["Mandarin Orange", "Orange", "Pineapple", "Bergamot"],
@@ -5524,8 +5219,7 @@ sole_patchouli: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Vertus/Sole-Patchouli-47929.html",
   family: "Woody Floral Musk",
   gender: "unisex",
-  image: IMAGES.sole_patchouli,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-47929.jpeg",
+  image: "/images/fragrances/sole_patchouli.jpg",
   Our_Name: "",
   notes: {
     top: ["Patchouli", "Green Notes", "Orris Root"],
@@ -5546,8 +5240,7 @@ bleu_de_chanel_lexclusif: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-L-Exclusif-113429.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.bleu_de_chanel_lexclusif,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-113429.jpeg",
+  image: "/images/fragrances/bleu_de_chanel_lexclusif.jpg",
   Our_Name: "",
   notes: {
     top: ["Amber", "Woody Notes", "Labdanum", "Sandalwood"],
@@ -5565,8 +5258,7 @@ alien_pulp: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Mugler/Alien-Pulp-121443.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.alien_pulp,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-121443.jpeg",
+  image: "/images/fragrances/alien_pulp.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Lemon Peel"],
@@ -5587,8 +5279,7 @@ brand_short: ".GUERLAIN",
   fragrantica_link: "https://www.fragrantica.com/perfume/Guerlain/Peche-Mirage-101040.html",
   family: "Floral Fruity",
   gender: "unisex",
-  image: IMAGES.peche_mirage,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-101040.jpeg",
+  image: "/images/fragrances/peche_mirage.jpg",
   Our_Name: "",
   notes: {
     top: ["Peach", "Blackcurrant", "Saffron"],
@@ -5606,8 +5297,7 @@ brand_short: ".HERMES",
   fragrantica_link: "https://www.fragrantica.com/perfume/Hermes/Barenia-96428.html",
   family: "Chypre",
   gender: "women",
-  image: IMAGES.barenia_hermes,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-96428.jpeg",
+  image: "/images/fragrances/barenia_hermes.jpg",
   Our_Name: "",
   notes: {
     top: ["Miracle Berry", "Bergamot"],
@@ -5625,8 +5315,7 @@ brand_short: ".KAYALI",
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Yum-Boujee-Marshmallow-81-99254.html",
   family: "Floral Fruity Gourmand",
   gender: "women",
-  image: IMAGES.yum_boujee_marshmallow_81,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-99254.jpeg",
+  image: "/images/fragrances/yum_boujee_marshmallow_81.jpg",
   Our_Name: "",
   notes: {
     top: ["Freesia", "Italian Lemon", "Nectarine Blossom", "Apple"],
@@ -5643,8 +5332,7 @@ bois_talisman: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/Bois-Talisman-100813.html",
   family: "Amber Woody",
   gender: "unisex",
-  image: IMAGES.bois_talisman,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-100813.jpeg",
+  image: "/images/fragrances/bois_talisman.jpg",
   Our_Name: "",
   notes: {
     top: ["Vanilla"],
@@ -5660,8 +5348,7 @@ camomille_satin: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dries-Van-Noten/Camomille-Satin-96541.html",
   family: "Floral Woody Musk",
   gender: "unisex",
-  image: IMAGES.camomille_satin,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-96541.jpeg",
+  image: "/images/fragrances/camomille_satin.jpg",
   Our_Name: "",
   notes: {
     top: ["Chamomile", "Petitgrain"],
@@ -5678,8 +5365,7 @@ gold_juice: {
   fragrantica_link: "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Gold-Juice-109045.html",
   family: "Floral Fruity Gourmand",
   gender: "unisex",
-  image: IMAGES.gold_juice,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-109045.jpeg",
+  image: "/images/fragrances/gold_juice.jpg",
   Our_Name: "",
   notes: {
     top: ["Mango", "Durian", "Rhubarb"],
@@ -5698,8 +5384,7 @@ acqua_di_gio_elixir: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Elixir-101438.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.acqua_di_gio_elixir,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-101438.jpeg",
+  image: "/images/fragrances/acqua_di_gio_elixir.jpg",
   Our_Name: "",
   notes: {
     top: ["Bergamot", "Green Mandarin", "Nutmeg"],
@@ -5717,8 +5402,7 @@ new_look_2024: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Dior/New-Look-2024-88939.html",
   family: "Amber",
   gender: "unisex",
-  image: IMAGES.new_look_2024,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-88939.jpeg",
+  image: "/images/fragrances/new_look_2024.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes"],
@@ -5735,8 +5419,7 @@ gentleman_society_extreme: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Givenchy/Gentleman-Society-Eau-de-Parfum-Extreme-89933.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.gentleman_society_extreme,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-89933.jpeg",
+  image: "/images/fragrances/gentleman_society_extreme.jpg",
   Our_Name: "",
   notes: {
     top: ["Nutmeg", "Peppermint", "Clary Sage"],
@@ -5753,8 +5436,7 @@ fleur_majesty_rose_royale_31: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Fleur-Majesty-Rose-Royale-31-103558.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.fleur_majesty_rose_royale_31,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-103558.jpeg",
+  image: "/images/fragrances/fleur_majesty_rose_royale_31.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Peach", "Mandarin", "Orange"],
@@ -5771,8 +5453,7 @@ freedom_musk_matcha_45: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-Eau-de-Parfum-118623.html",
   family: "Amber Vanilla",
   gender: "unisex",
-  image: IMAGES.freedom_musk_matcha_45,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-118623.jpeg",
+  image: "/images/fragrances/freedom_musk_matcha_45.jpg",
   Our_Name: "",
   notes: {
     top: ["Matcha Tea", "Mate", "Bergamot", "Green Apple"],
@@ -5789,8 +5470,7 @@ deep_ocean_amber: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Sospiro-Perfumes/Deep-Ocean-Amber-81492.html",
   family: "Amber",
   gender: "unisex",
-  image: IMAGES.deep_ocean_amber,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-81492.jpeg",
+  image: "/images/fragrances/deep_ocean_amber.jpg",
   Our_Name: "",
   notes: {
     top: ["Ambrette", "Elemi"],
@@ -5810,8 +5490,7 @@ ink_mark: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Ink-Mark-115407.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.ink_mark,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115407.jpeg",
+  image: "/images/fragrances/ink_mark.jpg",
   Our_Name: "",
   notes: {
     top: ["Sandalwood", "Incense", "Amber"],
@@ -5828,8 +5507,7 @@ moon_tale: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Moon-Tale-115408.html",
   family: "Floral Fruity Fragrance",
   gender: "unisex",
-  image: IMAGES.moon_tale,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115408.jpeg",
+  image: "/images/fragrances/moon_tale.jpg",
   Our_Name: "",
   notes: {
     top: ["Raspberry", "Peony", "Jasmine Sambac", "Magnolia", "Rose Geranium"],
@@ -5846,8 +5524,7 @@ rain_tea: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Rain-Tea-115406.html",
   family: "Aromatic Green Fragrance",
   gender: "unisex",
-  image: IMAGES.rain_tea,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-115406.jpeg",
+  image: "/images/fragrances/rain_tea.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemongrass", "Tea", "Magnolia", "Rose", "Woody Notes"],
@@ -5864,8 +5541,7 @@ sun_song_2025: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Louis-Vuitton/Sun-Song-2025-107116.html",
   family: "Citrus",
   gender: "unisex",
-  image: IMAGES.sun_song_2025,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-107116.jpeg",
+  image: "/images/fragrances/sun_song_2025.jpg",
   Our_Name: "",
   notes: {
     top: ["Lemon", "Petitgrain"],
@@ -5881,8 +5557,7 @@ paradaxe: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
   family: "Oriental Floral",
   gender: "women",
-  image: IMAGES.paradaxe,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-75668.jpeg",
+  image: "/images/fragrances/paradaxe.jpg",
   Our_Name: "",
   notes: {
     top: ["Pear", "Tangerine", "Bergamot"],
@@ -5898,8 +5573,7 @@ pure_musc_for_her: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Pure-Musc-For-Her-53441.html",
   family: "Floral Woody Musk",
   gender: "women",
-  image: IMAGES.pure_musc_for_her,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-53441.jpeg",
+  image: "/images/fragrances/pure_musc_for_her.jpg",
   Our_Name: "",
   notes: {
     top: ["Musk"],
@@ -5915,8 +5589,7 @@ spicebomb_metallic_musk: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Metallic-Musk-104937.html",
   family: "Oriental Spicy",
   gender: "men",
-  image: IMAGES.spicebomb_metallic_musk,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-104937.jpeg",
+  image: "/images/fragrances/spicebomb_metallic_musk.jpg",
   Our_Name: "",
   notes: {
     top: ["Aldehydes", "Black Pepper", "Elemi", "Bergamot"],
@@ -5932,8 +5605,7 @@ bombshell: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Victoria-s-Secret/Bombshell-10190.html",
   family: "Floral Fruity",
   gender: "women",
-  image: IMAGES.bombshell,
-  image_url: "https://fimgs.net/mdimg/perfume-thumbs/375x500.10190.jpg",
+  image: "/images/fragrances/bombshell.jpg",
   Our_Name: "",
   notes: {
     top: ["Passionfruit", "Grapefruit", "Pineapple", "Tangerine", "Big Strawberry"],
@@ -5949,8 +5621,7 @@ gypsy_water_absolu: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Gypsy-Water-Absolu-121784.html",
   family: "Oriental Woody",
   gender: "unisex",
-  image: IMAGES.gypsy_water_absolu,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-121784.jpeg",
+  image: "/images/fragrances/gypsy_water_absolu.jpg",
   Our_Name: "",
   notes: {
     top: ["Pine Needles", "Black Pepper", "Bergamot"],
@@ -5966,8 +5637,7 @@ eau_de_lacoste_l1212_white: {
   fragrantica_link: "https://www.fragrantica.com/perfume/Lacoste/Eau-de-Lacoste-L-12-12-White-11043.html",
   family: "Woody Aromatic",
   gender: "men",
-  image: IMAGES.eau_de_lacoste_l1212_white,
-  image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-11043.jpeg",
+  image: "/images/fragrances/eau_de_lacoste_l1212_white.jpg",
   Our_Name: "",
   notes: {
     top: ["Grapefruit", "Rosemary", "Cardamom"],
@@ -5975,8 +5645,480 @@ eau_de_lacoste_l1212_white: {
     base: ["Virginia Cedar", "Suede", "Vetiver", "Leather"]
   }
 },
+
+red_hibiscus_cologne_intense: {
+  code: "red_hibiscus_cologne_intense",
+  brand: "Jo Malone London",
+  brand_short: ".JM",
+  fragrance: "Red Hibiscus Cologne Intense",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Red-Hibiscus-Cologne-Intense-65928.html",
+  family: "Oriental Floral",
+  gender: "unisex",
+  image: "/images/fragrances/red_hibiscus_cologne_intense.avif",
+  Our_Name: "",
+  notes: {
+    top: ["Mandarin Orange"],
+    middle: ["Ylang Ylang", "Jasmine Sambac", "Hibiscus"],
+    base: ["Vanilla"]
+  }
+},
+blanche: {
+  code: "blanche",
+  brand: "Byredo",
+  brand_short: ".BY",
+  fragrance: "Blanche",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Blanche-6686.html",
+  family: "Floral Aldehyde",
+  gender: "women",
+  image: "/images/fragrances/blanche.avif",
+  Our_Name: "",
+  notes: {
+    top: ["Aldehydes", "Rose", "Pink Pepper"],
+    middle: ["Peony", "Violet", "African Orange Flower"],
+    base: ["Musk", "Woody Notes", "Sandalwood"]
+  }
+},
+gypsy_water: {
+  code: "gypsy_water",
+  brand: "Byredo",
+  brand_short: ".BY",
+  fragrance: "Gypsy Water",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Byredo/Gypsy-Water-3575.html",
+  family: "Woody Aromatic",
+  gender: "unisex",
+  image: "/images/fragrances/gypsy_water.avif",
+  Our_Name: "",
+  notes: {
+    top: ["Juniper", "Lemon", "Bergamot", "Pepper"],
+    middle: ["Pine Needles", "Incense", "Orris Root"],
+    base: ["Vanilla", "Sandalwood", "Amber"]
+  }
+},
+oud_bergamote_cologne_intense: {
+  code: "oud_bergamote_cologne_intense",
+  brand: "Jo Malone London",
+  brand_short: ".JM",
+  fragrance: "Oud & Bergamote Cologne Intense",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Oud-Bergamot-12928.html",
+  family: "Oriental",
+  gender: "unisex",
+  image: "/images/fragrances/oud_bergamote_cologne_intense.avif",
+  Our_Name: "",
+  notes: {
+    top: [],
+    middle: [],
+    base: [],
+    all: ["Agarwood (Oud)", "Bergamot", "Virginia Cedar", "Orange", "Amalfi Lemon"]
+  }
+},
+smoking_hot: {
+  code: "smoking_hot",
+  brand: "By Kilian",
+  brand_short: ".Kilian",
+  fragrance: "Smoking Hot",
+  fragrantica_link: "https://www.fragrantica.com/perfume/By-Kilian/Smoking-Hot-84413.html",
+  family: "Oriental Spicy",
+  gender: "unisex",
+  image: "/images/fragrances/smoking_hot.png",
+  Our_Name: "",
+  notes: {
+    top: ["Apple", "Smoke", "Cinnamon"],
+    middle: ["Tobacco", "Vanilla", "Moss"],
+    base: ["Bourbon Vanilla", "Licorice", "Orcano", "Iso E Super", "Clary Sage"]
+  }
+},
+blue_sapphire: {
+  code: "blue_sapphire",
+  brand: "Boadicea the Victorious",
+  brand_short: ".BV",
+  fragrance: "Blue Sapphire",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Boadicea-the-Victorious/Blue-Sapphire-18518.html",
+  family: "Oriental Woody",
+  gender: "unisex",
+  image: "/images/fragrances/blue_sapphire.png",
+  Our_Name: "",
+  notes: {
+    top: ["Lemon", "Chamomile", "Sage", "Saffron", "Marigold"],
+    middle: ["Rose", "Indian Jasmine", "Magnolia"],
+    base: ["Agarwood (Oud)", "Patchouli", "Amber"]
+  }
+},
+lazy_sunday_morning: {
+  code: "lazy_sunday_morning",
+  brand: "Maison Martin Margiela",
+  brand_short: ".MM",
+  fragrance: "Lazy Sunday Morning",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/Lazy-Sunday-Morning-20542.html",
+  family: "Floral Woody Musk",
+  gender: "unisex",
+  image: "/images/fragrances/lazy_sunday_morning.png",
+  Our_Name: "",
+  notes: {
+    top: ["Aldehydes", "Lily Of the Valley", "Pear"],
+    middle: ["Rose", "Iris", "Orange Blossom"],
+    base: ["White Musk", "Ambrette (Musk Mallow)", "Indonesian Patchouli Leaf"]
+  }
+},
+ebene_fume: {
+  code: "ebene_fume",
+  brand: "Tom Ford",
+  brand_short: ".TF",
+  fragrance: "Ebene Fume",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Ebene-Fume-69008.html",
+  family: "Oriental Woody",
+  gender: "unisex",
+  image: "/images/fragrances/ebene_fume.png",
+  Our_Name: "",
+  notes: {
+    top: ["Incense", "Palo Santo", "Black Pepper", "Violet Leaf"],
+    middle: ["Leather", "Labdanum", "Cade oil", "Papyrus", "Rose"],
+    base: ["Resins", "ebony tree", "Guaiac Wood"]
+  }
+},
+ysl_myself: {
+  code: "ysl_myself",
+  brand: "Yves Saint Laurent",
+  brand_short: ".YSL",
+  fragrance: "MYSLF Eau de Parfum",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/MYSLF-Eau-de-Parfum-84094.html",
+  family: "Aromatic",
+  gender: "men",
+  image: "/images/fragrances/ysl_myself.png",
+  Our_Name: "",
+  notes: {
+    top: ["Calabrian bergamot", "Bergamot"],
+    middle: ["Tunisian Orange Blossom"],
+    base: ["Ambrofix™", "Patchouli"]
+  }
+},
+reef_33: {
+  code: "reef_33",
+  brand: "Reef Perfumes",
+  brand_short: ".Reef",
+  fragrance: "Reef 33",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Reef-Perfumes/Reef-33-89358.html",
+  family: "Oriental Woody",
+  gender: "unisex",
+  image: "/images/fragrances/reef_33.png",
+  Our_Name: "",
+  notes: {
+    top: ["Indian Saffron"],
+    middle: ["Rosemary"],
+    base: ["Agarwood (Oud)"]
+  }
+},
+flora_edt: {
+  code: "flora_edt",
+  brand: "Gucci",
+  brand_short: ".Gucci",
+  fragrance: "Flora by Gucci Eau de Toilette",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html",
+  family: "Floral",
+  gender: "women",
+  image: "/images/fragrances/flora_edt.png",
+  Our_Name: "",
+  notes: {
+    top: ["Peony", "Citruses", "Mandarin Orange"],
+    middle: ["Osmanthus", "Rose"],
+    base: ["Sandalwood", "Pink Pepper", "Patchouli"]
+  }
+},
+lime_basil_mandarin: {
+  code: "lime_basil_mandarin",
+  brand: "Jo Malone London",
+  brand_short: ".JM",
+  fragrance: "Lime Basil & Mandarin",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Jo-Malone-London/Lime-Basil-Mandarin-5585.html",
+  family: "Citrus Aromatic",
+  gender: "unisex",
+  image: "/images/fragrances/lime_basil_mandarin.png",
+  Our_Name: "",
+  notes: {
+    top: ["Lime", "Bergamot", "Mandarin Orange"],
+    middle: ["Basil","Thyme", "Lilac", "Iris"],
+    base: ["Vetiver", "Patchouli"]
+  }
+},
+atomic_rose: {
+  code: "atomic_rose",
+  brand: "Initio Parfums Prives",
+  brand_short: ".IP",
+  fragrance: "Atomic Rose",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Atomic-Rose-57587.html",
+  family: "Oriental Floral",
+  gender: "unisex",
+  image: "/images/fragrances/atomic_rose.png",
+  Our_Name: "",
+  notes: {
+    top: ["Pink Pepper", "Bergamot"],
+    middle: ["Bulgarian Rose", "Turkish Rose"],
+    base: ["Vanilla", "Tonka Bean", "Musk"]
+  }
+},
+istanbul: {
+  code: "istanbul",
+  brand: "Atelier Rebul",
+  brand_short: ".AR",
+  fragrance: "Istanbul",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Atelier-Rebul/Istanbul-50903.html",
+  family: "Oriental Spicy",
+  gender: "unisex",
+  image: "/images/fragrances/istanbul.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Pink Pepper", "Saffron"],
+    middle: ["Rose", "Jasmine", "Cinnamon"],
+    base: ["Vanilla", "Sandalwood", "Amber", "Patchouli"]
+  }
+},
+fierce: {
+  code: "fierce",
+  brand: "Abercrombie & Fitch",
+  brand_short: ".AF",
+  fragrance: "Fierce",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Abercrombie-Fitch/Fierce-3508.html",
+  family: "Woody Aromatic",
+  gender: "men",
+  image: "/images/fragrances/fierce.png",
+  Our_Name: "",
+  notes: {
+    top: ["Fir", "Lemon", "Orange", "Cardamom"],
+    middle: ["Rose", "Lily of the Valley", "Jasmine"],
+    base: ["Sandalwood", "Musk", "Oakmoss", "Amber"]
+  }
+},
+pomme: {
+  code: "pomme",
+  brand: "Yves Rocher",
+  brand_short: ".YR",
+  fragrance: "Pomme",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Yves-Rocher/Pomme-15657.html",
+  family: "Floral Fruity",
+  gender: "women",
+  image: "/images/fragrances/pomme.png",
+  Our_Name: "",
+  notes: {
+    top: ["Green Apple", "Pear"],
+    middle: ["Rose", "Peony"],
+    base: ["Cedarwood", "Musk"]
+  }
+},
+mon_guerlain: {
+  code: "mon_guerlain",
+  brand: "Guerlain",
+  brand_short: ".GUERLAIN",
+  fragrance: "Mon Guerlain",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Guerlain/Mon-Guerlain-43297.html",
+  family: "Oriental Vanilla",
+  gender: "women",
+  image: "/images/fragrances/mon_guerlain.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Lavender"],
+    middle: ["Jasmine Sambac", "Rose", "Iris"],
+    base: ["Tahitian Vanilla", "Australian Sandalwood", "Coumarin", "Licorice", "Benzoin", "Patchouli"]
+  }
+},
+
+
+percival: {
+  code: "percival",
+  brand: "Parfums de Marly",
+  brand_short: ".PDM",
+  fragrance: "Percival",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Percival-51037.html",
+  family: "Citrus Aromatic",
+  gender: "unisex",
+  image: "/images/fragrances/percival.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Mandarin Orange", "Lavender"],
+    middle: ["Geranium", "Coriander"],
+    base: ["Vetiver", "Sandalwood", "Oakmoss"]
+  }
+},
+
+moonlight_patchouli: {
+  code: "moonlight_patchouli",
+  brand: "Van Cleef & Arpels",
+  brand_short: ".VCA",
+  fragrance: "Moonlight Patchouli",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Moonlight-Patchouli-38374.html",
+  family: "Woody Chypre",
+  gender: "unisex",
+  image: "/images/fragrances/moonlight_patchouli.png",
+  Our_Name: "",
+  notes: {
+    top: ["Patchouli", "Bergamot"],
+    middle: ["Rose", "Jasmine"],
+    base: ["Musk", "Sandalwood", "Cedar"]
+  }
+},
+x_for_men: {
+  code: "x_for_men",
+  brand: "Clive Christian",
+  brand_short: ".CC",
+  fragrance: "X For Men",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Clive-Christian/X-For-Men-4650.html",
+  family: "Oriental Woody",
+  gender: "men",
+  image: "/images/fragrances/x_for_men.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Lemon", "Cardamom"],
+    middle: ["Jasmine", "Rose", "Cinnamon"],
+    base: ["Sandalwood", "Vanilla", "Amber"]
+  }
+},
+armani_code: {
+  code: "armani_code",
+  brand: "Giorgio Armani",
+  brand_short: ".GA",
+  fragrance: "Armani Code",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-412.html",
+  family: "Oriental Spicy",
+  gender: "men",
+  image: "/images/fragrances/armani_code.png",
+  Our_Name: "",
+  notes: {
+    top: ["Lemon", "Bergamot"],
+    middle: ["Olive Blossom", "Star Anise", "Guaiac Wood"],
+    base: ["Tonka Bean", "Leather", "Tobacco"]
+  }
+},
+
+loyal_agar: {
+  code: "loyal_agar",
+  brand: "Luxodor",
+  brand_short: ".Luxodor",
+  fragrance: "Loyal Agar",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Luxodor/Loyal-Agar-61291.html",
+  family: "Oriental Woody",
+  gender: "unisex",
+  image: "/images/fragrances/loyal_agar.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Pink Pepper"],
+    middle: ["Agarwood (Oud)", "Rose"],
+    base: ["Sandalwood", "Vanilla", "Amber"]
+  }
+},
+
+
+molecule_01: {
+  code: "molecule_01",
+  brand: "Escentric Molecules",
+  brand_short: ".EM",
+  fragrance: "Molecule 01",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Escentric-Molecules/Molecule-01-845.html",
+  family: "Woody Floral Musk",
+  gender: "unisex",
+  image: "/images/fragrances/molecule_01.png",
+  Our_Name: "",
+  notes: {
+    top: ["Iso E Super"],
+    middle: ["Lily of the Valley", "Jasmine"],
+    base: ["Musk", "Cedarwood", "Sandalwood"]
+  }
+},
+
+
+
+oriana: {
+  code: "oriana",
+  brand: "Parfums de Marly",
+  brand_short: ".PDM",
+  fragrance: "Oriana",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Oriana-69117.html",
+  family: "Floral Fruity Gourmand",
+  gender: "women",
+  image: "/images/fragrances/oriana.png",
+  Our_Name: "",
+  notes: {
+    top: ["Mandarin Orange", "Bergamot"],
+    middle: ["Peony", "Rose", "Jasmine"],
+    base: ["Vanilla", "Tonka Bean", "Musk"]
+  }
+},
+flora_gorgeous_gardenia_edp: {
+  code: "flora_gorgeous_gardenia_edp",
+  brand: "Gucci",
+  brand_short: ".Gucci",
+  fragrance: "Flora Gorgeous Gardenia Eau de Parfum",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Gardenia-68578.html",
+  family: "Floral",
+  gender: "women",
+  image: "/images/fragrances/flora_gorgeous_gardenia.png",
+  Our_Name: "",
+  notes: {
+    top: ["Pear", "Pink Pepper", "Bergamot"],
+    middle: ["Gardenia", "Jasmine", "Orange Blossom"],
+    base: ["Musk", "Patchouli", "Sandalwood"]
+  }
+},
+
+love_hibiscus: {
+  code: "love_hibiscus",
+  brand: "Amouage",
+  brand_short: ".AM",
+  fragrance: "Love Hibiscus",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Amouage/Love-Hibiscus-126673.html",
+  family: "Floral Fruity Gourmand",
+  gender: "women",
+  image: "/images/fragrances/love_hibiscus.png",
+  Our_Name: "",
+  notes: {
+    top: ["Bergamot", "Passionfruit", "Salted Caramel"],
+    middle: ["Frankincense", "Hibiscus", "Orris"],
+    base: ["Cypriol", "Sandalwood", "Vanilla"]
+  }
+},
+meant_to_be_seen: {
+  code: "meant_to_be_seen",
+  brand: "Nishane",
+  brand_short: ".NI",
+  fragrance: "Meant To Be Seen",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Nishane/Meant-To-Be-Seen-116224.html",
+  family: "Woody Floral Musk",
+  gender: "unisex",
+  image: "/images/fragrances/meant_to_be_seen.png",
+  Our_Name: "",
+  notes: {
+    top: ["Violet", "Bergamot"],
+    middle: ["Orris Butter", "Moxalone", "Civettone"],
+    base: ["Akigalawood", "Sesame", "Ambrettolide", "Sandalwood"]
+  }
+},
+
+queen_of_silk: {
+  code: "queen_of_silk",
+  brand: "Creed",
+  brand_short: ".CR",
+  fragrance: "Queen of Silk",
+  fragrantica_link: "https://www.fragrantica.com/perfume/Creed/Queen-of-Silk-89643.html",
+  family: "Oriental Floral",
+  gender: "women",
+  image: "/images/fragrances/queen_of_silk.png",
+  Our_Name: "",
+  notes: {
+    top: ["Saffron", "Osmanthus", "Magnolia"],
+    middle: ["Passionfruit", "Tuberose", "Patchouli", "Agarwood (Oud)"],
+    base: ["Madagascar Vanilla", "Ambroxan", "Myrrh", "Musk", "Incense", "Cedarwood"]
+  }
+},
 };
 export default MASTER_FRAGRANCES;
+
+
+
+// https://www.fragrantica.com/perfume/Guerlain/Mon-Guerlain-43297.html
+// https://www.fragrantica.com/perfume/Parfums-de-Marly/Percival-51037.html
+
+
+
+
+
+
 
 // oud_wood_intense: {
 //   code: "oud_wood_intense",
@@ -5986,8 +6128,7 @@ export default MASTER_FRAGRANCES;
 //   fragrantica_link: "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-Intense-46767.html",
 //   family: "Oriental Woody",
 //   gender: "unisex",
-//   image: IMAGES.oud_wood_intense,
-//   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-46767.jpeg",
+//   image: "/images/fragrances/oud_wood_intense.jpg",
 //   Our_Name: "",
 //   notes: {
 //     top: ["Castoreum", "Agarwood (Oud)", "Cypress", "Juniper", "Angelica", "Ginger"],
@@ -6004,8 +6145,7 @@ export default MASTER_FRAGRANCES;
 //   fragrantica_link: "https://www.fragrantica.com/perfume/Parfum-d-Empire/Ambre-Russe-5258.html",
 //   family: "Oriental Spicy",
 //   gender: "unisex",
-//   image: IMAGES.ambre_russe,
-//   image_url: "https://fimgs.net/mdimg/perfume-social-cards/en-social-5258.jpeg",
+//   image: "/images/fragrances/ambre_russe.jpg",
 //   Our_Name: "",
 //   notes: {
 //     top: ["Vodka", "Champagne"],

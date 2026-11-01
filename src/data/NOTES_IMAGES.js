@@ -449,6 +449,20 @@ export const NOTES_IMAGES = {
   "red fruits": "https://fimgs.net/mdimg/sastojci/t.726.jpg",
   "pine needles":"https://fimgs.net/mdimg/sastojci/t.204.jpg",
   "white suede":"https://fimgs.net/mdimg/sastojci/t.196.jpg",
+
+
+  "star anise":"https://fimgs.net/mdimg/sastojci/t.100.jpg",
+  "olive blossom":"https://fimgs.net/mdimg/sastojci/t.427.jpg",
+  "fir":"https://fimgs.net/mdimg/sastojci/t.205.jpg",
+  "indian saffron":"https://fimgs.net/mdimg/sastojci/t.55.jpg",
+  "cade oil":"https://fimgs.net/mdimg/sastojci/t.810.jpg",
+  "ebony tree":"https://fimgs.net/mdimg/sastojci/t.331.jpg",
+  "orcano":"https://fimgs.net/mdimg/sastojci/t.1418.jpg",
+  "salted caramel": "https://fimgs.net/mdimg/sastojci/t.183.jpg",
+  "cypriol": "https://fimgs.net/mdimg/sastojci/t.406.jpg",
+  "orris butter": "https://fimgs.net/mdimg/sastojci/t.101.jpg",
+  "moxalone": "https://fimgs.net/mdimg/sastojci/t.1804.jpg",
+  "civettone": "https://fimgs.net/mdimg/sastojci/t.1483.jpg",
   
   
 };

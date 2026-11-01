@@ -17,11 +17,13 @@ export default function FragranceNotesMini({ notes, matchedNotes = [] }) {
     return false;
   }
 
-  const sections = [
-    { title: "Top Notes", list: notes.top || [] },
-    { title: "Middle Notes", list: notes.middle || [] },
-    { title: "Base Notes", list: notes.base || [] }
-  ];
+  const sections = notes.all?.length
+    ? [{ title: "Fragrance Notes", list: notes.all }]
+    : [
+        { title: "Top Notes", list: notes.top || [] },
+        { title: "Middle Notes", list: notes.middle || [] },
+        { title: "Base Notes", list: notes.base || [] },
+      ];
 
   return (
     <div className="notes-mini-wrapper">
