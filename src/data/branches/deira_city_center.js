@@ -1,4 +1,4 @@
-export const DAIRA_CITY_CENTER = [
+export const DEIRA_CITY_CENTER = [
   { id: 1, code: "afternoon_swim" },
   { id: 2, code: "si_armani" },
   { id: 3, code: "acqua_di_gio_profumo" },
@@ -290,6 +290,10 @@ export const DAIRA_CITY_CENTER = [
   { id: 290, code: "les_sables_roses" },
   { id: 291, code: "my_way" },
   { id: 292, code: "meant_to_be_seen" },
-  { id: 293, code: "queen_of_silk" }
-
+  { id: 293, code: "queen_of_silk" },
+  { id: 294, code: "chance_eau_tendre" },
+  { id: 295, code: "libre_vanille_couture" },
+  { id: 296, code: "decision" },
+  { id: 297, code: "linterdit" },
+  { id: 298, code: "vibrato" },
 ];
