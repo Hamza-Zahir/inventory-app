@@ -23,15 +23,31 @@ export default function App() {
   const branchNames = Object.keys(BRANCHES);
 
   const [branch, setBranch] = useState(() => {
-    return localStorage.getItem("selectedBranch") || branchNames[0];
+    const urlBranch = new URLSearchParams(window.location.search).get("branch");
+    const savedBranch = localStorage.getItem("selectedBranch");
+
+    if (urlBranch && branchNames.includes(urlBranch)) return urlBranch;
+    if (savedBranch && branchNames.includes(savedBranch)) return savedBranch;
+    return branchNames[0];
   });
 
   useEffect(() => {
     localStorage.setItem("selectedBranch", branch);
+    setSelectedBrand("all");
+
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("branch") !== branch) {
+      url.searchParams.set("branch", branch);
+      window.history.replaceState(window.history.state, "", url);
+    }
   }, [branch]);
 
   const [nameQuery, setNameQuery] = useState("");
   const [selectedNotes, setSelectedNotes] = useState([]);
+  const [selectedGenders, setSelectedGenders] = useState(["all"]);
+  const [selectedFamily, setSelectedFamily] = useState("all");
+  const [selectedBrand, setSelectedBrand] = useState("all");
+  const [searchMode, setSearchMode] = useState("name");
   const [selectedItem, setSelectedItem] = useState(null);
 
   const savedView = localStorage.getItem("selectedView") || "cards";
@@ -39,6 +55,28 @@ export default function App() {
 
   const [forcedNotesMode, setForcedNotesMode] = useState(false);
   const [showMixTable, setShowMixTable] = useState(false);
+
+  function clearFragranceFilters() {
+    setSelectedGenders(["all"]);
+    setSelectedFamily("all");
+    setSelectedBrand("all");
+  }
+
+  function toggleGender(gender) {
+    if (gender === "all") {
+      setSelectedGenders(["all"]);
+      return;
+    }
+
+    setSelectedGenders((current) => {
+      const selected = current.filter((value) => value !== "all");
+      const next = selected.includes(gender)
+        ? selected.filter((value) => value !== gender)
+        : [...selected, gender];
+      if (next.length === 3) return ["all"];
+      return next.length > 0 ? next : ["all"];
+    });
+  }
 
   useEffect(() => {
     if (!forcedNotesMode) {
@@ -76,6 +114,12 @@ export default function App() {
   }
 
   const items = getBranchItems(branch);
+  const fragranceFamilies = Array.from(
+    new Set(items.map((item) => item.family).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
+  const fragranceBrands = Array.from(
+    new Set(items.map((item) => item.brand).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
 
   const ALL_NOTES = new Set();
   items.forEach((item) => {
@@ -108,10 +152,14 @@ export default function App() {
       const nameQ = nameQuery.toLowerCase().trim();
 
       if (selectedNotes.length > 0 && item.matchCount === 0) return false;
+      if (!selectedGenders.includes("all") && !selectedGenders.includes(item.gender)) return false;
+      if (selectedFamily !== "all" && item.family !== selectedFamily) return false;
+      if (selectedBrand !== "all" && item.brand !== selectedBrand) return false;
 
       const matchName =
         item.fragrance.toLowerCase().includes(nameQ) ||
         item.brand.toLowerCase().includes(nameQ) ||
+        item.Our_Name?.toLowerCase().includes(nameQ) ||
         item.id.toString().includes(nameQ) ||
         item.brand_short?.toLowerCase().includes(nameQ);
 
@@ -144,8 +192,67 @@ export default function App() {
               notesList={notesList}
               selectedNotes={selectedNotes}
               setSelectedNotes={setSelectedNotes}
-              onModeChange={() => setSelectedNotes([])}
+              onModeChange={(mode) => {
+                setSearchMode(mode);
+                clearFragranceFilters();
+                if (mode === "name") setSelectedNotes([]);
+              }}
             />
+
+            {searchMode === "name" && (
+              <div className="fragrance-filters">
+                <div className="gender-filters" role="group" aria-label="Filter by gender">
+                  <span className="filter-label">Gender</span>
+                  {["all", "men", "women", "unisex"].map((gender) => (
+                    <button
+                      key={gender}
+                      type="button"
+                      className={`gender-filter ${selectedGenders.includes(gender) ? "active" : ""}`}
+                      aria-pressed={selectedGenders.includes(gender)}
+                      onClick={() => toggleGender(gender)}
+                    >
+                      {gender === "all" ? "All" : gender[0].toUpperCase() + gender.slice(1)}
+                    </button>
+                  ))}
+                </div>
+
+                <label className="family-filter">
+                  <span className="filter-label">Fragrance type</span>
+                  <select
+                    className={selectedFamily !== "all" ? "active" : ""}
+                    value={selectedFamily}
+                    onChange={(event) => setSelectedFamily(event.target.value)}
+                  >
+                    <option value="all">All types</option>
+                    {fragranceFamilies.map((family) => (
+                      <option key={family} value={family}>{family}</option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="brand-filter">
+                  <span className="filter-label">Brand</span>
+                  <select
+                    className={selectedBrand !== "all" ? "active" : ""}
+                    value={selectedBrand}
+                    onChange={(event) => setSelectedBrand(event.target.value)}
+                  >
+                    <option value="all">All brands</option>
+                    {fragranceBrands.map((brand) => (
+                      <option key={brand} value={brand}>{brand}</option>
+                    ))}
+                  </select>
+                </label>
+
+                <button
+                  type="button"
+                  className="clear-filters-button"
+                  onClick={clearFragranceFilters}
+                >
+                  Clear all filters
+                </button>
+              </div>
+            )}
 
             {/* ⭐ MIX BUTTONS */}
             {selectedNotes.length > 2 && !showMixTable && (

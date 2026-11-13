@@ -52,6 +52,10 @@
 @media (max-width: 600px) {
   .view-switcher {
     gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .view-btn {

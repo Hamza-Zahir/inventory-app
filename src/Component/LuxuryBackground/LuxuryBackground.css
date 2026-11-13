@@ -2,6 +2,7 @@
 .luxury-bg-root {
   position: fixed;
   inset: 0;
+  overflow: hidden;
   z-index: 0;
   pointer-events: none;
   /* background: radial-gradient(circle at center, #2d2d2d 0%, #1c1c1c 55%, #0f0f0f 100%); */

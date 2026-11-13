@@ -50,6 +50,14 @@ export default function SearchBox({
     setShowSuggestions(false);
   };
 
+  const changeMode = (mode) => {
+    setActive(mode);
+    onModeChange(mode);
+    setNameQuery("");
+    setNoteInput("");
+    setShowSuggestions(false);
+  };
+
   // ⭐ remove note
   const removeNote = (note) => {
     setSelectedNotes(selectedNotes.filter((n) => n !== note));
@@ -57,109 +65,94 @@ export default function SearchBox({
 
   return (
     <div className="search-wrapper">
+      <div className="search-row">
+        <label className="search-mode">
+          <span className="search-mode-label">Search by</span>
+          <select
+            className="search-mode-select"
+            aria-label="Search by"
+            value={active}
+            onChange={(event) => changeMode(event.target.value)}
+          >
+            <option value="name">Brand / Fragrance / Our Name / ID</option>
+            <option value="notes">Notes</option>
+          </select>
+        </label>
 
-      {/* ⭐ TABS */}
-      <div className="search-tabs">
-        <div
-          className={`search-tab ${active === "name" ? "active" : ""}`}
-          onClick={() => {
-            setActive("name");
-            onModeChange();
-            setNoteInput("");
-            setShowSuggestions(false);
-            setNameQuery("");
-          }}
-        >
-          Search by Brand / Fragrance
-        </div>
+        <div className="search-dynamic-area">
 
-        <div
-          className={`search-tab ${active === "notes" ? "active" : ""}`}
-          onClick={() => {
-            setActive("notes");
-            setNameQuery("");
-            setNoteInput("");
-            setShowSuggestions(false);
-          }}
-        >
-          Search by Notes
-        </div>
-      </div>
-
-      {/* ⭐ DYNAMIC AREA */}
-      <div className="search-dynamic-area">
-
-        {/* ⭐ NAME SEARCH */}
-        <div className={`name-container ${active === "name" ? "show" : "hide"}`}>
-          <input
-            className="search-input"
-            placeholder="Type brand, fragrance or ID..."
-            value={nameQuery}
-            onChange={(e) => setNameQuery(e.target.value)}
-          />
-        </div>
-
-        {/* ⭐ NOTES SEARCH */}
-        <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
-
-          {/* Selected notes chips */}
-          {selectedNotes.length > 0 && (
-            <div className="chips-row">
-              {selectedNotes.map((note) => (
-                <div key={note} className="chip">
-                  {note}
-                  <span className="chip-x" onClick={() => removeNote(note)}>×</span>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Input */}
-          <div className="input-wrapper">
+          {/* ⭐ NAME SEARCH */}
+          <div className={`name-container ${active === "name" ? "show" : "hide"}`}>
             <input
               className="search-input"
-              placeholder="Type notes (vanilla, musk...)"
-              value={noteInput}
-              onChange={(e) => {
-                setNoteInput(e.target.value);
-                setShowSuggestions(true);
-
-                if (suggestionsRef.current) {
-                  suggestionsRef.current.scrollTop = 0;
-                }
-              }}
-              onFocus={() => setShowSuggestions(true)}
-              onBlur={() => {
-                setTimeout(() => setShowSuggestions(false), 150);
-              }}
+              placeholder="Type brand, fragrance, our name or ID..."
+              value={nameQuery}
+              onChange={(e) => setNameQuery(e.target.value)}
             />
+          </div>
 
-            {noteInput.length > 0 && (
-              <span className="clear-input" onClick={() => setNoteInput("")}>
-                ×
-              </span>
+          {/* ⭐ NOTES SEARCH */}
+          <div className={`notes-container ${active === "notes" ? "show" : "hide"}`}>
+
+            {/* Selected notes chips */}
+            {selectedNotes.length > 0 && (
+              <div className="chips-row">
+                {selectedNotes.map((note) => (
+                  <div key={note} className="chip">
+                    {note}
+                    <span className="chip-x" onClick={() => removeNote(note)}>×</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Input */}
+            <div className="input-wrapper">
+              <input
+                className="search-input"
+                placeholder="Type notes (vanilla, musk...)"
+                value={noteInput}
+                onChange={(e) => {
+                  setNoteInput(e.target.value);
+                  setShowSuggestions(true);
+
+                  if (suggestionsRef.current) {
+                    suggestionsRef.current.scrollTop = 0;
+                  }
+                }}
+                onFocus={() => setShowSuggestions(true)}
+                onBlur={() => {
+                  setTimeout(() => setShowSuggestions(false), 150);
+                }}
+              />
+
+              {noteInput.length > 0 && (
+                <span className="clear-input" onClick={() => setNoteInput("")}>
+                  ×
+                </span>
+              )}
+            </div>
+
+            {/* Suggestions */}
+            {showSuggestions && suggestions.length > 0 && (
+              <div className="suggestions-box" ref={suggestionsRef}>
+                {suggestions.map((note) => (
+                  <div
+                    key={note.name}
+                    className={`suggestion-item note-with-img ${
+                      selectedNotes.includes(note.name) ? "selected-note" : ""
+                    }`}
+                    onClick={() => addNote(note)}
+                  >
+                    <img src={note.img} alt={note.name} className="note-icon" />
+                    {note.name}
+                  </div>
+                ))}
+              </div>
             )}
           </div>
 
-          {/* Suggestions */}
-          {showSuggestions && suggestions.length > 0 && (
-            <div className="suggestions-box" ref={suggestionsRef}>
-              {suggestions.map((note) => (
-                <div
-                  key={note.name}
-                  className={`suggestion-item note-with-img ${
-                    selectedNotes.includes(note.name) ? "selected-note" : ""
-                  }`}
-                  onClick={() => addNote(note)}
-                >
-                  <img src={note.img} alt={note.name} className="note-icon" />
-                  {note.name}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
-
       </div>
     </div>
   );

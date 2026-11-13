@@ -64,6 +64,13 @@
   text-align: left;
 }
 
+.modal-our-name {
+  color: #c9a86a;
+  font-size: 13px;
+  font-weight: 600;
+  margin: -8px 0 14px;
+}
+
 .gender-line-modal {
   margin-bottom: 10px;
   text-align: left;

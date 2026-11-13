@@ -6,7 +6,7 @@ import "./ModalCard.css";
 export default function ModalCard({ item, onClose }) {
   if (!item) return null;
 
-  const { fragrance, brand, family, gender, image, notes, id } = item;
+  const { fragrance, brand, family, gender, image, notes, id, Our_Name } = item;
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -30,6 +30,7 @@ export default function ModalCard({ item, onClose }) {
           <div className="modal-title-line">
             {fragrance} <span className="brand_name"> {brand}</span>
           </div>
+          {Our_Name && <div className="modal-our-name">{Our_Name}</div>}
 
           {/* GENDER */}
           <div className="gender-line-modal">

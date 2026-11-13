@@ -2,7 +2,7 @@ import "./AnimatedNotesCard.css";
 import FragranceNotesMini from "../FragranceNotes/FragranceNotesMini";
 
 export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
-  const { fragrance, brand, image, notes, gender, id } = item;
+  const { fragrance, brand, image, notes, gender, id, Our_Name } = item;
 
   // ⭐ FUNCTION — نفس logic ديال App.js
   function isNoteMatch(note, selected) {
@@ -50,6 +50,7 @@ export default function AnimatedNotesCard({ item, selectedNotes, onClick }) {
           <div className="title-box">
             <div className="frag">{fragrance}</div>
             {brand && <div className="brand">({brand})</div>}
+            {Our_Name && <div className="our-name">{Our_Name}</div>}
           </div>
         </div>
 

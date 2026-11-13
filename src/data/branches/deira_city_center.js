@@ -218,7 +218,7 @@ export const DEIRA_CITY_CENTER = [
   { id: 217, code: "scandal" },
   { id: 218, code: "orchidee_vanille" },
   { id: 219, code: "black_sea" },
-  { id: 220, code: "percival" },
+  { id: 220, code: "molecule_01" },
   { id: 221, code: "oriana" },
   { id: 222, code: "moonlight_patchouli" },
   { id: 223, code: "x_for_men" },
@@ -296,4 +296,9 @@ export const DEIRA_CITY_CENTER = [
   { id: 296, code: "decision" },
   { id: 297, code: "linterdit" },
   { id: 298, code: "vibrato" },
+  { id: 299, code: "percival" },
+  { id: 300, code: "alexandria_ii" },
+  { id: 301, code: "herod" },
+  
+
 ];
